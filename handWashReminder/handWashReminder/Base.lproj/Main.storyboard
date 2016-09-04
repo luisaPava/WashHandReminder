@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qUu-yT-vbC">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="handWashReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +19,252 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBb-3T-WGX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wBb-3T-WGX" secondAttribute="height" multiplier="1:1" id="fwk-uf-2gF"/>
+                                </constraints>
+                                <state key="normal" image="Instrucoes"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fwk-uf-2gF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="fwk-uf-2gF"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brN-yw-rCW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="brN-yw-rCW" secondAttribute="height" multiplier="1:1" id="XXE-Rc-07M"/>
+                                </constraints>
+                                <state key="normal" image="info"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XXE-Rc-07M"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="XXE-Rc-07M"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaT-Iw-29I">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CaT-Iw-29I" secondAttribute="height" multiplier="1:1" id="gZf-j2-7pD"/>
+                                </constraints>
+                                <state key="normal" image="Notificacao"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gZf-j2-7pD"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="321" y="20" width="59" height="59"/>
+                                    <mask key="constraints">
+                                        <include reference="gZf-j2-7pD"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="fEE-qT-YdJ" kind="show" id="ubX-kF-Nfh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="brN-yw-rCW" secondAttribute="bottom" constant="30" id="4Un-nY-Q25"/>
+                            <constraint firstItem="wBb-3T-WGX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6nN-X4-FgG"/>
+                            <constraint firstItem="CaT-Iw-29I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9Jp-9W-gV0"/>
+                            <constraint firstItem="brN-yw-rCW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="LXo-ds-Am0"/>
+                            <constraint firstItem="CaT-Iw-29I" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MhY-I5-AH9"/>
+                            <constraint firstItem="wBb-3T-WGX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cee-pu-1yS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="wBb-3T-WGX"/>
+                                <exclude reference="brN-yw-rCW"/>
+                                <exclude reference="CaT-Iw-29I"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4Un-nY-Q25"/>
+                                <exclude reference="9Jp-9W-gV0"/>
+                                <exclude reference="MhY-I5-AH9"/>
+                                <exclude reference="LXo-ds-Am0"/>
+                                <exclude reference="6nN-X4-FgG"/>
+                                <exclude reference="cee-pu-1yS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="wBb-3T-WGX"/>
+                                <include reference="brN-yw-rCW"/>
+                                <include reference="CaT-Iw-29I"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4Un-nY-Q25"/>
+                                <include reference="9Jp-9W-gV0"/>
+                                <include reference="MhY-I5-AH9"/>
+                                <include reference="LXo-ds-Am0"/>
+                                <include reference="6nN-X4-FgG"/>
+                                <include reference="cee-pu-1yS"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="njy-lp-Ymf">
+                        <barButtonItem key="backBarButtonItem" title="Hand Wash" id="FQe-40-7Hb"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1056" y="337.5"/>
+        </scene>
+        <!--Notification-->
+        <scene sceneID="568-Pr-y4p">
+            <objects>
+                <viewController id="fEE-qT-YdJ" customClass="NotificationViewController" customModule="handWashReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pp9-Rj-b0c"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oo8-Gw-fpC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ju6-VV-Rll">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duração" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="954-ms-7kQ">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha o intervalo de tempo que você gostaria de ser notificado." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zBa-lt-MuW">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervalo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MZG-kF-giY">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="cn8-pN-ETF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cn8-pN-ETF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cn8-pN-ETF"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha o intervalo de tempo das notificações" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bw1-c1-odV">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Qvu-Ze-EN3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Qvu-Ze-EN3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Qvu-Ze-EN3"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJa-xp-k6F" customClass="SegmentedControl" customModule="handWashReminder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MZG-kF-giY" firstAttribute="leading" secondItem="Ju6-VV-Rll" secondAttribute="leadingMargin" constant="20" id="0nH-7Y-gA3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MZG-kF-giY" secondAttribute="trailing" constant="20" id="3yn-zP-eBT"/>
+                            <constraint firstItem="MZG-kF-giY" firstAttribute="top" secondItem="pp9-Rj-b0c" secondAttribute="bottom" constant="40" id="8pX-Zb-jod"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bw1-c1-odV" secondAttribute="trailing" constant="20" id="SDq-vG-pkj"/>
+                            <constraint firstItem="bw1-c1-odV" firstAttribute="top" secondItem="MZG-kF-giY" secondAttribute="bottom" constant="15" id="kfD-RI-etZ"/>
+                            <constraint firstItem="bw1-c1-odV" firstAttribute="leading" secondItem="Ju6-VV-Rll" secondAttribute="leadingMargin" constant="20" id="pdp-sp-MAB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="954-ms-7kQ"/>
+                                <exclude reference="zBa-lt-MuW"/>
+                                <exclude reference="MZG-kF-giY"/>
+                                <exclude reference="bw1-c1-odV"/>
+                                <exclude reference="uJa-xp-k6F"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0nH-7Y-gA3"/>
+                                <exclude reference="3yn-zP-eBT"/>
+                                <exclude reference="8pX-Zb-jod"/>
+                                <exclude reference="SDq-vG-pkj"/>
+                                <exclude reference="kfD-RI-etZ"/>
+                                <exclude reference="pdp-sp-MAB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="954-ms-7kQ"/>
+                                <include reference="zBa-lt-MuW"/>
+                                <include reference="MZG-kF-giY"/>
+                                <include reference="bw1-c1-odV"/>
+                                <include reference="uJa-xp-k6F"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0nH-7Y-gA3"/>
+                                <include reference="3yn-zP-eBT"/>
+                                <include reference="8pX-Zb-jod"/>
+                                <include reference="SDq-vG-pkj"/>
+                                <include reference="kfD-RI-etZ"/>
+                                <include reference="pdp-sp-MAB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notification" id="a68-ki-19R">
+                        <barButtonItem key="backBarButtonItem" title="Hand Wash" id="xSk-QQ-nd7"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojY-LJ-1XL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.5" y="337.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WoF-3h-a9K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qUu-yT-vbC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1VR-q4-0Il">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9mW-KX-hkk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQQ-JI-ZIE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196.5" y="331.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Instrucoes" width="200" height="200"/>
+        <image name="Notificacao" width="59" height="59"/>
+        <image name="info" width="44" height="44"/>
+    </resources>
 </document>
