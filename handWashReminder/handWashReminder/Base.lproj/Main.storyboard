@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qUu-yT-vbC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qUu-yT-vbC">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -65,8 +65,7 @@
                                         <exclude reference="gZf-j2-7pD"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="321" y="20" width="59" height="59"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="gZf-j2-7pD"/>
                                     </mask>
@@ -186,9 +185,24 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJa-xp-k6F" customClass="SegmentedControl" customModule="handWashReminder" customModuleProvider="target">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="uJa-xp-k6F" customClass="ADVSegmentedControl" customModule="handWashReminder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="NHb-UT-Xpv">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NHb-UT-Xpv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="NHb-UT-Xpv"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
@@ -196,9 +210,12 @@
                             <constraint firstItem="MZG-kF-giY" firstAttribute="leading" secondItem="Ju6-VV-Rll" secondAttribute="leadingMargin" constant="20" id="0nH-7Y-gA3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MZG-kF-giY" secondAttribute="trailing" constant="20" id="3yn-zP-eBT"/>
                             <constraint firstItem="MZG-kF-giY" firstAttribute="top" secondItem="pp9-Rj-b0c" secondAttribute="bottom" constant="40" id="8pX-Zb-jod"/>
+                            <constraint firstItem="uJa-xp-k6F" firstAttribute="top" secondItem="bw1-c1-odV" secondAttribute="bottom" constant="36" id="MCh-JC-r7j"/>
+                            <constraint firstItem="uJa-xp-k6F" firstAttribute="trailing" secondItem="Ju6-VV-Rll" secondAttribute="trailingMargin" id="Oiw-fl-ZS1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bw1-c1-odV" secondAttribute="trailing" constant="20" id="SDq-vG-pkj"/>
                             <constraint firstItem="bw1-c1-odV" firstAttribute="top" secondItem="MZG-kF-giY" secondAttribute="bottom" constant="15" id="kfD-RI-etZ"/>
                             <constraint firstItem="bw1-c1-odV" firstAttribute="leading" secondItem="Ju6-VV-Rll" secondAttribute="leadingMargin" constant="20" id="pdp-sp-MAB"/>
+                            <constraint firstItem="uJa-xp-k6F" firstAttribute="leading" secondItem="Ju6-VV-Rll" secondAttribute="leadingMargin" id="q6r-zB-Wop"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -215,6 +232,9 @@
                                 <exclude reference="SDq-vG-pkj"/>
                                 <exclude reference="kfD-RI-etZ"/>
                                 <exclude reference="pdp-sp-MAB"/>
+                                <exclude reference="MCh-JC-r7j"/>
+                                <exclude reference="Oiw-fl-ZS1"/>
+                                <exclude reference="q6r-zB-Wop"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -232,6 +252,9 @@
                                 <include reference="SDq-vG-pkj"/>
                                 <include reference="kfD-RI-etZ"/>
                                 <include reference="pdp-sp-MAB"/>
+                                <include reference="MCh-JC-r7j"/>
+                                <include reference="Oiw-fl-ZS1"/>
+                                <include reference="q6r-zB-Wop"/>
                             </mask>
                         </variation>
                     </view>
