@@ -12,6 +12,7 @@
 		2B0095BA1D7A12CC00812FD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0095B81D7A12CC00812FD7 /* Main.storyboard */; };
 		2B0095BC1D7A12CC00812FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0095BB1D7A12CC00812FD7 /* Assets.xcassets */; };
 		2B0095BF1D7A12CC00812FD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0095BD1D7A12CC00812FD7 /* LaunchScreen.storyboard */; };
+		2BCB57541D81D93200C12C65 /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */; };
 		EB2F95E21D7CC23C00A2744E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */; };
 		EB2F95E41D7CCA3100A2744E /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		2B0095BB1D7A12CC00812FD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B0095BE1D7A12CC00812FD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0095C01D7A12CC00812FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
 		EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +64,7 @@
 				2B0095B61D7A12CC00812FD7 /* ViewController.swift */,
 				EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */,
 				EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */,
+				2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */,
 				2B0095B81D7A12CC00812FD7 /* Main.storyboard */,
 				2B0095BB1D7A12CC00812FD7 /* Assets.xcassets */,
 				2B0095BD1D7A12CC00812FD7 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0095B71D7A12CC00812FD7 /* ViewController.swift in Sources */,
+				2BCB57541D81D93200C12C65 /* InstrucoesViewController.swift in Sources */,
 				2B0095B51D7A12CC00812FD7 /* AppDelegate.swift in Sources */,
 				EB2F95E41D7CCA3100A2744E /* SegmentedControl.swift in Sources */,
 				EB2F95E21D7CC23C00A2744E /* NotificationViewController.swift in Sources */,
