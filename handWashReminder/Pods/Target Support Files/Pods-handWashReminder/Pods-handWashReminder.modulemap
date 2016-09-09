@@ -1,0 +1,6 @@
+framework module Pods_handWashReminder {
+  umbrella header "Pods-handWashReminder-umbrella.h"
+
+  export *
+  module * { export * }
+}

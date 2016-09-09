@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import CircleMenu
 
 class ViewController: UIViewController {
+    @IBOutlet weak var circleMenuButton: CircleMenu!
+    private var buttons: Array<String> = ["curiosidade", "tips"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        circleMenuButton.delegate = self
+        
         self.navigationController?.navigationBarHidden = true
 
     }
@@ -27,5 +32,15 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController: CircleMenuDelegate {
+    func circleMenu(circleMenu: CircleMenu, willDisplay button: UIButton, atIndex: Int) {
+        button.setImage(UIImage(named: buttons[atIndex]), forState: .Normal)
+    }
+    
+    func circleMenu(circleMenu: CircleMenu, buttonWillSelected button: UIButton, atIndex: Int) {
+        print(atIndex)
+    }
 }
 

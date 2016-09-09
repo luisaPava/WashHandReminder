@@ -13,11 +13,13 @@
 		2B0095BC1D7A12CC00812FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0095BB1D7A12CC00812FD7 /* Assets.xcassets */; };
 		2B0095BF1D7A12CC00812FD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0095BD1D7A12CC00812FD7 /* LaunchScreen.storyboard */; };
 		2BCB57541D81D93200C12C65 /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */; };
+		4DFDF79093F98A09EF622119 /* Pods_handWashReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B1C49386E6CCC9828D5179 /* Pods_handWashReminder.framework */; };
 		EB2F95E21D7CC23C00A2744E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */; };
 		EB2F95E41D7CCA3100A2744E /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DBA5727F8E31955A26DA610 /* Pods-handWashReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handWashReminder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-handWashReminder/Pods-handWashReminder.debug.xcconfig"; sourceTree = "<group>"; };
 		2B0095B11D7A12CC00812FD7 /* handWashReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = handWashReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0095B41D7A12CC00812FD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B0095B61D7A12CC00812FD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		2B0095BE1D7A12CC00812FD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0095C01D7A12CC00812FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
+		B7B1C49386E6CCC9828D5179 /* Pods_handWashReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handWashReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52451D28781A8455DF2DCA6 /* Pods-handWashReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handWashReminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-handWashReminder/Pods-handWashReminder.release.xcconfig"; sourceTree = "<group>"; };
 		EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DFDF79093F98A09EF622119 /* Pods_handWashReminder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				2B0095B31D7A12CC00812FD7 /* handWashReminder */,
 				2B0095B21D7A12CC00812FD7 /* Products */,
+				A3D41F512DFA447ECC473D98 /* Pods */,
+				7F592DCDA49DA55588332603 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,23 @@
 			path = handWashReminder;
 			sourceTree = "<group>";
 		};
+		7F592DCDA49DA55588332603 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7B1C49386E6CCC9828D5179 /* Pods_handWashReminder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3D41F512DFA447ECC473D98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DBA5727F8E31955A26DA610 /* Pods-handWashReminder.debug.xcconfig */,
+				C52451D28781A8455DF2DCA6 /* Pods-handWashReminder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B0095C31D7A12CC00812FD7 /* Build configuration list for PBXNativeTarget "handWashReminder" */;
 			buildPhases = (
+				6C08E92CA91B1DDDA8534D41 /* [CP] Check Pods Manifest.lock */,
 				2B0095AD1D7A12CC00812FD7 /* Sources */,
 				2B0095AE1D7A12CC00812FD7 /* Frameworks */,
 				2B0095AF1D7A12CC00812FD7 /* Resources */,
+				56EC07C640611DD79F75C3AF /* [CP] Embed Pods Frameworks */,
+				662A9A200005C0281B797668 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56EC07C640611DD79F75C3AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-handWashReminder/Pods-handWashReminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		662A9A200005C0281B797668 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-handWashReminder/Pods-handWashReminder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C08E92CA91B1DDDA8534D41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B0095AD1D7A12CC00812FD7 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		2B0095C41D7A12CC00812FD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBA5727F8E31955A26DA610 /* Pods-handWashReminder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = handWashReminder/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		2B0095C51D7A12CC00812FD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52451D28781A8455DF2DCA6 /* Pods-handWashReminder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = handWashReminder/Info.plist;
