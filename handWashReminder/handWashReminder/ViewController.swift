@@ -18,6 +18,23 @@ class ViewController: UIViewController {
         
         circleMenuButton.delegate = self
         
+        print(view.frame.height)
+        print(view.frame.width)
+        let button = CircleMenu(
+            frame: CGRect(x: view.frame.width / 11.8, y: view.frame.height / 1.09, width: view.frame.width / 8.28, height: view.frame.height / 14.72),
+            normalIcon:"info",
+            selectedIcon:"info",
+            buttonsCount: 2,
+            duration: 2,
+            distance: 100)
+        button.delegate = self
+        button.layer.cornerRadius = button.frame.size.width / 2.0
+        self.view.addSubview(button)
+        
+        circleMenuButton.hidden = true
+        
+        button.delegate = self
+        
         self.navigationController?.navigationBarHidden = true
 
     }
