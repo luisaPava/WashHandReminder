@@ -10,6 +10,7 @@ import UIKit
 import CircleMenu
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var circleMenuButton: CircleMenu!
     private var buttons: Array<String> = ["curiosidade", "tips"]
 
@@ -20,6 +21,7 @@ class ViewController: UIViewController {
         
         print(view.frame.height)
         print(view.frame.width)
+        
         let button = CircleMenu(
             frame: CGRect(x: view.frame.width / 11.8, y: view.frame.height / 1.09, width: view.frame.width / 8.28, height: view.frame.height / 14.72),
             normalIcon:"info",

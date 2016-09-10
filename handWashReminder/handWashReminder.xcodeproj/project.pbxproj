@@ -16,6 +16,7 @@
 		4DFDF79093F98A09EF622119 /* Pods_handWashReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B1C49386E6CCC9828D5179 /* Pods_handWashReminder.framework */; };
 		EB2F95E21D7CC23C00A2744E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */; };
 		EB2F95E41D7CCA3100A2744E /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */; };
+		EB6BCC911D83989800211438 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BCC901D83989800211438 /* VideoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C52451D28781A8455DF2DCA6 /* Pods-handWashReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handWashReminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-handWashReminder/Pods-handWashReminder.release.xcconfig"; sourceTree = "<group>"; };
 		EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		EB6BCC901D83989800211438 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,15 +69,11 @@
 		2B0095B31D7A12CC00812FD7 /* handWashReminder */ = {
 			isa = PBXGroup;
 			children = (
-				2B0095B41D7A12CC00812FD7 /* AppDelegate.swift */,
-				2B0095B61D7A12CC00812FD7 /* ViewController.swift */,
-				EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */,
-				EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */,
-				2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */,
-				2B0095B81D7A12CC00812FD7 /* Main.storyboard */,
-				2B0095BB1D7A12CC00812FD7 /* Assets.xcassets */,
-				2B0095BD1D7A12CC00812FD7 /* LaunchScreen.storyboard */,
-				2B0095C01D7A12CC00812FD7 /* Info.plist */,
+				EB6BCC8D1D8396AB00211438 /* Other */,
+				EB6BCC8F1D8396C600211438 /* View Controllers */,
+				EB6BCC8E1D8396BA00211438 /* Classes */,
+				EB6BCC8B1D83968B00211438 /* Storyboard */,
+				EB6BCC8C1D83969C00211438 /* Assets */,
 			);
 			path = handWashReminder;
 			sourceTree = "<group>";
@@ -95,6 +93,51 @@
 				C52451D28781A8455DF2DCA6 /* Pods-handWashReminder.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB6BCC8B1D83968B00211438 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2B0095B81D7A12CC00812FD7 /* Main.storyboard */,
+				2B0095BD1D7A12CC00812FD7 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		EB6BCC8C1D83969C00211438 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2B0095BB1D7A12CC00812FD7 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		EB6BCC8D1D8396AB00211438 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2B0095B41D7A12CC00812FD7 /* AppDelegate.swift */,
+				2B0095C01D7A12CC00812FD7 /* Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		EB6BCC8E1D8396BA00211438 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		EB6BCC8F1D8396C600211438 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B0095B61D7A12CC00812FD7 /* ViewController.swift */,
+				EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */,
+				EB6BCC901D83989800211438 /* VideoViewController.swift */,
+				2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +264,7 @@
 			files = (
 				2B0095B71D7A12CC00812FD7 /* ViewController.swift in Sources */,
 				2BCB57541D81D93200C12C65 /* InstrucoesViewController.swift in Sources */,
+				EB6BCC911D83989800211438 /* VideoViewController.swift in Sources */,
 				2B0095B51D7A12CC00812FD7 /* AppDelegate.swift in Sources */,
 				EB2F95E41D7CCA3100A2744E /* SegmentedControl.swift in Sources */,
 				EB2F95E21D7CC23C00A2744E /* NotificationViewController.swift in Sources */,

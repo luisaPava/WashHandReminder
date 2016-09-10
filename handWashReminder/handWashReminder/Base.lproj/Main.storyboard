@@ -476,7 +476,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojY-LJ-1XL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1789.5" y="337.5"/>
+            <point key="canvasLocation" x="1876.5" y="375"/>
         </scene>
         <!--Intruções-->
         <scene sceneID="lAP-Lb-ITO">
@@ -497,6 +497,9 @@
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlA-47-hXR">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="Botão video"/>
+                                <connections>
+                                    <segue destination="eue-wm-h4J" kind="presentation" id="pSY-H7-UuM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
@@ -543,7 +546,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgH-U0-3U4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1789" y="1239"/>
+            <point key="canvasLocation" x="1056" y="1273.5"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="tof-nj-a0s">
+            <objects>
+                <viewController id="eue-wm-h4J" customClass="VideoViewController" customModule="handWashReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qFj-sa-gil"/>
+                        <viewControllerLayoutGuide type="bottom" id="R80-4j-Slx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3uF-xn-AhT">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7CD-au-TPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876.5" y="1893.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WoF-3h-a9K">
