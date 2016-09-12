@@ -493,6 +493,9 @@
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9W-iR-8cM">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="Botão passo a passo"/>
+                                <connections>
+                                    <segue destination="tp9-bT-335" kind="presentation" id="Ex7-s0-FX8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlA-47-hXR">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -548,6 +551,45 @@
             </objects>
             <point key="canvasLocation" x="1056" y="1273.5"/>
         </scene>
+        <!--Passo View Controller-->
+        <scene sceneID="vjJ-Gb-w0c">
+            <objects>
+                <viewController id="tp9-bT-335" customClass="PassoViewController" customModule="handWashReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j5l-nb-tgo"/>
+                        <viewControllerLayoutGuide type="bottom" id="SuZ-mM-6aT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ha7-57-Swk">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbq-cz-Dac" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="271" width="400" height="258"/>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="sbq-cz-Dac"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="sbq-cz-Dac"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="carousel" destination="sbq-cz-Dac" id="ebm-HI-CO0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z1a-9H-QOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2050.5" y="1273.5"/>
+        </scene>
         <!--Video View Controller-->
         <scene sceneID="tof-nj-a0s">
             <objects>
@@ -557,13 +599,14 @@
                         <viewControllerLayoutGuide type="bottom" id="R80-4j-Slx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3uF-xn-AhT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CD-au-TPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1876.5" y="1893.75"/>
+            <point key="canvasLocation" x="1876.5" y="2009.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WoF-3h-a9K">
@@ -581,7 +624,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQQ-JI-ZIE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196.5" y="331.5"/>
+            <point key="canvasLocation" x="279" y="337.5"/>
         </scene>
     </scenes>
     <resources>

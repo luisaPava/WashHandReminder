@@ -14,6 +14,8 @@
 		2B0095BF1D7A12CC00812FD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0095BD1D7A12CC00812FD7 /* LaunchScreen.storyboard */; };
 		2BCB57541D81D93200C12C65 /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */; };
 		4DFDF79093F98A09EF622119 /* Pods_handWashReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B1C49386E6CCC9828D5179 /* Pods_handWashReminder.framework */; };
+		4E7F89EC1D86FB36002B00B1 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F89EB1D86FB36002B00B1 /* iCarousel.m */; };
+		4E7F89EE1D86FB60002B00B1 /* PassoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F89ED1D86FB60002B00B1 /* PassoViewController.swift */; };
 		EB2F95E21D7CC23C00A2744E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */; };
 		EB2F95E41D7CCA3100A2744E /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */; };
 		EB6BCC911D83989800211438 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BCC901D83989800211438 /* VideoViewController.swift */; };
@@ -29,6 +31,10 @@
 		2B0095BE1D7A12CC00812FD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0095C01D7A12CC00812FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
+		4E7F89E91D86FB35002B00B1 /* handWashReminder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "handWashReminder-Bridging-Header.h"; sourceTree = "<group>"; };
+		4E7F89EA1D86FB36002B00B1 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		4E7F89EB1D86FB36002B00B1 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		4E7F89ED1D86FB60002B00B1 /* PassoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassoViewController.swift; sourceTree = "<group>"; };
 		B7B1C49386E6CCC9828D5179 /* Pods_handWashReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handWashReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52451D28781A8455DF2DCA6 /* Pods-handWashReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handWashReminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-handWashReminder/Pods-handWashReminder.release.xcconfig"; sourceTree = "<group>"; };
 		EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +75,7 @@
 		2B0095B31D7A12CC00812FD7 /* handWashReminder */ = {
 			isa = PBXGroup;
 			children = (
+				4E7F89E71D86FB0E002B00B1 /* Frameworks */,
 				EB6BCC8D1D8396AB00211438 /* Other */,
 				EB6BCC8F1D8396C600211438 /* View Controllers */,
 				EB6BCC8E1D8396BA00211438 /* Classes */,
@@ -76,6 +83,24 @@
 				EB6BCC8C1D83969C00211438 /* Assets */,
 			);
 			path = handWashReminder;
+			sourceTree = "<group>";
+		};
+		4E7F89E71D86FB0E002B00B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F89E81D86FB17002B00B1 /* iCarousel */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E7F89E81D86FB17002B00B1 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F89EA1D86FB36002B00B1 /* iCarousel.h */,
+				4E7F89EB1D86FB36002B00B1 /* iCarousel.m */,
+				4E7F89E91D86FB35002B00B1 /* handWashReminder-Bridging-Header.h */,
+			);
+			name = iCarousel;
 			sourceTree = "<group>";
 		};
 		7F592DCDA49DA55588332603 /* Frameworks */ = {
@@ -136,6 +161,7 @@
 				EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */,
 				EB6BCC901D83989800211438 /* VideoViewController.swift */,
 				2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */,
+				4E7F89ED1D86FB60002B00B1 /* PassoViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -263,10 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0095B71D7A12CC00812FD7 /* ViewController.swift in Sources */,
+				4E7F89EE1D86FB60002B00B1 /* PassoViewController.swift in Sources */,
 				2BCB57541D81D93200C12C65 /* InstrucoesViewController.swift in Sources */,
 				EB6BCC911D83989800211438 /* VideoViewController.swift in Sources */,
 				2B0095B51D7A12CC00812FD7 /* AppDelegate.swift in Sources */,
 				EB2F95E41D7CCA3100A2744E /* SegmentedControl.swift in Sources */,
+				4E7F89EC1D86FB36002B00B1 /* iCarousel.m in Sources */,
 				EB2F95E21D7CC23C00A2744E /* NotificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,10 +409,13 @@
 			baseConfigurationReference = 1DBA5727F8E31955A26DA610 /* Pods-handWashReminder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = handWashReminder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Luisa.handWashReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "handWashReminder/handWashReminder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -393,10 +424,12 @@
 			baseConfigurationReference = C52451D28781A8455DF2DCA6 /* Pods-handWashReminder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = handWashReminder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Luisa.handWashReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "handWashReminder/handWashReminder-Bridging-Header.h";
 			};
 			name = Release;
 		};
