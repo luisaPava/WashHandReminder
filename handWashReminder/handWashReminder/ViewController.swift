@@ -12,10 +12,13 @@ import CircleMenu
 class ViewController: UIViewController {
     
     @IBOutlet weak var circleMenuButton: CircleMenu!
-    private var buttons: Array<String> = ["curiosidade", "tips"]
+    fileprivate var buttons: Array<String> = ["curiosidade", "tips"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("OI")
+            
         
         circleMenuButton.delegate = self
         
@@ -33,11 +36,11 @@ class ViewController: UIViewController {
         button.layer.cornerRadius = button.frame.size.width / 2.0
         self.view.addSubview(button)
         
-        circleMenuButton.hidden = true
+        circleMenuButton.isHidden = true
         
         button.delegate = self
         
-        self.navigationController?.navigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = true
 
     }
 
@@ -46,19 +49,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBarHidden = true
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
     }
 
 
 }
 
 extension ViewController: CircleMenuDelegate {
-    func circleMenu(circleMenu: CircleMenu, willDisplay button: UIButton, atIndex: Int) {
-        button.setImage(UIImage(named: buttons[atIndex]), forState: .Normal)
+    func circleMenu(_ circleMenu: CircleMenu, willDisplay button: UIButton, atIndex: Int) {
+        button.setImage(UIImage(named: buttons[atIndex]), for: UIControlState())
     }
     
-    func circleMenu(circleMenu: CircleMenu, buttonWillSelected button: UIButton, atIndex: Int) {
+    func circleMenu(_ circleMenu: CircleMenu, buttonWillSelected button: UIButton, atIndex: Int) {
         print(atIndex)
     }
 }

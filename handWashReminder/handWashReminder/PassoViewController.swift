@@ -18,7 +18,7 @@ class PassoViewController: UIViewController {
         
         carousel.delegate = self
         carousel.dataSource = self
-        carousel.type = .Rotary
+        carousel.type = .rotary
         carousel.centerItemWhenSelected = true
         carousel.bounces = false
 
@@ -33,13 +33,13 @@ class PassoViewController: UIViewController {
 
 //MARK: - iCarousel Delegate
 extension PassoViewController: iCarouselDelegate {
-    func carousel(carousel: iCarousel, valueForOption option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
+    func carousel(_ carousel: iCarousel, valueFor option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
         // Set iCarousel wheel radius
-        if option == .Radius {
+        if option == .radius {
             return self.view.bounds.width / 1.6
             
             // Set how many iCarousel items will be visible
-        } else if option == .VisibleItems {
+        } else if option == .visibleItems {
             return 3
         }
         
@@ -49,15 +49,15 @@ extension PassoViewController: iCarouselDelegate {
 
 //MARK: - iCarousel Data Source
 extension PassoViewController: iCarouselDataSource {
-    func numberOfItemsInCarousel(carousel: iCarousel) -> Int {
+    func numberOfItems(in carousel: iCarousel) -> Int {
         return 5
     }
     
     // Return each 'cell' to be shown in iCarousel
-    func carousel(carousel: iCarousel, viewForItemAtIndex index: Int, reusingView view: UIView?) -> UIView {
+    func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         let tempView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width / 1.5, height: self.view.bounds.height / 2))
-        tempView.backgroundColor = UIColor.blueColor()
-        tempView.layer.borderColor = UIColor.blackColor().CGColor
+        tempView.backgroundColor = UIColor.blue
+        tempView.layer.borderColor = UIColor.black.cgColor
         
 //        tempView.image = UIImage(named: "Notificacao")
         

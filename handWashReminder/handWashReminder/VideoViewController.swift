@@ -20,15 +20,15 @@ import AVFoundation
 
 class VideoViewController: UIViewController {
 
-    private var firstAppear = true
+    fileprivate var firstAppear = true
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if firstAppear {
             do {
                 try playVideo()
                 firstAppear = false
-            } catch AppError.InvalidResource(let name, let type) {
+            } catch AppError.invalidResource(let name, let type) {
                 debugPrint("Could not find resource \(name).\(type)")
             } catch {
                 debugPrint("Generic error")
@@ -37,20 +37,20 @@ class VideoViewController: UIViewController {
         }
     }
     
-    private func playVideo() throws {
-        guard let path = NSBundle.mainBundle().pathForResource("video", ofType:"m4v") else {
-            throw AppError.InvalidResource("video", "m4v")
+    fileprivate func playVideo() throws {
+        guard let path = Bundle.main.path(forResource: "video", ofType:"m4v") else {
+            throw AppError.invalidResource("video", "m4v")
         }
-        let player = AVPlayer(URL: NSURL(fileURLWithPath: path))
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
         let playerController = AVPlayerViewController()
         playerController.player = player
-        self.presentViewController(playerController, animated: true) {
+        self.present(playerController, animated: true) {
             player.play()
         }
     }
 
 }
 
-enum AppError : ErrorType {
-    case InvalidResource(String, String)
+enum AppError : Error {
+    case invalidResource(String, String)
 }
