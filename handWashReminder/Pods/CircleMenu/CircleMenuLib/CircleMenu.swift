@@ -137,9 +137,9 @@ open class CircleMenu: UIButton {
   fileprivate func commonInit() {
     addActions()
     
-    customNormalIconView = addCustomImageView(state: UIControlState())
+    customNormalIconView = addCustomImageView(UIControlState())
     
-    customSelectedIconView = addCustomImageView(state: .selected)
+    customSelectedIconView = addCustomImageView(.selected)
     if customSelectedIconView != nil {
       customSelectedIconView.alpha = 0
     }
@@ -160,7 +160,7 @@ open class CircleMenu: UIButton {
       return
     }
     
-    buttonsAnimationIsShow(isShow: false, duration: duration, hideDelay: hideDelay)
+    buttonsAnimationIsShow(false, duration: duration, hideDelay: hideDelay)
 
     tapBounceAnimation()
     tapRotatedAnimation(0.3, isSelected: false)
@@ -202,7 +202,7 @@ open class CircleMenu: UIButton {
     return buttons
   }
   
-  fileprivate func addCustomImageView(state: UIControlState) -> UIImageView? {
+  fileprivate func addCustomImageView(_ state: UIControlState) -> UIImageView? {
     guard let image = image(for: state) else {
       return nil
     }
@@ -244,7 +244,7 @@ open class CircleMenu: UIButton {
     }
     let isShow = !buttonsIsShown()
     let duration  = isShow ? 0.5 : 0.2
-    buttonsAnimationIsShow(isShow: isShow, duration: duration)
+    buttonsAnimationIsShow(isShow, duration: duration)
     
     tapBounceAnimation()
     tapRotatedAnimation(0.3, isSelected: isShow)
@@ -262,7 +262,7 @@ open class CircleMenu: UIButton {
   
   // MARK: animations
   
-  fileprivate func buttonsAnimationIsShow(isShow: Bool, duration: Double, hideDelay: Double = 0) {
+  fileprivate func buttonsAnimationIsShow(_ isShow: Bool, duration: Double, hideDelay: Double = 0) {
     guard let buttons = self.buttons else {
       return
     }
@@ -274,11 +274,10 @@ open class CircleMenu: UIButton {
       if isShow == true {
         delegate?.circleMenu?(self, willDisplay: button, atIndex: index)
         
-        button.rotatedZ(angle: angle, animated: false, delay: Double(index) * showDelay)
-        button.showAnimation(distance: distance, duration: duration, delay: Double(index) * showDelay)
+        button.rotatedZ(angle, animated: false, delay: Double(index) * showDelay)
+        button.showAnimation(distance, duration: duration, delay: Double(index) * showDelay)
       } else {
-        button.hideAnimation(
-          distance: Float(self.bounds.size.height / 2.0),
+        button.hideAnimation(Float(self.bounds.size.height / 2.0),
           duration: duration, delay: hideDelay)
       }
     }
@@ -349,7 +348,7 @@ open class CircleMenu: UIButton {
     self.alpha = isSelected ? 0.3 : 1
   }
   
-  fileprivate func hideCenterButton(duration: Double, delay: Double = 0) {
+  fileprivate func hideCenterButton(_ duration: Double, delay: Double = 0) {
     UIView.animate( withDuration: TimeInterval(duration), delay: TimeInterval(delay),
       options: UIViewAnimationOptions.curveEaseOut,
       animations: { () -> Void in
@@ -357,7 +356,7 @@ open class CircleMenu: UIButton {
       }, completion: nil)
   }
   
-  fileprivate func showCenterButton(duration: Float, delay: Double) {
+  fileprivate func showCenterButton(_ duration: Float, delay: Double) {
     UIView.animate( withDuration: TimeInterval(duration), delay: TimeInterval(delay), usingSpringWithDamping: 0.78,
       initialSpringVelocity: 0, options: UIViewAnimationOptions.curveLinear,
       animations: { () -> Void in

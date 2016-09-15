@@ -8,6 +8,7 @@
 
 import UIKit
 import CircleMenu
+import PopupController
 
 class ViewController: UIViewController {
     
@@ -62,7 +63,9 @@ extension ViewController: CircleMenuDelegate {
     }
     
     func circleMenu(_ circleMenu: CircleMenu, buttonWillSelected button: UIButton, atIndex: Int) {
-        print(atIndex)
+        if atIndex == 0 {
+            PopupController.create(self).show(PopUpViewController.instance())
+        }
     }
 }
 

@@ -1,12 +1,15 @@
 PODS:
   - CircleMenu (1.0.6)
+  - PopupController (0.1.0)
 
 DEPENDENCIES:
   - CircleMenu (~> 1.0.0)
+  - PopupController
 
 SPEC CHECKSUMS:
   CircleMenu: 8a019654446b003f796a7da5826153cf6f168205
+  PopupController: fb329de274ab0cf9bf1f2758074287600082de1d
 
-PODFILE CHECKSUM: 9fb6af142b58081aae8b6043d80da35b7851cc8e
+PODFILE CHECKSUM: f4007d151df9ded7ed6a4c12504ef637b6b59328
 
 COCOAPODS: 1.0.1

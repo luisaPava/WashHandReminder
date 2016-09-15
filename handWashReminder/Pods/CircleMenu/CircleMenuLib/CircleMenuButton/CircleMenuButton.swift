@@ -51,7 +51,7 @@ internal class CircleMenuButton: UIButton {
 
         view.layer.transform = CATransform3DMakeRotation(-CGFloat(angle.degrees), 0, 0, 1)
 
-        self.rotatedZ(angle: angle, animated: false)
+        self.rotatedZ(angle, animated: false)
     }
 
     required internal init?(coder aDecoder: NSCoder) {
@@ -113,7 +113,7 @@ internal class CircleMenuButton: UIButton {
 
     // MARK: methods
 
-    internal func rotatedZ(angle: Float, animated: Bool, duration: Double = 0, delay: Double = 0) {
+    internal func rotatedZ(_ angle: Float, animated: Bool, duration: Double = 0, delay: Double = 0) {
         guard let container = self.container else {
             fatalError("contaner don't create")
         }
@@ -139,7 +139,7 @@ internal class CircleMenuButton: UIButton {
 @available(iOS 9.0, *)
 internal extension CircleMenuButton {
 
-    internal func showAnimation(distance: Float, duration: Double, delay: Double = 0) {
+    internal func showAnimation(_ distance: Float, duration: Double, delay: Double = 0) {
 
         guard let container = self.container else {
             fatalError()
@@ -170,7 +170,7 @@ internal extension CircleMenuButton {
         })
     }
 
-    internal func hideAnimation(distance: Float, duration: Double, delay: Double = 0) {
+    internal func hideAnimation(_ distance: Float, duration: Double, delay: Double = 0) {
 
         guard let container = self.container else {
             fatalError()

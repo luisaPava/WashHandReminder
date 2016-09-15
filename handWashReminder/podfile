@@ -8,5 +8,5 @@ target 'handWashReminder' do
   # Pods for handWashReminder
 
     pod 'CircleMenu', '~> 1.0.0'
-
+	pod 'PopupController'
 end
