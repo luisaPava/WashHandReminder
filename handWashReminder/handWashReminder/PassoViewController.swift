@@ -16,13 +16,13 @@ class PassoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //iCarousel settings
         carousel.delegate = self
         carousel.dataSource = self
         carousel.type = .rotary
         carousel.centerItemWhenSelected = true
         carousel.bounces = false
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +38,7 @@ extension PassoViewController: iCarouselDelegate {
         if option == .radius {
             return self.view.bounds.width / 1.6
             
-            // Set how many iCarousel items will be visible
+        // Set how many iCarousel items will be visible
         } else if option == .visibleItems {
             return 3
         }
@@ -49,6 +49,8 @@ extension PassoViewController: iCarouselDelegate {
 
 //MARK: - iCarousel Data Source
 extension PassoViewController: iCarouselDataSource {
+    
+    //Returns the number of items in iCarousel
     func numberOfItems(in carousel: iCarousel) -> Int {
         return 5
     }

@@ -25,11 +25,13 @@ class PopUpViewController: UIViewController, PopupContentViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //Returns PopUpViewController
     class func instance() -> PopUpViewController {
         let storyboard = UIStoryboard(name: "PopUpViewController", bundle: nil)
         return storyboard.instantiateInitialViewController() as! PopUpViewController
     }
     
+    //Set PopUp size
     func sizeForPopup(_ popupController: PopupController, size: CGSize, showingKeyboard: Bool) -> CGSize {
         return popupSize
     }
