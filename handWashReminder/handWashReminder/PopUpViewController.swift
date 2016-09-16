@@ -16,9 +16,16 @@ class PopUpViewController: UIViewController, PopupContentViewController {
         super.viewDidLoad()
         
         popupSize = CGSize(width: 300, height: 300)
+        
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidLayoutSubviews() {
+        
+        self.view.layer.cornerRadius = 10
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -35,4 +42,13 @@ class PopUpViewController: UIViewController, PopupContentViewController {
     func sizeForPopup(_ popupController: PopupController, size: CGSize, showingKeyboard: Bool) -> CGSize {
         return popupSize
     }
+    
+    //Função de dismiss
+    
+    @IBAction func exitButton(_ sender: AnyObject) {
+    
+    
+    }
+    
+    
 }

@@ -25,6 +25,7 @@ class NotificationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.navigationBar.barTintColor = UIColor(netHex: 0x2F557D)

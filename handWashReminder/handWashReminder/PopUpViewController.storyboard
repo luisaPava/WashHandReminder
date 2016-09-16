@@ -15,14 +15,41 @@
                         <viewControllerLayoutGuide type="bottom" id="U9l-JD-VQp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vsA-3m-vg7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOD-Wj-Ll1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="HiX-gy-LFt"/>
+                                    <constraint firstAttribute="width" constant="35" id="fMb-F3-ZyF"/>
+                                </constraints>
+                                <state key="normal" image="Exit"/>
+                                <connections>
+                                    <action selector="exitButton:" destination="ezk-Ku-VVC" eventType="touchUpInside" id="juZ-3E-qRe"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.1019607843" green="0.58823529409999997" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hOD-Wj-Ll1" secondAttribute="trailing" constant="10" id="Bim-Mi-20H"/>
+                            <constraint firstItem="hOD-Wj-Ll1" firstAttribute="top" secondItem="vsA-3m-vg7" secondAttribute="top" constant="10" id="HB8-yg-bmW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="300"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JxW-07-O7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-191" y="154"/>
+            <point key="canvasLocation" x="-213" y="163"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Exit" width="35" height="35"/>
+    </resources>
 </document>
