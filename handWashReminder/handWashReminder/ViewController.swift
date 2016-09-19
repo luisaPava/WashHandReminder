@@ -64,7 +64,14 @@ extension ViewController: CircleMenuDelegate {
     //Actions for each button
     func circleMenu(_ circleMenu: CircleMenu, buttonWillSelected button: UIButton, atIndex: Int) {
         if atIndex == 0 {
-            PopupController.create(self).show(PopUpViewController.instance())
+            let popup = PopupController.create(self)
+            
+            let container = PopUpViewController.instance()
+            container.closeHandler = { _ in
+                popup.dismiss()
+            }
+            
+            let _ = popup.show(container)
         }
     }
 }

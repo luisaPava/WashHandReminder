@@ -11,6 +11,7 @@ import PopupController
 
 class PopUpViewController: UIViewController, PopupContentViewController {
     var popupSize: CGSize!
+    var closeHandler: (() -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +47,7 @@ class PopUpViewController: UIViewController, PopupContentViewController {
     //Função de dismiss
     
     @IBAction func exitButton(_ sender: AnyObject) {
-    
+        closeHandler!()
     
     }
     

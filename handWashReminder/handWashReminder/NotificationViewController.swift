@@ -9,6 +9,8 @@
 import UIKit
 
 class NotificationViewController: UIViewController {
+    @IBOutlet weak var pickerInicio: AKPickerView!
+    @IBOutlet weak var pickerFim: AKPickerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +18,18 @@ class NotificationViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationController?.isNavigationBarHidden = false
         
-
+        pickerInicio.delegate = self
+        pickerInicio.dataSource = self
+        pickerInicio.interitemSpacing = 30
+        pickerInicio.textColor = UIColor.white
+        pickerInicio.highlightedTextColor = UIColor.white
+        
+        pickerFim.delegate = self
+        pickerFim.dataSource = self
+        pickerFim.interitemSpacing = 30
+        pickerFim.textColor = UIColor.white
+        pickerFim.highlightedTextColor = UIColor.white
+        
 
     }
 
@@ -49,5 +62,19 @@ extension UIColor {
     
     convenience init(netHex:Int) {
         self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
+    }
+}
+
+extension NotificationViewController: AKPickerViewDelegate {
+    
+}
+
+extension NotificationViewController: AKPickerViewDataSource {
+    func numberOfItemsInPickerView(_ pickerView: AKPickerView) -> Int {
+        return 24
+    }
+    
+    func pickerView(_ pickerView: AKPickerView, titleForItem item: Int) -> String {
+        return "\(item + 1)"
     }
 }

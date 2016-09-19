@@ -284,6 +284,16 @@
                                                     </mask>
                                                 </variation>
                                             </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Io-U1-fry" customClass="AKPickerView" customModule="handWashReminder" customModuleProvider="target">
+                                                <frame key="frameInset" minX="51" minY="510" width="92" height="67"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iy2-bL-ARL" customClass="AKPickerView" customModule="handWashReminder" customModuleProvider="target">
+                                                <frame key="frameInset" minX="248" minY="510" width="92" height="67"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -462,10 +472,14 @@
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="900"/>
+                    <connections>
+                        <outlet property="pickerFim" destination="Iy2-bL-ARL" id="dpM-9c-ek8"/>
+                        <outlet property="pickerInicio" destination="6Io-U1-fry" id="XmG-Zz-v6E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojY-LJ-1XL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2131" y="336"/>
+            <point key="canvasLocation" x="2129.5999999999999" y="335.5322338830585"/>
         </scene>
         <!--Intruções-->
         <scene sceneID="lAP-Lb-ITO">
