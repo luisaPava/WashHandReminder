@@ -19,6 +19,7 @@
 		4E7F89EC1D86FB36002B00B1 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F89EB1D86FB36002B00B1 /* iCarousel.m */; };
 		4E7F89EE1D86FB60002B00B1 /* PassoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F89ED1D86FB60002B00B1 /* PassoViewController.swift */; };
 		4EEBD9911D90634300E5C2AA /* AKPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEBD9901D90634300E5C2AA /* AKPickerView.swift */; };
+		EB0B8B4A1D9208ED00EF0753 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B8B491D9208ED00EF0753 /* View.swift */; };
 		EB2F95E21D7CC23C00A2744E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */; };
 		EB2F95E41D7CCA3100A2744E /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */; };
 		EB6BCC911D83989800211438 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BCC901D83989800211438 /* VideoViewController.swift */; };
@@ -43,6 +44,7 @@
 		4EEBD9901D90634300E5C2AA /* AKPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKPickerView.swift; sourceTree = "<group>"; };
 		B7B1C49386E6CCC9828D5179 /* Pods_handWashReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handWashReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52451D28781A8455DF2DCA6 /* Pods-handWashReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handWashReminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-handWashReminder/Pods-handWashReminder.release.xcconfig"; sourceTree = "<group>"; };
+		EB0B8B491D9208ED00EF0753 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		EB6BCC901D83989800211438 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */,
+				EB0B8B491D9208ED00EF0753 /* View.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				EB2F95E41D7CCA3100A2744E /* SegmentedControl.swift in Sources */,
 				4E7F89EC1D86FB36002B00B1 /* iCarousel.m in Sources */,
 				4E5B2C771D8B563D009C74B6 /* PopUpViewController.swift in Sources */,
+				EB0B8B4A1D9208ED00EF0753 /* View.swift in Sources */,
 				EB2F95E21D7CC23C00A2744E /* NotificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
