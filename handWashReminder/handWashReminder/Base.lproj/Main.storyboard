@@ -19,7 +19,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brN-yw-rCW" customClass="CircleMenu" customModule="CircleMenu">
@@ -51,6 +51,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="CaT-Iw-29I" secondAttribute="height" multiplier="1:1" id="gZf-j2-7pD"/>
                                 </constraints>
+                                <color key="tintColor" red="0.12941176470588237" green="0.25098039215686274" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Notificacao"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -407,6 +408,9 @@
                                             </mask>
                                             <mask key="constraints">
                                                 <exclude reference="Ryq-rM-49P"/>
+                                                <exclude reference="85M-sb-vWt"/>
+                                                <exclude reference="eZq-nN-qA5"/>
+                                                <exclude reference="qjL-h8-XYB"/>
                                                 <exclude reference="cPM-sZ-Bpv"/>
                                                 <exclude reference="vkm-gY-HkH"/>
                                                 <exclude reference="vpa-uo-hLS"/>
@@ -416,15 +420,12 @@
                                                 <exclude reference="Gdb-BU-TIJ"/>
                                                 <exclude reference="LtR-cz-vT2"/>
                                                 <exclude reference="koK-uI-TeO"/>
-                                                <exclude reference="85M-sb-vWt"/>
-                                                <exclude reference="eZq-nN-qA5"/>
-                                                <exclude reference="qjL-h8-XYB"/>
-                                                <exclude reference="8Cd-mz-JNr"/>
-                                                <exclude reference="Htq-Ij-nQA"/>
-                                                <exclude reference="iuS-2Q-quA"/>
                                                 <exclude reference="2QX-8E-8Ed"/>
                                                 <exclude reference="4rV-X7-CVK"/>
                                                 <exclude reference="KhN-q6-KJJ"/>
+                                                <exclude reference="8Cd-mz-JNr"/>
+                                                <exclude reference="Htq-Ij-nQA"/>
+                                                <exclude reference="iuS-2Q-quA"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
@@ -438,6 +439,9 @@
                                             </mask>
                                             <mask key="constraints">
                                                 <include reference="Ryq-rM-49P"/>
+                                                <include reference="85M-sb-vWt"/>
+                                                <include reference="eZq-nN-qA5"/>
+                                                <include reference="qjL-h8-XYB"/>
                                                 <include reference="cPM-sZ-Bpv"/>
                                                 <include reference="vkm-gY-HkH"/>
                                                 <include reference="vpa-uo-hLS"/>
@@ -447,15 +451,12 @@
                                                 <include reference="Gdb-BU-TIJ"/>
                                                 <include reference="LtR-cz-vT2"/>
                                                 <include reference="koK-uI-TeO"/>
-                                                <include reference="85M-sb-vWt"/>
-                                                <include reference="eZq-nN-qA5"/>
-                                                <include reference="qjL-h8-XYB"/>
-                                                <include reference="8Cd-mz-JNr"/>
-                                                <include reference="Htq-Ij-nQA"/>
-                                                <include reference="iuS-2Q-quA"/>
                                                 <include reference="2QX-8E-8Ed"/>
                                                 <include reference="4rV-X7-CVK"/>
                                                 <include reference="KhN-q6-KJJ"/>
+                                                <include reference="8Cd-mz-JNr"/>
+                                                <include reference="Htq-Ij-nQA"/>
+                                                <include reference="iuS-2Q-quA"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -556,7 +557,7 @@
                         <viewControllerLayoutGuide type="bottom" id="SwU-eF-ebR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="p1q-kE-cAD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9W-iR-8cM">
@@ -616,7 +617,7 @@
                         <viewControllerLayoutGuide type="bottom" id="SuZ-mM-6aT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ha7-57-Swk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbq-cz-Dac" customClass="iCarousel">
@@ -659,7 +660,7 @@
                         <viewControllerLayoutGuide type="bottom" id="R80-4j-Slx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3uF-xn-AhT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>

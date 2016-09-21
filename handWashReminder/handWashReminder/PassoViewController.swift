@@ -13,6 +13,7 @@ class PassoViewController: UIViewController {
     
     var indexCarousel: Int = 0
 
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,7 +64,7 @@ extension PassoViewController: iCarouselDataSource {
         
 //        tempView.image = UIImage(named: "Notificacao")
         
-        return tempView
+        return CustomCarouselView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width / 1.5, height: self.view.bounds.height / 2))
         
     }
 }

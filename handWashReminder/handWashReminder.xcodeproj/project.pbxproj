@@ -14,10 +14,13 @@
 		2B0095BF1D7A12CC00812FD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0095BD1D7A12CC00812FD7 /* LaunchScreen.storyboard */; };
 		2BCB57541D81D93200C12C65 /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */; };
 		4DFDF79093F98A09EF622119 /* Pods_handWashReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B1C49386E6CCC9828D5179 /* Pods_handWashReminder.framework */; };
+		4E1B380E1D92E66E007A1DEB /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1B380C1D92E66E007A1DEB /* CustomView.swift */; };
+		4E1B380F1D92E66E007A1DEB /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E1B380D1D92E66E007A1DEB /* CustomView.xib */; };
 		4E5B2C771D8B563D009C74B6 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B2C761D8B563D009C74B6 /* PopUpViewController.swift */; };
 		4E5B2C791D8B56D8009C74B6 /* PopUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E5B2C781D8B56D8009C74B6 /* PopUpViewController.storyboard */; };
 		4E7F89EC1D86FB36002B00B1 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F89EB1D86FB36002B00B1 /* iCarousel.m */; };
 		4E7F89EE1D86FB60002B00B1 /* PassoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F89ED1D86FB60002B00B1 /* PassoViewController.swift */; };
+		4E9730751D922021002FA267 /* CircleTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9730741D922021002FA267 /* CircleTimer.m */; };
 		4EEBD9911D90634300E5C2AA /* AKPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEBD9901D90634300E5C2AA /* AKPickerView.swift */; };
 		EB0B8B4A1D9208ED00EF0753 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B8B491D9208ED00EF0753 /* View.swift */; };
 		EB2F95E21D7CC23C00A2744E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */; };
@@ -35,12 +38,16 @@
 		2B0095BE1D7A12CC00812FD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0095C01D7A12CC00812FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
+		4E1B380C1D92E66E007A1DEB /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		4E1B380D1D92E66E007A1DEB /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		4E5B2C761D8B563D009C74B6 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		4E5B2C781D8B56D8009C74B6 /* PopUpViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopUpViewController.storyboard; sourceTree = "<group>"; };
 		4E7F89E91D86FB35002B00B1 /* handWashReminder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "handWashReminder-Bridging-Header.h"; sourceTree = "<group>"; };
 		4E7F89EA1D86FB36002B00B1 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		4E7F89EB1D86FB36002B00B1 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		4E7F89ED1D86FB60002B00B1 /* PassoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassoViewController.swift; sourceTree = "<group>"; };
+		4E9730731D922021002FA267 /* CircleTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTimer.h; sourceTree = "<group>"; };
+		4E9730741D922021002FA267 /* CircleTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTimer.m; sourceTree = "<group>"; };
 		4EEBD9901D90634300E5C2AA /* AKPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKPickerView.swift; sourceTree = "<group>"; };
 		B7B1C49386E6CCC9828D5179 /* Pods_handWashReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handWashReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52451D28781A8455DF2DCA6 /* Pods-handWashReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handWashReminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-handWashReminder/Pods-handWashReminder.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +100,15 @@
 			path = handWashReminder;
 			sourceTree = "<group>";
 		};
+		4E1B380B1D9220A1007A1DEB /* iCarouselCell */ = {
+			isa = PBXGroup;
+			children = (
+				4E1B380C1D92E66E007A1DEB /* CustomView.swift */,
+				4E1B380D1D92E66E007A1DEB /* CustomView.xib */,
+			);
+			name = iCarouselCell;
+			sourceTree = "<group>";
+		};
 		4E5B2C751D8B5624009C74B6 /* PopupViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +121,8 @@
 		4E7F89E71D86FB0E002B00B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E7F89E91D86FB35002B00B1 /* handWashReminder-Bridging-Header.h */,
+				4E9730721D922012002FA267 /* CircleTimer */,
 				4EEBD98F1D90632900E5C2AA /* AKPickerView */,
 				4E7F89E81D86FB17002B00B1 /* iCarousel */,
 			);
@@ -116,9 +134,17 @@
 			children = (
 				4E7F89EA1D86FB36002B00B1 /* iCarousel.h */,
 				4E7F89EB1D86FB36002B00B1 /* iCarousel.m */,
-				4E7F89E91D86FB35002B00B1 /* handWashReminder-Bridging-Header.h */,
 			);
 			name = iCarousel;
+			sourceTree = "<group>";
+		};
+		4E9730721D922012002FA267 /* CircleTimer */ = {
+			isa = PBXGroup;
+			children = (
+				4E9730731D922021002FA267 /* CircleTimer.h */,
+				4E9730741D922021002FA267 /* CircleTimer.m */,
+			);
+			name = CircleTimer;
 			sourceTree = "<group>";
 		};
 		4EEBD98F1D90632900E5C2AA /* AKPickerView */ = {
@@ -184,6 +210,7 @@
 		EB6BCC8F1D8396C600211438 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4E1B380B1D9220A1007A1DEB /* iCarouselCell */,
 				4E5B2C751D8B5624009C74B6 /* PopupViewController */,
 				2B0095B61D7A12CC00812FD7 /* ViewController.swift */,
 				EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */,
@@ -258,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E5B2C791D8B56D8009C74B6 /* PopUpViewController.storyboard in Resources */,
+				4E1B380F1D92E66E007A1DEB /* CustomView.xib in Resources */,
 				2B0095BF1D7A12CC00812FD7 /* LaunchScreen.storyboard in Resources */,
 				2B0095BC1D7A12CC00812FD7 /* Assets.xcassets in Resources */,
 				2B0095BA1D7A12CC00812FD7 /* Main.storyboard in Resources */,
@@ -322,8 +350,10 @@
 				4EEBD9911D90634300E5C2AA /* AKPickerView.swift in Sources */,
 				2B0095B71D7A12CC00812FD7 /* ViewController.swift in Sources */,
 				4E7F89EE1D86FB60002B00B1 /* PassoViewController.swift in Sources */,
+				4E9730751D922021002FA267 /* CircleTimer.m in Sources */,
 				2BCB57541D81D93200C12C65 /* InstrucoesViewController.swift in Sources */,
 				EB6BCC911D83989800211438 /* VideoViewController.swift in Sources */,
+				4E1B380E1D92E66E007A1DEB /* CustomView.swift in Sources */,
 				2B0095B51D7A12CC00812FD7 /* AppDelegate.swift in Sources */,
 				EB2F95E41D7CCA3100A2744E /* SegmentedControl.swift in Sources */,
 				4E7F89EC1D86FB36002B00B1 /* iCarousel.m in Sources */,
