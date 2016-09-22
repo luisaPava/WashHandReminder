@@ -18,19 +18,9 @@ class NotificationViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationController?.isNavigationBarHidden = false
         
-        pickerInicio.delegate = self
-        pickerInicio.dataSource = self
-        pickerInicio.interitemSpacing = 30
-        pickerInicio.textColor = UIColor.white
-        pickerInicio.highlightedTextColor = UIColor.white
-        
-        pickerFim.delegate = self
-        pickerFim.dataSource = self
-        pickerFim.interitemSpacing = 30
-        pickerFim.textColor = UIColor.white
-        pickerFim.highlightedTextColor = UIColor.white
-        
-
+        setPicker(picker: pickerInicio)
+        setPicker(picker: pickerFim)
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +36,14 @@ class NotificationViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
+    }
+    
+    func setPicker(picker: AKPickerView) {
+        picker.delegate = self
+        picker.dataSource = self
+        picker.interitemSpacing = 30
+        picker.textColor = UIColor.white
+        picker.highlightedTextColor = UIColor.white
     }
 
 }
