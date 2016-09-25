@@ -12,24 +12,30 @@ import UserNotifications
 class NotificationViewController: UIViewController {
     @IBOutlet weak var pickerInicio: AKPickerView!
     @IBOutlet weak var pickerFim: AKPickerView!
+    @IBOutlet weak var resultLabel: UILabel!
     
     let center = UNUserNotificationCenter.current()
+    
+    var inicio = 1
+    var fim = 1
+//    var 
 
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        resultLabel.text = ""
 
         // Do any additional setup after loading the view.
         self.navigationController?.isNavigationBarHidden = false
         
         //pickerInicio and pickerFim setting
-        setPicker(picker: pickerInicio)
-        setPicker(picker: pickerFim)
+        setPicker(picker: pickerInicio, id: "inicio")
+        setPicker(picker: pickerFim, id: "fim")
         
         //Request authorization to notifiations
         registerLocal()
         
-    
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,15 +56,16 @@ class NotificationViewController: UIViewController {
     //MARK: - Actions
     @IBAction func ativarBtnAction(_ sender: AnyObject) {
         print("botão")
-        setScheduledNotification(title: "Lembre-se de lavar as mãos", body: "Teste")
+        setScheduledNotification(title: "Lembre-se de lavar as mãos", body: "Teste", inicio: inicio, fim: fim)
     }
     
     //MARK: - Other Methods
     
     //Picker setting
-    func setPicker(picker: AKPickerView) {
+    func setPicker(picker: AKPickerView, id: String) {
         picker.delegate = self
         picker.dataSource = self
+        picker.id = id
         picker.interitemSpacing = 30
         picker.textColor = UIColor.white
         picker.highlightedTextColor = UIColor.white
@@ -74,12 +81,12 @@ class NotificationViewController: UIViewController {
     }
     
     //Schedule notification
-    func setScheduledNotification(title: String, body: String) {
+    func setScheduledNotification(title: String, body: String, inicio: Int, fim: Int) {
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = body
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 20, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         
         center.add(request, withCompletionHandler: { error in
@@ -88,7 +95,6 @@ class NotificationViewController: UIViewController {
             }
         })
     }
-
 }
 
 //MARK: - UIColor Extension
@@ -108,6 +114,13 @@ extension UIColor {
 
 //MARK: - AKPickerViewDelegate
 extension NotificationViewController: AKPickerViewDelegate {
+    func pickerView(_ pickerView: AKPickerView, didSelectItem item: Int) {
+        if pickerView.id == "inicio" {
+            inicio = item + 1
+        } else {
+            fim = item + 1
+        }
+    }
     
 }
 

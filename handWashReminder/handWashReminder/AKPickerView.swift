@@ -237,6 +237,9 @@ open class AKPickerView: UIView, UICollectionViewDataSource, UICollectionViewDel
 			self.intercepter.delegate = delegate
 		}
 	}
+    
+    open lazy var id = ""
+    
 	/// Readwrite. A font which used in NOT selected cells.
 	open lazy var font = UIFont.systemFont(ofSize: 20)
 
