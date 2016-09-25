@@ -7,19 +7,28 @@
 //
 
 import UIKit
+import UserNotifications
 
 class NotificationViewController: UIViewController {
     @IBOutlet weak var pickerInicio: AKPickerView!
     @IBOutlet weak var pickerFim: AKPickerView!
+    
+    let center = UNUserNotificationCenter.current()
 
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.navigationController?.isNavigationBarHidden = false
         
+        //pickerInicio and pickerFim setting
         setPicker(picker: pickerInicio)
         setPicker(picker: pickerFim)
+        
+        //Request authorization to notifiations
+        registerLocal()
+        
     
     }
 
@@ -38,12 +47,46 @@ class NotificationViewController: UIViewController {
         
     }
     
+    //MARK: - Actions
+    @IBAction func ativarBtnAction(_ sender: AnyObject) {
+        print("botão")
+        setScheduledNotification(title: "Lembre-se de lavar as mãos", body: "Teste")
+    }
+    
+    //MARK: - Other Methods
+    
+    //Picker setting
     func setPicker(picker: AKPickerView) {
         picker.delegate = self
         picker.dataSource = self
         picker.interitemSpacing = 30
         picker.textColor = UIColor.white
         picker.highlightedTextColor = UIColor.white
+    }
+    
+    //Request authorization
+    func registerLocal() {
+        center.requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { (granted, error) in
+            if !granted {
+                //handle denial
+            }
+        })
+    }
+    
+    //Schedule notification
+    func setScheduledNotification(title: String, body: String) {
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 20, repeats: false)
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        
+        center.add(request, withCompletionHandler: { error in
+            if error != nil {
+                print(error?.localizedDescription)
+            }
+        })
     }
 
 }
@@ -63,10 +106,12 @@ extension UIColor {
     }
 }
 
+//MARK: - AKPickerViewDelegate
 extension NotificationViewController: AKPickerViewDelegate {
     
 }
 
+//MARK: - AKPickerViewDataSource
 extension NotificationViewController: AKPickerViewDataSource {
     func numberOfItemsInPickerView(_ pickerView: AKPickerView) -> Int {
         return 24
