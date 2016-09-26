@@ -16,9 +16,12 @@ class NotificationViewController: UIViewController {
     
     let center = UNUserNotificationCenter.current()
     
-    var inicio = 1
-    var fim = 1
-//    var 
+    var inicio: Int = 1
+    var fim: Int = 1 { didSet {
+            resultLabel.text = "De \(inicio) às \(fim)"
+        }
+    }
+//    var
 
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -35,6 +38,8 @@ class NotificationViewController: UIViewController {
         
         //Request authorization to notifiations
         registerLocal()
+        
+//        center.removeAllPendingNotificationRequests()
         
     }
 
@@ -56,7 +61,7 @@ class NotificationViewController: UIViewController {
     //MARK: - Actions
     @IBAction func ativarBtnAction(_ sender: AnyObject) {
         print("botão")
-        setScheduledNotification(title: "Lembre-se de lavar as mãos", body: "Teste", inicio: inicio, fim: fim)
+//        setScheduledNotification(title: "Lembre-se de lavar as mãos", body: "Teste", inicio: inicio, fim: fim)
     }
     
     //MARK: - Other Methods
@@ -81,12 +86,12 @@ class NotificationViewController: UIViewController {
     }
     
     //Schedule notification
-    func setScheduledNotification(title: String, body: String, inicio: Int, fim: Int) {
+    func createNotification(title: String, body: String, dateComponent: DateComponents) {
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = body
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         
         center.add(request, withCompletionHandler: { error in
