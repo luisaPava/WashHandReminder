@@ -15,13 +15,14 @@ class NotificationViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     let center = UNUserNotificationCenter.current()
-    
-    var inicio: Int = 1
-    var fim: Int = 1 { didSet {
+
+    var qtd: Double!
+    var intervalo: Double = 2
+    var inicio: Double = 1
+    var fim: Double = 1 { didSet {
             resultLabel.text = "De \(inicio) às \(fim)"
         }
     }
-//    var
 
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -59,9 +60,36 @@ class NotificationViewController: UIViewController {
     }
     
     //MARK: - Actions
-    @IBAction func ativarBtnAction(_ sender: AnyObject) {
+    @IBAction func ativarBtnAction(_ sender: UIButton) {
         print("botão")
-//        setScheduledNotification(title: "Lembre-se de lavar as mãos", body: "Teste", inicio: inicio, fim: fim)
+        
+        if !sender.isSelected {
+            print("!highlighted")
+            sender.isSelected = true
+            createAllNotification()
+        } else {
+            print("highlighted")
+            sender.isSelected = false
+            center.removeAllPendingNotificationRequests()
+        }
+    }
+    
+    @IBAction func intervaloSegAction(_ sender: ADVSegmentedControl) {
+        let index = sender.selectedIndex
+        
+        switch index {
+            case 0:
+                intervalo = 2
+            
+            case 1:
+                intervalo = 1
+            
+            case 2:
+                intervalo = 0.5
+            
+            default:
+                break
+        }
     }
     
     //MARK: - Other Methods
@@ -100,6 +128,52 @@ class NotificationViewController: UIViewController {
             }
         })
     }
+    
+    //Create all notifications based on user choice
+    func createAllNotification() {
+        qtd = fim - inicio
+        
+        if qtd <= 0 {
+            qtd! += 24
+        }
+        
+        let count = Int(qtd * intervalo)
+        var countHora = 0
+        
+        for i in 1...count {
+            var dateComponents = DateComponents()
+            
+            switch intervalo {
+                case 1:
+                    dateComponents.hour = Int(inicio) + i
+                    createNotification(title: "TEste", body: "teste", dateComponent: dateComponents)
+                    print(Int(inicio) + i)
+                
+                case 2:
+                    if (i % 2) == 0 {
+                        countHora += 1
+                        dateComponents.hour = Int(inicio) + countHora
+                        createNotification(title: "TEste", body: "teste", dateComponent: dateComponents)
+                        print(Int(inicio) + countHora)
+
+                    } else {
+                        dateComponents.hour = Int(inicio) + countHora
+                        dateComponents.minute = 30
+                        createNotification(title: "TEste", body: "teste", dateComponent: dateComponents)
+                        print("\(Int(inicio) + countHora) 30")
+                    }
+                
+                case 0.5:
+                    dateComponents.hour = Int(inicio) + (i * 2)
+                    createNotification(title: "TEste", body: "teste", dateComponent: dateComponents)
+                    print(Int(inicio) + (i * 2))
+                
+                
+                default:
+                    break
+            }
+        }
+    }
 }
 
 //MARK: - UIColor Extension
@@ -121,12 +195,11 @@ extension UIColor {
 extension NotificationViewController: AKPickerViewDelegate {
     func pickerView(_ pickerView: AKPickerView, didSelectItem item: Int) {
         if pickerView.id == "inicio" {
-            inicio = item + 1
+            inicio = Double(item + 1)
         } else {
-            fim = item + 1
+            fim = Double(item + 1)
         }
     }
-    
 }
 
 //MARK: - AKPickerViewDataSource

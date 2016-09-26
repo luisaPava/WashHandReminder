@@ -155,30 +155,6 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6e-HS-5yJ">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pm2-0c-kxc">
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="pm2-0c-kxc" secondAttribute="height" multiplier="287:38" id="GVM-Xl-YJS"/>
-                                            <constraint firstAttribute="height" constant="38" id="V0I-bO-CcL"/>
-                                            <constraint firstAttribute="height" constant="30" id="Xj2-Jd-poK">
-                                                <variation key="heightClass=regular-widthClass=compact" constant="38"/>
-                                            </constraint>
-                                        </constraints>
-                                        <state key="normal" image="Ativar"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="GVM-Xl-YJS"/>
-                                                <exclude reference="V0I-bO-CcL"/>
-                                                <exclude reference="Xj2-Jd-poK"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="GVM-Xl-YJS"/>
-                                                <include reference="V0I-bO-CcL"/>
-                                                <exclude reference="Xj2-Jd-poK"/>
-                                            </mask>
-                                        </variation>
-                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pF-mj-zJF" userLabel="Content View">
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7W7-8d-c5U">
@@ -284,6 +260,9 @@
                                                         <include reference="Rxh-k5-kUT"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="intervaloSegAction:" destination="fEE-qT-YdJ" eventType="valueChanged" id="Au1-Lq-PfS"/>
+                                                </connections>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZKe-vW-eF0">
                                                 <subviews>
@@ -365,12 +344,33 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1Q-9k-ges">
-                                                <frame key="frameInset" minX="49" minY="301" width="46" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pm2-0c-kxc">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="pm2-0c-kxc" secondAttribute="height" multiplier="287:38" id="GVM-Xl-YJS"/>
+                                                    <constraint firstAttribute="height" constant="38" id="V0I-bO-CcL"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Xj2-Jd-poK">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="38"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <state key="normal" image="Ativar"/>
+                                                <state key="selected" image="Botão desativar"/>
+                                                <state key="highlighted" image="Botão desativar"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="GVM-Xl-YJS"/>
+                                                        <exclude reference="V0I-bO-CcL"/>
+                                                        <exclude reference="Xj2-Jd-poK"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="GVM-Xl-YJS"/>
+                                                        <include reference="V0I-bO-CcL"/>
+                                                        <exclude reference="Xj2-Jd-poK"/>
+                                                    </mask>
+                                                </variation>
                                                 <connections>
-                                                    <action selector="ativarBtnAction:" destination="fEE-qT-YdJ" eventType="touchUpInside" id="iFe-iE-lcI"/>
+                                                    <action selector="ativarBtnAction:" destination="fEE-qT-YdJ" eventType="touchUpInside" id="muG-MR-eR5"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -404,6 +404,8 @@
                                             <constraint firstItem="bw1-c1-odV" firstAttribute="leading" secondItem="0pF-mj-zJF" secondAttribute="leading" constant="20" id="u1e-kM-LOx"/>
                                             <constraint firstAttribute="trailing" secondItem="MZG-kF-giY" secondAttribute="trailing" constant="20" id="vkm-gY-HkH"/>
                                             <constraint firstItem="MZG-kF-giY" firstAttribute="leading" secondItem="0pF-mj-zJF" secondAttribute="leading" constant="20" id="vpa-uo-hLS"/>
+                                            <constraint firstAttribute="bottom" secondItem="pm2-0c-kxc" secondAttribute="bottom" constant="30" id="xEf-6H-PIf"/>
+                                            <constraint firstItem="pm2-0c-kxc" firstAttribute="centerX" secondItem="0pF-mj-zJF" secondAttribute="centerX" id="xmi-Xe-TUK"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="subviews">
@@ -416,9 +418,6 @@
                                             </mask>
                                             <mask key="constraints">
                                                 <exclude reference="Ryq-rM-49P"/>
-                                                <exclude reference="85M-sb-vWt"/>
-                                                <exclude reference="eZq-nN-qA5"/>
-                                                <exclude reference="qjL-h8-XYB"/>
                                                 <exclude reference="cPM-sZ-Bpv"/>
                                                 <exclude reference="vkm-gY-HkH"/>
                                                 <exclude reference="vpa-uo-hLS"/>
@@ -428,12 +427,15 @@
                                                 <exclude reference="Gdb-BU-TIJ"/>
                                                 <exclude reference="LtR-cz-vT2"/>
                                                 <exclude reference="koK-uI-TeO"/>
-                                                <exclude reference="2QX-8E-8Ed"/>
-                                                <exclude reference="4rV-X7-CVK"/>
-                                                <exclude reference="KhN-q6-KJJ"/>
+                                                <exclude reference="85M-sb-vWt"/>
+                                                <exclude reference="eZq-nN-qA5"/>
+                                                <exclude reference="qjL-h8-XYB"/>
                                                 <exclude reference="8Cd-mz-JNr"/>
                                                 <exclude reference="Htq-Ij-nQA"/>
                                                 <exclude reference="iuS-2Q-quA"/>
+                                                <exclude reference="2QX-8E-8Ed"/>
+                                                <exclude reference="4rV-X7-CVK"/>
+                                                <exclude reference="KhN-q6-KJJ"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
@@ -447,9 +449,6 @@
                                             </mask>
                                             <mask key="constraints">
                                                 <include reference="Ryq-rM-49P"/>
-                                                <include reference="85M-sb-vWt"/>
-                                                <include reference="eZq-nN-qA5"/>
-                                                <include reference="qjL-h8-XYB"/>
                                                 <include reference="cPM-sZ-Bpv"/>
                                                 <include reference="vkm-gY-HkH"/>
                                                 <include reference="vpa-uo-hLS"/>
@@ -459,30 +458,28 @@
                                                 <include reference="Gdb-BU-TIJ"/>
                                                 <include reference="LtR-cz-vT2"/>
                                                 <include reference="koK-uI-TeO"/>
-                                                <include reference="2QX-8E-8Ed"/>
-                                                <include reference="4rV-X7-CVK"/>
-                                                <include reference="KhN-q6-KJJ"/>
+                                                <include reference="85M-sb-vWt"/>
+                                                <include reference="eZq-nN-qA5"/>
+                                                <include reference="qjL-h8-XYB"/>
                                                 <include reference="8Cd-mz-JNr"/>
                                                 <include reference="Htq-Ij-nQA"/>
                                                 <include reference="iuS-2Q-quA"/>
+                                                <include reference="2QX-8E-8Ed"/>
+                                                <include reference="4rV-X7-CVK"/>
+                                                <include reference="KhN-q6-KJJ"/>
                                             </mask>
                                         </variation>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="0pF-mj-zJF" secondAttribute="trailing" id="KRk-xo-cuR"/>
-                                    <constraint firstAttribute="bottom" secondItem="pm2-0c-kxc" secondAttribute="bottom" constant="50" id="KgS-2L-WtO">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="40"/>
-                                    </constraint>
                                     <constraint firstAttribute="bottom" secondItem="0pF-mj-zJF" secondAttribute="bottom" id="Uq5-bi-cTp"/>
                                     <constraint firstItem="0pF-mj-zJF" firstAttribute="leading" secondItem="s6e-HS-5yJ" secondAttribute="leading" id="bnX-Bt-tpW"/>
                                     <constraint firstItem="0pF-mj-zJF" firstAttribute="top" secondItem="s6e-HS-5yJ" secondAttribute="top" id="jJW-0q-q6d"/>
                                     <constraint firstItem="0pF-mj-zJF" firstAttribute="centerX" secondItem="s6e-HS-5yJ" secondAttribute="centerX" id="jw8-ZT-fHt"/>
-                                    <constraint firstItem="pm2-0c-kxc" firstAttribute="centerX" secondItem="s6e-HS-5yJ" secondAttribute="centerX" id="oTD-ci-teb"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
-                                        <exclude reference="pm2-0c-kxc"/>
                                         <exclude reference="0pF-mj-zJF"/>
                                     </mask>
                                     <mask key="constraints">
@@ -491,13 +488,10 @@
                                         <exclude reference="bnX-Bt-tpW"/>
                                         <exclude reference="jJW-0q-q6d"/>
                                         <exclude reference="jw8-ZT-fHt"/>
-                                        <exclude reference="KgS-2L-WtO"/>
-                                        <exclude reference="oTD-ci-teb"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="subviews">
-                                        <include reference="pm2-0c-kxc"/>
                                         <include reference="0pF-mj-zJF"/>
                                     </mask>
                                     <mask key="constraints">
@@ -506,8 +500,6 @@
                                         <include reference="bnX-Bt-tpW"/>
                                         <include reference="jJW-0q-q6d"/>
                                         <include reference="jw8-ZT-fHt"/>
-                                        <include reference="KgS-2L-WtO"/>
-                                        <include reference="oTD-ci-teb"/>
                                     </mask>
                                 </variation>
                             </scrollView>
@@ -699,6 +691,7 @@
     </scenes>
     <resources>
         <image name="Ativar" width="287" height="38"/>
+        <image name="Botão desativar" width="287" height="38"/>
         <image name="Botão passo a passo" width="318" height="190"/>
         <image name="Botão video" width="318" height="190"/>
         <image name="Instrucoes" width="200" height="200"/>
