@@ -20,9 +20,13 @@ class NotificationViewController: UIViewController {
 
     var qtd: Double!
     var intervalo: Double = 2
-    var inicio: Double = 1
+    var inicio: Double = 1 { didSet {
+            resultLabel.text = "De \(Int(inicio)) às \(Int(fim))"
+        }
+    }
+    
     var fim: Double = 1 { didSet {
-            resultLabel.text = "De \(inicio) às \(fim)"
+            resultLabel.text = "De \(Int(inicio)) às \(Int(fim))"
         }
     }
 
@@ -43,8 +47,6 @@ class NotificationViewController: UIViewController {
         registerLocal()
         
         ativarBtnOutlet.isSelected = defaults.bool(forKey: "ativarButtonIsSelected")
-        
-//        center.removeAllPendingNotificationRequests()
         
     }
 
