@@ -540,6 +540,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="900"/>
                     <connections>
+                        <outlet property="ativarBtnOutlet" destination="pm2-0c-kxc" id="z4G-xU-2nj"/>
                         <outlet property="pickerFim" destination="Iy2-bL-ARL" id="dpM-9c-ek8"/>
                         <outlet property="pickerInicio" destination="6Io-U1-fry" id="XmG-Zz-v6E"/>
                         <outlet property="resultLabel" destination="2NE-Bk-e8X" id="i8w-4W-2jQ"/>

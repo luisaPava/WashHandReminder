@@ -13,8 +13,10 @@ class NotificationViewController: UIViewController {
     @IBOutlet weak var pickerInicio: AKPickerView!
     @IBOutlet weak var pickerFim: AKPickerView!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var ativarBtnOutlet: UIButton!
     
-    let center = UNUserNotificationCenter.current()
+    private let center = UNUserNotificationCenter.current()
+    private let defaults = UserDefaults.standard
 
     var qtd: Double!
     var intervalo: Double = 2
@@ -39,6 +41,8 @@ class NotificationViewController: UIViewController {
         
         //Request authorization to notifiations
         registerLocal()
+        
+        ativarBtnOutlet.isSelected = defaults.bool(forKey: "ativarButtonIsSelected")
         
 //        center.removeAllPendingNotificationRequests()
         
@@ -66,10 +70,12 @@ class NotificationViewController: UIViewController {
         if !sender.isSelected {
             print("!highlighted")
             sender.isSelected = true
+            defaults.set(true, forKey: "ativarButtonIsSelected")
             createAllNotification()
         } else {
             print("highlighted")
             sender.isSelected = false
+            defaults.set(false, forKey: "ativarButtonIsSelected")
             center.removeAllPendingNotificationRequests()
         }
     }
