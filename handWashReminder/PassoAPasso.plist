@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<string>Molhe as mãos com água</string>
+	<key>2</key>
+	<string>Aplique sabão suficiente para cobrir a superfície da mão</string>
+	<key>3</key>
+	<string>Esfregue o dorso dos dedos de uma mão com a palma da mão oposta</string>
+	<key>4</key>
+	<string>Palma da mão direita com dorso da esquerda com os dedos entrelaçados</string>
+	<key>5</key>
+	<string>Palma com palma com os dedos entrelaçados</string>
+	<key>6</key>
+	<string>Esfregue o dorso dos dedos de uma mão com a palma da mão oposta</string>
+	<key>7</key>
+	<string>Esfregue o polegar esquerdo com o auxílio da palma da mão direita em movimento circular</string>
+	<key>8</key>
+	<string>Friccione as pontas dos dedos da mão direita conta a palma da mão esquerda e vice-versa</string>
+	<key>9</key>
+	<string>Enxague bem as mãos com água</string>
+	<key>10</key>
+	<string>Seque as mãos com papel toalha descartável</string>
+	<key>11</key>
+	<string>Utilize o papel toalha para fechar a torneira caso seja manual</string>
+	<key>12</key>
+	<string>Agora, suas mãos estão seguras</string>
+</dict>
+</plist>

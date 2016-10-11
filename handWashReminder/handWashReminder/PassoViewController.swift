@@ -11,7 +11,9 @@ import UIKit
 class PassoViewController: UIViewController {
     @IBOutlet weak var carousel: iCarousel!
     
-    var indexCarousel: Int = 0
+    fileprivate let sharedDAO = DAOPassos.sharedInstance
+    
+//    var indexCarousel: Int = 0
 
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -23,6 +25,7 @@ class PassoViewController: UIViewController {
         carousel.type = .rotary
         carousel.centerItemWhenSelected = true
         carousel.bounces = false
+//        carousel.autoscroll = 1
         
     }
 
@@ -37,7 +40,7 @@ extension PassoViewController: iCarouselDelegate {
     func carousel(_ carousel: iCarousel, valueFor option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
         // Set iCarousel wheel radius
         if option == .radius {
-            return self.view.bounds.width / 1.6
+            return self.view.bounds.width / 0.7
             
         // Set how many iCarousel items will be visible
         } else if option == .visibleItems {
@@ -53,8 +56,9 @@ extension PassoViewController: iCarouselDataSource {
     
     //Returns the number of items in iCarousel
     func numberOfItems(in carousel: iCarousel) -> Int {
-        return 5
+        return sharedDAO.getCount()
     }
+    
     
     // Return each 'cell' to be shown in iCarousel
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
@@ -62,7 +66,14 @@ extension PassoViewController: iCarouselDataSource {
         
         if index == 0 {
             tempView.timer.start()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 18.0) {
+                carousel.scrollToItem(at: 1, animated: true)
+            }
         }
+        
+        tempView.imagem.image = UIImage(named: "instrucao\(index + 1)")
+        
+        
         
         return tempView
         
@@ -77,6 +88,16 @@ extension PassoViewController: iCarouselDataSource {
     func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
         let view = carousel.currentItemView as! CustomCarouselView
         
+        var index = carousel.index(ofItemView: view) + 1
+        
+        if index == sharedDAO.getCount() {
+            index = 0
+        }
+        
         view.timer.start()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 18.0) {
+            carousel.scrollToItem(at: index, animated: true)
+        }
     }
 }

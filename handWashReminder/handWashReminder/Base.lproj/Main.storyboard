@@ -418,6 +418,9 @@
                                             </mask>
                                             <mask key="constraints">
                                                 <exclude reference="Ryq-rM-49P"/>
+                                                <exclude reference="85M-sb-vWt"/>
+                                                <exclude reference="eZq-nN-qA5"/>
+                                                <exclude reference="qjL-h8-XYB"/>
                                                 <exclude reference="cPM-sZ-Bpv"/>
                                                 <exclude reference="vkm-gY-HkH"/>
                                                 <exclude reference="vpa-uo-hLS"/>
@@ -427,15 +430,12 @@
                                                 <exclude reference="Gdb-BU-TIJ"/>
                                                 <exclude reference="LtR-cz-vT2"/>
                                                 <exclude reference="koK-uI-TeO"/>
-                                                <exclude reference="85M-sb-vWt"/>
-                                                <exclude reference="eZq-nN-qA5"/>
-                                                <exclude reference="qjL-h8-XYB"/>
-                                                <exclude reference="8Cd-mz-JNr"/>
-                                                <exclude reference="Htq-Ij-nQA"/>
-                                                <exclude reference="iuS-2Q-quA"/>
                                                 <exclude reference="2QX-8E-8Ed"/>
                                                 <exclude reference="4rV-X7-CVK"/>
                                                 <exclude reference="KhN-q6-KJJ"/>
+                                                <exclude reference="8Cd-mz-JNr"/>
+                                                <exclude reference="Htq-Ij-nQA"/>
+                                                <exclude reference="iuS-2Q-quA"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
@@ -449,6 +449,9 @@
                                             </mask>
                                             <mask key="constraints">
                                                 <include reference="Ryq-rM-49P"/>
+                                                <include reference="85M-sb-vWt"/>
+                                                <include reference="eZq-nN-qA5"/>
+                                                <include reference="qjL-h8-XYB"/>
                                                 <include reference="cPM-sZ-Bpv"/>
                                                 <include reference="vkm-gY-HkH"/>
                                                 <include reference="vpa-uo-hLS"/>
@@ -458,15 +461,12 @@
                                                 <include reference="Gdb-BU-TIJ"/>
                                                 <include reference="LtR-cz-vT2"/>
                                                 <include reference="koK-uI-TeO"/>
-                                                <include reference="85M-sb-vWt"/>
-                                                <include reference="eZq-nN-qA5"/>
-                                                <include reference="qjL-h8-XYB"/>
-                                                <include reference="8Cd-mz-JNr"/>
-                                                <include reference="Htq-Ij-nQA"/>
-                                                <include reference="iuS-2Q-quA"/>
                                                 <include reference="2QX-8E-8Ed"/>
                                                 <include reference="4rV-X7-CVK"/>
                                                 <include reference="KhN-q6-KJJ"/>
+                                                <include reference="8Cd-mz-JNr"/>
+                                                <include reference="Htq-Ij-nQA"/>
+                                                <include reference="iuS-2Q-quA"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -565,7 +565,7 @@
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9W-iR-8cM">
                                 <state key="normal" image="Botão passo a passo"/>
                                 <connections>
-                                    <segue destination="tp9-bT-335" kind="presentation" id="Ex7-s0-FX8"/>
+                                    <segue destination="tp9-bT-335" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="Ex7-s0-FX8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlA-47-hXR">
@@ -623,10 +623,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbq-cz-Dac" customClass="iCarousel">
-                                <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="sbq-cz-Dac" secondAttribute="trailing" id="93e-hG-641"/>
                             <constraint firstItem="sbq-cz-Dac" firstAttribute="centerX" secondItem="ha7-57-Swk" secondAttribute="centerX" id="AuJ-3e-gU9"/>

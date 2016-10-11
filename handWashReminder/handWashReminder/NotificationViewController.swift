@@ -17,6 +17,8 @@ class NotificationViewController: UIViewController {
     
     private let center = UNUserNotificationCenter.current()
     private let defaults = UserDefaults.standard
+    
+    fileprivate let sharedDAO = DAOCuriosidades.sharedInstance
 
     var qtd: Double!
     var intervalo: Double = 2
@@ -145,35 +147,45 @@ class NotificationViewController: UIViewController {
             qtd! += 24
         }
         
+        if qtd >= 24 {
+            qtd! -= 24
+        }
+        
         let count = Int(qtd * intervalo)
         var countHora = 0
         
         for i in 1...count {
             var dateComponents = DateComponents()
+            let count = sharedDAO.getCount()
+            let index = random(min: Float(1), max: Float(count) - 1)
+            let curiosidade = sharedDAO.getString(atIndex: index)
             
             switch intervalo {
+                //Uma em uma hora
                 case 1:
                     dateComponents.hour = Int(inicio) + i
-                    createNotification(title: "Lembre-se de lavar as mãos", body: "teste", dateComponent: dateComponents)
+                    createNotification(title: "Lembre-se de lavar as mãos", body: curiosidade, dateComponent: dateComponents)
                     print(Int(inicio) + i)
                 
+                //Meia em meia hora
                 case 2:
                     if (i % 2) == 0 {
                         countHora += 1
                         dateComponents.hour = Int(inicio) + countHora
-                        createNotification(title: "Lembre-se de lavar as mãos", body: "teste", dateComponent: dateComponents)
+                        createNotification(title: "Lembre-se de lavar as mãos", body: curiosidade, dateComponent: dateComponents)
                         print(Int(inicio) + countHora)
 
                     } else {
                         dateComponents.hour = Int(inicio) + countHora
                         dateComponents.minute = 30
-                        createNotification(title: "Lembre-se de lavar as mãos", body: "teste", dateComponent: dateComponents)
+                        createNotification(title: "Lembre-se de lavar as mãos", body: curiosidade, dateComponent: dateComponents)
                         print("\(Int(inicio) + countHora) 30")
                     }
                 
+                //Duas em duas horas
                 case 0.5:
                     dateComponents.hour = Int(inicio) + (i * 2)
-                    createNotification(title: "Lembre-se de lavar as mãos", body: "teste", dateComponent: dateComponents)
+                    createNotification(title: "Lembre-se de lavar as mãos", body: curiosidade, dateComponent: dateComponents)
                     print(Int(inicio) + (i * 2))
                 
                 

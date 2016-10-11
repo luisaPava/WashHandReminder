@@ -9,7 +9,7 @@
 import UIKit
 
 class CustomCarouselView: UIView {
-    
+    @IBOutlet weak var imagem: UIImageView!
     @IBOutlet weak var timer: CircleTimer!
     @IBOutlet weak var numberLabel: UILabel!
     
@@ -26,6 +26,8 @@ class CustomCarouselView: UIView {
         self.timer.isActive = true
         self.timer.totalTime = 20
         self.timer.elapsedTime = 0
+        
+        self.imagem.contentMode = .scaleAspectFit
 //        self.timer.start()
     }
     

@@ -13,8 +13,18 @@ class PopUpViewController: UIViewController, PopupContentViewController {
     var popupSize: CGSize!
     var closeHandler: (() -> Void)?
     
+    @IBOutlet weak var curiosidadeTextView: UITextView!
+    
+    fileprivate let sharedDAO = DAOCuriosidades.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let count = sharedDAO.getCount()
+        let index = random(min: Float(1), max: Float(count) - 1)
+        let curiosidade = sharedDAO.getString(atIndex: index)
+        
+        curiosidadeTextView.text = curiosidade
         
         popupSize = CGSize(width: 300, height: 300)
         
