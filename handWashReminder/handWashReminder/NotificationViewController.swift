@@ -154,26 +154,26 @@ class NotificationViewController: UIViewController {
             switch intervalo {
                 case 1:
                     dateComponents.hour = Int(inicio) + i
-                    createNotification(title: "TEste", body: "teste", dateComponent: dateComponents)
+                    createNotification(title: "Lembre-se de lavar as mãos", body: "teste", dateComponent: dateComponents)
                     print(Int(inicio) + i)
                 
                 case 2:
                     if (i % 2) == 0 {
                         countHora += 1
                         dateComponents.hour = Int(inicio) + countHora
-                        createNotification(title: "TEste", body: "teste", dateComponent: dateComponents)
+                        createNotification(title: "Lembre-se de lavar as mãos", body: "teste", dateComponent: dateComponents)
                         print(Int(inicio) + countHora)
 
                     } else {
                         dateComponents.hour = Int(inicio) + countHora
                         dateComponents.minute = 30
-                        createNotification(title: "TEste", body: "teste", dateComponent: dateComponents)
+                        createNotification(title: "Lembre-se de lavar as mãos", body: "teste", dateComponent: dateComponents)
                         print("\(Int(inicio) + countHora) 30")
                     }
                 
                 case 0.5:
                     dateComponents.hour = Int(inicio) + (i * 2)
-                    createNotification(title: "TEste", body: "teste", dateComponent: dateComponents)
+                    createNotification(title: "Lembre-se de lavar as mãos", body: "teste", dateComponent: dateComponents)
                     print(Int(inicio) + (i * 2))
                 
                 

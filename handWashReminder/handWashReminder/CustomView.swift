@@ -26,7 +26,7 @@ class CustomCarouselView: UIView {
         self.timer.isActive = true
         self.timer.totalTime = 20
         self.timer.elapsedTime = 0
-        self.timer.start()
+//        self.timer.start()
     }
     
     override init(frame: CGRect) {
@@ -39,7 +39,7 @@ class CustomCarouselView: UIView {
         self.timer.isActive = true
         self.timer.totalTime = 20
         self.timer.elapsedTime = 0
-        self.timer.start()
+//        self.timer.start()
     }
     
     required init?(coder aDecoder: NSCoder) {

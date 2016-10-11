@@ -58,13 +58,25 @@ extension PassoViewController: iCarouselDataSource {
     
     // Return each 'cell' to be shown in iCarousel
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
-        let tempView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width / 1.5, height: self.view.bounds.height / 2))
-        tempView.backgroundColor = UIColor.blue
-        tempView.layer.borderColor = UIColor.black.cgColor
+        let tempView = CustomCarouselView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width / 1.5, height: self.view.bounds.height / 2))
         
-//        tempView.image = UIImage(named: "Notificacao")
+        if index == 0 {
+            tempView.timer.start()
+        }
         
-        return CustomCarouselView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width / 1.5, height: self.view.bounds.height / 2))
+        return tempView
         
+    }
+    
+//    func carouselDidScroll(_ carousel: iCarousel) {
+//        let view = carousel.currentItemView as! CustomCarouselView
+//        
+//        view.timer.start()
+//    }
+//
+    func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
+        let view = carousel.currentItemView as! CustomCarouselView
+        
+        view.timer.start()
     }
 }
