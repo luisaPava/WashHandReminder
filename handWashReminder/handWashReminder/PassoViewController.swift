@@ -75,7 +75,6 @@ extension PassoViewController: iCarouselDataSource {
         tempView.imagem.image = UIImage(named: "instrucao\(index + 1)")
         
         
-        
         return tempView
         
     }

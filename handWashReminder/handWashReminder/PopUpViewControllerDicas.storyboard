@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,19 +29,32 @@
                                     <action selector="exitButton:" destination="JtL-bh-yLt" eventType="touchUpInside" id="HZP-k0-7oN"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ysj-ne-hoH">
-                                <frame key="frameInset" minX="16" minY="53" width="274" height="239"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVG-O5-2bE">
+                                <frame key="frameInset" minX="124" minY="17" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysj-ne-hoH">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="tRc-UE-Wg7"/>
+                                    <constraint firstAttribute="height" constant="150" id="zFN-sz-Edj"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.1019607843" green="0.58823529409999997" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="8S5-nu-jE4" firstAttribute="top" secondItem="xBx-QI-OHR" secondAttribute="top" constant="10" id="ZYx-z4-ZjO"/>
+                            <constraint firstItem="Ysj-ne-hoH" firstAttribute="centerY" secondItem="xBx-QI-OHR" secondAttribute="centerY" constant="23" id="ZuX-zr-1oO"/>
+                            <constraint firstItem="eVG-O5-2bE" firstAttribute="centerX" secondItem="xBx-QI-OHR" secondAttribute="centerX" id="b5y-Oa-vIn"/>
                             <constraint firstAttribute="trailing" secondItem="8S5-nu-jE4" secondAttribute="trailing" constant="10" id="qQm-NI-KwL"/>
+                            <constraint firstItem="eVG-O5-2bE" firstAttribute="top" secondItem="xBx-QI-OHR" secondAttribute="topMargin" constant="17" id="tu8-g7-Yah"/>
+                            <constraint firstItem="Ysj-ne-hoH" firstAttribute="centerX" secondItem="xBx-QI-OHR" secondAttribute="centerX" id="wzX-Jb-fQ9"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

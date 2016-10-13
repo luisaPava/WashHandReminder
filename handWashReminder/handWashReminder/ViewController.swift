@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
         //Create circle menu programmatically
         let button = CircleMenu(
-            frame: CGRect(x: view.frame.width / 11.8, y: view.frame.height / 1.09, width: view.frame.width / 8.28, height: view.frame.height / 14.72),
+            frame: CGRect(x: view.frame.width / 11.2, y: view.frame.height / 1.11, width: view.frame.width / 8.28, height: view.frame.height / 14.72),
             normalIcon:"info",
             selectedIcon:"info",
             buttonsCount: 2,

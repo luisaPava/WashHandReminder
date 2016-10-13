@@ -89,12 +89,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="brN-yw-rCW" secondAttribute="bottom" constant="40" id="4Un-nY-Q25"/>
                             <constraint firstItem="wBb-3T-WGX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6nN-X4-FgG"/>
                             <constraint firstItem="CaT-Iw-29I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="9Jp-9W-gV0"/>
                             <constraint firstItem="brN-yw-rCW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="LXo-ds-Am0"/>
                             <constraint firstItem="CaT-Iw-29I" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MhY-I5-AH9"/>
                             <constraint firstItem="wBb-3T-WGX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="WS7-sc-1s9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="brN-yw-rCW" secondAttribute="bottom" constant="50" id="bnU-ql-p3S"/>
                             <constraint firstItem="wBb-3T-WGX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cee-pu-1yS"/>
                         </constraints>
                         <variation key="default">
@@ -104,13 +104,12 @@
                                 <exclude reference="wBb-3T-WGX"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="4Un-nY-Q25"/>
-                                <exclude reference="9Jp-9W-gV0"/>
-                                <exclude reference="MhY-I5-AH9"/>
-                                <exclude reference="LXo-ds-Am0"/>
                                 <exclude reference="6nN-X4-FgG"/>
                                 <exclude reference="WS7-sc-1s9"/>
                                 <exclude reference="cee-pu-1yS"/>
+                                <exclude reference="9Jp-9W-gV0"/>
+                                <exclude reference="MhY-I5-AH9"/>
+                                <exclude reference="LXo-ds-Am0"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -120,13 +119,12 @@
                                 <include reference="wBb-3T-WGX"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="4Un-nY-Q25"/>
-                                <include reference="9Jp-9W-gV0"/>
-                                <include reference="MhY-I5-AH9"/>
-                                <include reference="LXo-ds-Am0"/>
                                 <include reference="6nN-X4-FgG"/>
                                 <include reference="WS7-sc-1s9"/>
                                 <include reference="cee-pu-1yS"/>
+                                <include reference="9Jp-9W-gV0"/>
+                                <include reference="MhY-I5-AH9"/>
+                                <include reference="LXo-ds-Am0"/>
                             </mask>
                         </variation>
                     </view>
