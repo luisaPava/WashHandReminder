@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ezk-Ku-VVC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JtL-bh-yLt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pop Up View Controller-->
-        <scene sceneID="VnY-bh-L2h">
+        <!--Pop Up View Controller Dicas-->
+        <scene sceneID="xru-Cq-01t">
             <objects>
-                <viewController storyboardIdentifier="PopUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ezk-Ku-VVC" customClass="PopUpViewController" customModule="handWashReminder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PopUpViewControllerDicas" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JtL-bh-yLt" customClass="PopUpViewControllerDicas" customModule="handWashReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oBV-W6-u2Y"/>
-                        <viewControllerLayoutGuide type="bottom" id="U9l-JD-VQp"/>
+                        <viewControllerLayoutGuide type="top" id="KSy-F7-IJG"/>
+                        <viewControllerLayoutGuide type="bottom" id="96Q-Pw-B3s"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vsA-3m-vg7">
+                    <view key="view" contentMode="scaleToFill" id="xBx-QI-OHR">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOD-Wj-Ll1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8S5-nu-jE4">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="HiX-gy-LFt"/>
-                                    <constraint firstAttribute="width" constant="35" id="fMb-F3-ZyF"/>
+                                    <constraint firstAttribute="height" constant="35" id="KsX-aZ-VaR"/>
+                                    <constraint firstAttribute="width" constant="35" id="da4-3Q-jFT"/>
                                 </constraints>
                                 <state key="normal" image="Exit"/>
                                 <connections>
-                                    <action selector="exitButton:" destination="ezk-Ku-VVC" eventType="touchUpInside" id="juZ-3E-qRe"/>
+                                    <action selector="exitButton:" destination="JtL-bh-yLt" eventType="touchUpInside" id="HZP-k0-7oN"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KDm-AD-hSz">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ysj-ne-hoH">
                                 <frame key="frameInset" minX="16" minY="53" width="274" height="239"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -39,25 +39,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1019607843" green="0.58823529409999997" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="hOD-Wj-Ll1" secondAttribute="trailing" constant="10" id="Bim-Mi-20H"/>
-                            <constraint firstItem="hOD-Wj-Ll1" firstAttribute="top" secondItem="vsA-3m-vg7" secondAttribute="top" constant="10" id="HB8-yg-bmW"/>
+                            <constraint firstItem="8S5-nu-jE4" firstAttribute="top" secondItem="xBx-QI-OHR" secondAttribute="top" constant="10" id="ZYx-z4-ZjO"/>
+                            <constraint firstAttribute="trailing" secondItem="8S5-nu-jE4" secondAttribute="trailing" constant="10" id="qQm-NI-KwL"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="10"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                        </userDefinedRuntimeAttributes>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="300" height="300"/>
                     <connections>
-                        <outlet property="curiosidadeTextView" destination="KDm-AD-hSz" id="bv3-lN-IJF"/>
+                        <outlet property="curiosidadeTextView" destination="Ysj-ne-hoH" id="iV9-U7-PLD"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JxW-07-O7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Zm-K0-zKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="27" y="69"/>
+            <point key="canvasLocation" x="-371.19999999999999" y="-83.658170914542737"/>
         </scene>
     </scenes>
     <resources>

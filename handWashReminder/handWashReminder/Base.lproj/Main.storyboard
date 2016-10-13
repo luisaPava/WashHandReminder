@@ -83,7 +83,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="JGi-jT-eFJ" kind="show" id="LJC-Mh-vzz"/>
+                                    <segue destination="tp9-bT-335" kind="presentation" animates="NO" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="68B-c0-OFy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -622,15 +622,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yar-iD-SIx">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hvj-7M-Nmz">
+                                    <frame key="frameInset"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbq-cz-Dac" customClass="iCarousel">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwm-8f-Nxf">
+                                <frame key="frameInset" minX="164" minY="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismissButton:" destination="tp9-bT-335" eventType="touchUpInside" id="Ean-8f-coi"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="sbq-cz-Dac" secondAttribute="trailing" id="93e-hG-641"/>
                             <constraint firstItem="sbq-cz-Dac" firstAttribute="centerX" secondItem="ha7-57-Swk" secondAttribute="centerX" id="AuJ-3e-gU9"/>
+                            <constraint firstAttribute="trailing" secondItem="yar-iD-SIx" secondAttribute="trailing" id="DPH-t4-oHq"/>
                             <constraint firstItem="sbq-cz-Dac" firstAttribute="leading" secondItem="ha7-57-Swk" secondAttribute="leading" id="HsU-vK-O5P"/>
+                            <constraint firstItem="yar-iD-SIx" firstAttribute="leading" secondItem="ha7-57-Swk" secondAttribute="leading" id="OHa-n5-6ZG"/>
+                            <constraint firstItem="yar-iD-SIx" firstAttribute="top" secondItem="ha7-57-Swk" secondAttribute="top" id="RWM-Qi-AQ5"/>
+                            <constraint firstItem="SuZ-mM-6aT" firstAttribute="top" secondItem="yar-iD-SIx" secondAttribute="bottom" id="SJo-4v-UpR"/>
                             <constraint firstItem="sbq-cz-Dac" firstAttribute="centerY" secondItem="ha7-57-Swk" secondAttribute="centerY" id="mfH-xZ-P7c"/>
                             <constraint firstItem="sbq-cz-Dac" firstAttribute="height" secondItem="ha7-57-Swk" secondAttribute="height" multiplier="0.7" id="x8c-Km-iRC"/>
                         </constraints>
@@ -651,7 +670,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z1a-9H-QOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2050.4000000000001" y="1273.313343328336"/>
+            <point key="canvasLocation" x="2128.8000000000002" y="1270.6146926536733"/>
         </scene>
         <!--Video View Controller-->
         <scene sceneID="tof-nj-a0s">
@@ -699,4 +718,7 @@
         <image name="Notificacao" width="59" height="59"/>
         <image name="info" width="44" height="44"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="68B-c0-OFy"/>
+    </inferredMetricsTieBreakers>
 </document>

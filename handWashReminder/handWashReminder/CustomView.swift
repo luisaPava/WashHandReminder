@@ -28,6 +28,7 @@ class CustomCarouselView: UIView {
         self.timer.elapsedTime = 0
         
         self.imagem.contentMode = .scaleAspectFit
+        
 //        self.timer.start()
     }
     
@@ -41,7 +42,10 @@ class CustomCarouselView: UIView {
         self.timer.isActive = true
         self.timer.totalTime = 20
         self.timer.elapsedTime = 0
-//        self.timer.start()
+    }
+    
+    override func layoutSubviews() {
+        self.imagem.clipsToBounds = true
     }
     
     required init?(coder aDecoder: NSCoder) {

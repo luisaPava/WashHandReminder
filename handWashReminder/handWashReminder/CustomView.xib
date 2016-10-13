@@ -17,15 +17,15 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zth-9u-70E">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zth-9u-70E">
                     <color key="backgroundColor" red="0.12941176469999999" green="0.25098039220000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" red="0.12941176469999999" green="0.25098039220000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBI-JQ-aTu" customClass="CircleTimer">
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="ehq-Bb-066"/>
-                        <constraint firstAttribute="width" constant="50" id="zhh-xV-6dv"/>
+                        <constraint firstAttribute="height" constant="35" id="ehq-Bb-066"/>
+                        <constraint firstAttribute="width" constant="35" id="zhh-xV-6dv"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
@@ -47,14 +47,14 @@
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.16884228587150574" green="0.32595556974411011" blue="0.4962121844291687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="zth-9u-70E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EbR-bJ-nUE"/>
-                <constraint firstItem="xBI-JQ-aTu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="KLe-s1-Hon"/>
-                <constraint firstAttribute="trailing" secondItem="zth-9u-70E" secondAttribute="trailing" id="TD2-Jz-wUl"/>
-                <constraint firstAttribute="bottom" secondItem="zth-9u-70E" secondAttribute="bottom" id="avn-on-mR9"/>
-                <constraint firstItem="zth-9u-70E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hST-bl-w7f"/>
-                <constraint firstAttribute="trailing" secondItem="xBI-JQ-aTu" secondAttribute="trailing" constant="30" id="wYX-fg-vL5"/>
+                <constraint firstItem="zth-9u-70E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="EbR-bJ-nUE"/>
+                <constraint firstItem="xBI-JQ-aTu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="KLe-s1-Hon"/>
+                <constraint firstAttribute="trailing" secondItem="zth-9u-70E" secondAttribute="trailing" constant="10" id="TD2-Jz-wUl"/>
+                <constraint firstAttribute="bottom" secondItem="zth-9u-70E" secondAttribute="bottom" constant="10" id="avn-on-mR9"/>
+                <constraint firstItem="zth-9u-70E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="hST-bl-w7f"/>
+                <constraint firstAttribute="trailing" secondItem="xBI-JQ-aTu" secondAttribute="trailing" constant="10" id="wYX-fg-vL5"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

@@ -25,13 +25,16 @@ class PassoViewController: UIViewController {
         carousel.type = .rotary
         carousel.centerItemWhenSelected = true
         carousel.bounces = false
-//        carousel.autoscroll = 1
-        
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func dismissButton(_ sender: AnyObject) {
+        self.dismiss(animated: false, completion: nil)
     }
 }
 
@@ -66,9 +69,7 @@ extension PassoViewController: iCarouselDataSource {
         
         if index == 0 {
             tempView.timer.start()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 18.0) {
-                carousel.scrollToItem(at: 1, animated: true)
-            }
+            
         }
         
         tempView.imagem.image = UIImage(named: "instrucao\(index + 1)")
@@ -96,8 +97,5 @@ extension PassoViewController: iCarouselDataSource {
         
         view.timer.start()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 18.0) {
-            carousel.scrollToItem(at: index, animated: true)
-        }
     }
 }

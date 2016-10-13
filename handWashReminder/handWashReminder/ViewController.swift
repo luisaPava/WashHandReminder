@@ -72,6 +72,21 @@ extension ViewController: CircleMenuDelegate {
             }
             
             let _ = popup.show(container)
+            
+        } else if atIndex == 1 {
+            let popup = PopupController.create(self)
+            
+            print("Dicas main view controller")
+            
+            let container = PopUpViewControllerDicas.instance()
+            
+            print("Dicas main view controller")
+            
+            container.closeHandler = { _ in
+                popup.dismiss()
+            }
+            
+            let _ = popup.show(container)
         }
     }
 }
