@@ -104,12 +104,12 @@
                                 <exclude reference="wBb-3T-WGX"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="6nN-X4-FgG"/>
-                                <exclude reference="WS7-sc-1s9"/>
-                                <exclude reference="cee-pu-1yS"/>
                                 <exclude reference="9Jp-9W-gV0"/>
                                 <exclude reference="MhY-I5-AH9"/>
                                 <exclude reference="LXo-ds-Am0"/>
+                                <exclude reference="6nN-X4-FgG"/>
+                                <exclude reference="WS7-sc-1s9"/>
+                                <exclude reference="cee-pu-1yS"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -119,12 +119,12 @@
                                 <include reference="wBb-3T-WGX"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="6nN-X4-FgG"/>
-                                <include reference="WS7-sc-1s9"/>
-                                <include reference="cee-pu-1yS"/>
                                 <include reference="9Jp-9W-gV0"/>
                                 <include reference="MhY-I5-AH9"/>
                                 <include reference="LXo-ds-Am0"/>
+                                <include reference="6nN-X4-FgG"/>
+                                <include reference="WS7-sc-1s9"/>
+                                <include reference="cee-pu-1yS"/>
                             </mask>
                         </variation>
                     </view>
@@ -624,20 +624,35 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hvj-7M-Nmz">
                                     <frame key="frameInset"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instruções" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9R-KJ-tem">
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwm-8f-Nxf">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="38" id="apK-Bw-KrT"/>
+                                                <constraint firstAttribute="width" constant="38" id="xm8-yC-NDL"/>
+                                            </constraints>
+                                            <state key="normal" image="Exit"/>
+                                            <connections>
+                                                <action selector="dismissButton:" destination="tp9-bT-335" eventType="touchUpInside" id="Ean-8f-coi"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Uwm-8f-Nxf" firstAttribute="centerX" secondItem="hvj-7M-Nmz" secondAttribute="centerX" id="Lxx-QR-zHs"/>
+                                        <constraint firstAttribute="bottom" secondItem="Uwm-8f-Nxf" secondAttribute="bottom" constant="60" id="b8e-q0-zQ0"/>
+                                        <constraint firstItem="m9R-KJ-tem" firstAttribute="top" secondItem="hvj-7M-Nmz" secondAttribute="top" constant="60" id="gnN-1S-WqK"/>
+                                        <constraint firstItem="m9R-KJ-tem" firstAttribute="centerX" secondItem="hvj-7M-Nmz" secondAttribute="centerX" id="sMT-FA-4Lj"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbq-cz-Dac" customClass="iCarousel">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwm-8f-Nxf">
-                                <frame key="frameInset" minX="164" minY="318" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="dismissButton:" destination="tp9-bT-335" eventType="touchUpInside" id="Ean-8f-coi"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -712,6 +727,7 @@
         <image name="Botão desativar" width="287" height="38"/>
         <image name="Botão passo a passo" width="318" height="190"/>
         <image name="Botão video" width="318" height="190"/>
+        <image name="Exit" width="35" height="35"/>
         <image name="Instrucoes" width="200" height="200"/>
         <image name="Notificacao" width="59" height="59"/>
         <image name="info" width="44" height="44"/>
