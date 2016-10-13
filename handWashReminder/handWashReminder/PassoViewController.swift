@@ -12,8 +12,6 @@ class PassoViewController: UIViewController {
     @IBOutlet weak var carousel: iCarousel!
     
     fileprivate let sharedDAO = DAOPassos.sharedInstance
-    
-//    var indexCarousel: Int = 0
 
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -75,17 +73,22 @@ extension PassoViewController: iCarouselDataSource {
         tempView.imagem.image = UIImage(named: "instrucao\(index + 1)")
         tempView.desc.text = sharedDAO.getString(atIndex: index + 1)
         
+        let timer = sharedDAO.getTempo(atIndex: index)
+        
+        if timer == 0 {
+            tempView.timer.isHidden = true
+            
+            
+        } else {
+            tempView.timer.totalTime = timer
+            
+        }
+        
         
         return tempView
         
     }
     
-//    func carouselDidScroll(_ carousel: iCarousel) {
-//        let view = carousel.currentItemView as! CustomCarouselView
-//        
-//        view.timer.start()
-//    }
-//
     func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
         let view = carousel.currentItemView as! CustomCarouselView
         

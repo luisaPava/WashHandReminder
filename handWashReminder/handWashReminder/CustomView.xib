@@ -10,6 +10,7 @@
             <connections>
                 <outlet property="desc" destination="ss7-K7-DcP" id="j0P-E8-BiJ"/>
                 <outlet property="imagem" destination="zth-9u-70E" id="FNA-zr-Aa0"/>
+                <outlet property="infinityLabel" destination="Hy2-m0-pvc" id="UWU-FM-MfX"/>
                 <outlet property="timer" destination="xBI-JQ-aTu" id="vIz-tp-FTz"/>
             </connections>
         </placeholder>
@@ -18,7 +19,16 @@
             <rect key="frame" x="0.0" y="0.0" width="301" height="285"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss7-K7-DcP">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hy2-m0-pvc">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="qo5-IC-McC"/>
+                        <constraint firstAttribute="height" constant="35" id="rA6-fy-NbS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss7-K7-DcP">
                     <constraints>
                         <constraint firstAttribute="width" constant="251" id="P4b-4p-i25"/>
                         <constraint firstAttribute="height" constant="75" id="z8W-1V-wjC"/>
@@ -64,6 +74,7 @@
             </subviews>
             <color key="backgroundColor" red="0.16884228587150574" green="0.32595556974411011" blue="0.4962121844291687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hy2-m0-pvc" secondAttribute="trailing" constant="10" id="7Nt-Ws-XV4"/>
                 <constraint firstItem="zth-9u-70E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="EbR-bJ-nUE"/>
                 <constraint firstItem="ss7-K7-DcP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="IwF-OZ-zl8"/>
                 <constraint firstItem="xBI-JQ-aTu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="KLe-s1-Hon"/>
@@ -71,6 +82,7 @@
                 <constraint firstItem="zth-9u-70E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="hST-bl-w7f"/>
                 <constraint firstAttribute="trailing" secondItem="ss7-K7-DcP" secondAttribute="trailing" constant="25" id="jR6-vg-Qcn"/>
                 <constraint firstAttribute="trailing" secondItem="xBI-JQ-aTu" secondAttribute="trailing" constant="10" id="wYX-fg-vL5"/>
+                <constraint firstItem="Hy2-m0-pvc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="zNZ-IG-J5c"/>
                 <constraint firstAttribute="bottom" secondItem="ss7-K7-DcP" secondAttribute="bottom" constant="10" id="zvt-lu-6mP"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

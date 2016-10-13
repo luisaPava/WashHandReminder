@@ -15,7 +15,7 @@ class PopUpViewControllerDicas: UIViewController, PopupContentViewController {
     
     @IBOutlet weak var curiosidadeTextView: UITextView!
     
-    fileprivate let sharedDAO = DAODicas.sharedInstance
+    private let sharedDAO = DAODicas.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,11 +42,9 @@ class PopUpViewControllerDicas: UIViewController, PopupContentViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //Returns PopUpViewController
+    //Returns PopUpViewControllerDicas
     class func instance() -> PopUpViewControllerDicas {
-        print("instance:")
         let storyboard = UIStoryboard(name: "PopUpViewControllerDicas", bundle: nil)
-        print("Dicas")
         return storyboard.instantiateInitialViewController() as! PopUpViewControllerDicas
     }
     

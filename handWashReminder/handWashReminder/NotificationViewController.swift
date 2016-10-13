@@ -18,7 +18,7 @@ class NotificationViewController: UIViewController {
     private let center = UNUserNotificationCenter.current()
     private let defaults = UserDefaults.standard
     
-    fileprivate let sharedDAO = DAOCuriosidades.sharedInstance
+    private let sharedDAO = DAOCuriosidades.sharedInstance
 
     var qtd: Double!
     var intervalo: Double = 2
@@ -69,15 +69,11 @@ class NotificationViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func ativarBtnAction(_ sender: UIButton) {
-        print("botão")
-        
         if !sender.isSelected {
-            print("!highlighted")
             sender.isSelected = true
             defaults.set(true, forKey: "ativarButtonIsSelected")
             createAllNotification()
         } else {
-            print("highlighted")
             sender.isSelected = false
             defaults.set(false, forKey: "ativarButtonIsSelected")
             center.removeAllPendingNotificationRequests()

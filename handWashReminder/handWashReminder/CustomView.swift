@@ -13,6 +13,7 @@ class CustomCarouselView: UIView {
     @IBOutlet weak var timer: CircleTimer!
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var desc: UITextView!
+    @IBOutlet weak var infinityLabel: UILabel!
     
     private var containerView: UIView!
     private let customViewNibName = "CustomView"
@@ -25,13 +26,13 @@ class CustomCarouselView: UIView {
         
         //Timer settings
         self.timer.isActive = true
-        self.timer.totalTime = 20
         self.timer.elapsedTime = 0
+        
+        infinityLabel.isHidden = true
         
         self.imagem.contentMode = .scaleAspectFit
         self.desc.setContentOffset(CGPoint.zero, animated: false)
         
-//        self.timer.start()
     }
     
     override init(frame: CGRect) {
@@ -64,7 +65,6 @@ class CustomCarouselView: UIView {
     }
     
     func loadViewFromNib() -> UIView {
-//        let bundle = NSBundle(forClass: self.dynamicType)
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: customViewNibName, bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView

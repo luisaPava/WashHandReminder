@@ -12,6 +12,7 @@ class DAOPassos {
     static let sharedInstance = DAOPassos()
     private var vet: NSDictionary = [:]
     private var count: Int!
+    private var arrayTempo: [Double] = [0, 0, 6, 12, 6, 12, 12, 12, 0, 0, 0, 0]
     
     private init() {
         popula()
@@ -31,5 +32,9 @@ class DAOPassos {
     
     func getCount() -> Int {
         return count
+    }
+    
+    func getTempo(atIndex: Int) -> Double {
+        return arrayTempo[atIndex]
     }
 }

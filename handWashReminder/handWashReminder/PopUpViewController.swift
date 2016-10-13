@@ -15,7 +15,7 @@ class PopUpViewController: UIViewController, PopupContentViewController {
     
     @IBOutlet weak var curiosidadeTextView: UITextView!
     
-    fileprivate let sharedDAO = DAOCuriosidades.sharedInstance
+    private let sharedDAO = DAOCuriosidades.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,12 +54,9 @@ class PopUpViewController: UIViewController, PopupContentViewController {
         return popupSize
     }
     
-    //Função de dismiss
-    
+    //Dismiss method
     @IBAction func exitButton(_ sender: AnyObject) {
         closeHandler!()
     
     }
-    
-    
 }

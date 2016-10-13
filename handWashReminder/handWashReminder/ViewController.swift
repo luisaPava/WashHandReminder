@@ -49,8 +49,6 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
     }
-
-
 }
 
 //MARK: - Circle Menu Delegate
@@ -76,11 +74,7 @@ extension ViewController: CircleMenuDelegate {
         } else if atIndex == 1 {
             let popup = PopupController.create(self)
             
-            print("Dicas main view controller")
-            
             let container = PopUpViewControllerDicas.instance()
-            
-            print("Dicas main view controller")
             
             container.closeHandler = { _ in
                 popup.dismiss()
