@@ -23,12 +23,12 @@ class NotificationViewController: UIViewController {
     var qtd: Double!
     var intervalo: Double = 2
     var inicio: Double = 1 { didSet {
-            resultLabel.text = "De \(Int(inicio)) às \(Int(fim))"
+            resultLabel.text = "De \(Int(inicio))h às \(Int(fim))h"
         }
     }
     
     var fim: Double = 1 { didSet {
-            resultLabel.text = "De \(Int(inicio)) às \(Int(fim))"
+            resultLabel.text = "De \(Int(inicio)) às \(Int(fim))h"
         }
     }
 
