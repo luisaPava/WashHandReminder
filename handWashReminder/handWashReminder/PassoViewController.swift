@@ -75,6 +75,8 @@ extension PassoViewController: iCarouselDataSource {
         
         let timer = sharedDAO.getTempo(atIndex: index)
         
+        tempView.infinityLabel.isHidden = true
+        
         if timer == 0 {
             tempView.timer.isHidden = true
             
