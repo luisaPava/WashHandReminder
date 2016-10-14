@@ -65,7 +65,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="notificacoesButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctP-vQ-hts"/>
-                                    <segue destination="fEE-qT-YdJ" kind="show" id="ubX-kF-Nfh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBb-3T-WGX">
@@ -85,7 +84,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="instrucoesButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5pz-A9-ffd"/>
-                                    <segue destination="tp9-bT-335" kind="presentation" animates="NO" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="68B-c0-OFy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -135,6 +133,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="circleMenuButton" destination="brN-yw-rCW" id="6Cr-gz-pl8"/>
+                        <outlet property="instrucoesButtonOutlet" destination="wBb-3T-WGX" id="RHq-Ls-DdD"/>
+                        <segue destination="tp9-bT-335" kind="presentation" identifier="mainToInst" animates="NO" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="Weg-aL-Plq"/>
+                        <segue destination="fEE-qT-YdJ" kind="show" identifier="mainToNot" id="c7o-YC-qWw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -735,6 +736,6 @@
         <image name="info" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="68B-c0-OFy"/>
+        <segue reference="Weg-aL-Plq"/>
     </inferredMetricsTieBreakers>
 </document>

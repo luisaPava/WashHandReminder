@@ -12,6 +12,7 @@ import PopupController
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var instrucoesButtonOutlet: UIButton!
     @IBOutlet weak var circleMenuButton: CircleMenu!
     fileprivate var buttons: Array<String> = ["curiosidade", "tips"]
 
@@ -53,11 +54,22 @@ class ViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func instrucoesButtonAction(_ sender: UIButton) {
-        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: instrucoesButtonOutlet)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.09) {
+            self.performSegue(withIdentifier: "mainToInst", sender: self)
+        }
+        
+        
+        print("btn")
     }
     
     @IBAction func notificacoesButtonAction(_ sender: UIButton) {
         ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.09) {
+            self.performSegue(withIdentifier: "mainToNot", sender: self)
+        }
     }
 }
 
