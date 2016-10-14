@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brN-yw-rCW" customClass="CircleMenu" customModule="CircleMenu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brN-yw-rCW" customClass="CircleMenu" customModule="CircleMenu">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="brN-yw-rCW" secondAttribute="height" multiplier="1:1" id="XXE-Rc-07M"/>
                                 </constraints>
@@ -47,7 +47,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaT-Iw-29I">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaT-Iw-29I">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="CaT-Iw-29I" secondAttribute="height" multiplier="1:1" id="gZf-j2-7pD"/>
                                 </constraints>
@@ -67,7 +67,7 @@
                                     <action selector="notificacoesButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctP-vQ-hts"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBb-3T-WGX">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBb-3T-WGX">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wBb-3T-WGX" secondAttribute="height" multiplier="1:1" id="fwk-uf-2gF"/>
                                 </constraints>
@@ -345,7 +345,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pm2-0c-kxc">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pm2-0c-kxc">
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="pm2-0c-kxc" secondAttribute="height" multiplier="287:38" id="GVM-Xl-YJS"/>
                                                     <constraint firstAttribute="height" constant="38" id="V0I-bO-CcL"/>
