@@ -49,6 +49,16 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
     }
+    
+    
+    //MARK: - Actions
+    @IBAction func instrucoesButtonAction(_ sender: UIButton) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
+    }
+    
+    @IBAction func notificacoesButtonAction(_ sender: UIButton) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
+    }
 }
 
 //MARK: - Circle Menu Delegate
@@ -61,6 +71,8 @@ extension ViewController: CircleMenuDelegate {
     
     //Actions for each button
     func circleMenu(_ circleMenu: CircleMenu, buttonWillSelected button: UIButton, atIndex: Int) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: button)
+        
         if atIndex == 0 {
             let popup = PopupController.create(self)
             

@@ -64,6 +64,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="notificacoesButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctP-vQ-hts"/>
                                     <segue destination="fEE-qT-YdJ" kind="show" id="ubX-kF-Nfh"/>
                                 </connections>
                             </button>
@@ -83,6 +84,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="instrucoesButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5pz-A9-ffd"/>
                                     <segue destination="tp9-bT-335" kind="presentation" animates="NO" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="68B-c0-OFy"/>
                                 </connections>
                             </button>

@@ -23,12 +23,13 @@ class NotificationViewController: UIViewController {
     var qtd: Double!
     var intervalo: Double = 2
     var inicio: Double = 1 { didSet {
-            resultLabel.text = "De \(Int(inicio))h às \(Int(fim))h"
+            resultLabel.text = stringIntervalo(inicio: Int(inicio), fim: Int(fim))
+        
         }
     }
     
     var fim: Double = 1 { didSet {
-            resultLabel.text = "De \(Int(inicio)) às \(Int(fim))h"
+            resultLabel.text = stringIntervalo(inicio: Int(inicio), fim: Int(fim))
         }
     }
 
@@ -69,9 +70,12 @@ class NotificationViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func ativarBtnAction(_ sender: UIButton) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
+        
         if !sender.isSelected {
             sender.isSelected = true
             defaults.set(true, forKey: "ativarButtonIsSelected")
+            center.removeAllPendingNotificationRequests()
             createAllNotification()
         } else {
             sender.isSelected = false
@@ -143,10 +147,6 @@ class NotificationViewController: UIViewController {
             qtd! += 24
         }
         
-        if qtd >= 24 {
-            qtd! -= 24
-        }
-        
         let count = Int(qtd * intervalo)
         var countHora = 0
         
@@ -159,17 +159,29 @@ class NotificationViewController: UIViewController {
             switch intervalo {
                 //Uma em uma hora
                 case 1:
-                    dateComponents.hour = Int(inicio) + i
+                    var hour = Int(inicio) + i
+                    
+                    if hour > 24 {
+                        hour -= 24
+                    }
+                    
+                    dateComponents.hour = hour
                     createNotification(title: "Lembre-se de lavar as mãos", body: curiosidade, dateComponent: dateComponents)
-                    print(Int(inicio) + i)
+                    print("Uma \(hour)")
                 
                 //Meia em meia hora
                 case 2:
+                    var hour = Int(inicio) + countHora
+                    
+                    if hour > 24 {
+                        hour -= 24
+                    }
+                    
                     if (i % 2) == 0 {
                         countHora += 1
-                        dateComponents.hour = Int(inicio) + countHora
+                        dateComponents.hour = hour
                         createNotification(title: "Lembre-se de lavar as mãos", body: curiosidade, dateComponent: dateComponents)
-                        print(Int(inicio) + countHora)
+                        print("Meia \(Int(inicio) + countHora)")
 
                     } else {
                         dateComponents.hour = Int(inicio) + countHora
@@ -180,15 +192,42 @@ class NotificationViewController: UIViewController {
                 
                 //Duas em duas horas
                 case 0.5:
-                    dateComponents.hour = Int(inicio) + (i * 2)
+                    var hour = Int(inicio) + (i * 2)
+                    
+                    if hour > 24 {
+                        hour -= 24
+                    }
+                    
+                    dateComponents.hour = hour
                     createNotification(title: "Lembre-se de lavar as mãos", body: curiosidade, dateComponent: dateComponents)
-                    print(Int(inicio) + (i * 2))
+                    print("Duas \(Int(inicio) + (i * 2))")
                 
                 
                 default:
                     break
             }
         }
+    }
+    
+    //Retorna a string correta para resultLabel
+    func stringIntervalo(inicio: Int, fim: Int) -> String {
+        var string = ""
+        
+        if inicio == 1 && fim > 1 {
+            string = "De \(Int(inicio))h às \(Int(fim))h"
+            
+        } else if inicio == 1 && fim == 1 {
+            string = "De \(Int(inicio))h à \(Int(fim))h"
+            
+        } else if inicio > 1 && fim == 1 {
+            string = "Das \(Int(inicio))h à \(Int(fim))h"
+            
+        } else {
+            string = "Das \(Int(inicio))h às \(Int(fim))h"
+            
+        }
+        
+        return string
     }
 }
 
@@ -210,12 +249,18 @@ extension UIColor {
 //MARK: - AKPickerViewDelegate
 extension NotificationViewController: AKPickerViewDelegate {
     func pickerView(_ pickerView: AKPickerView, didSelectItem item: Int) {
+        if ativarBtnOutlet.isSelected {
+            ativarBtnOutlet.setImage(#imageLiteral(resourceName: "Atualizar"), for: .normal)
+            ativarBtnOutlet.isSelected = false
+        }
+        
         if pickerView.id == "inicio" {
             inicio = Double(item + 1)
         } else {
             fim = Double(item + 1)
         }
     }
+    
 }
 
 //MARK: - AKPickerViewDataSource

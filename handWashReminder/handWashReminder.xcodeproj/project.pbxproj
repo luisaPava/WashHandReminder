@@ -26,6 +26,7 @@
 		4E4A11461DAFCBF200CE02EE /* PopUpViewControllerDicas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4A11451DAFCBF200CE02EE /* PopUpViewControllerDicas.storyboard */; };
 		4E4A114A1DAFDD4500CE02EE /* Dicas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4A11491DAFDD4500CE02EE /* Dicas.plist */; };
 		4E4A114D1DAFDE3100CE02EE /* Dicas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A114C1DAFDE3100CE02EE /* Dicas.swift */; };
+		4E4A114F1DB05FB200CE02EE /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A114E1DB05FB200CE02EE /* ButtonAnimation.swift */; };
 		4E5B2C771D8B563D009C74B6 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B2C761D8B563D009C74B6 /* PopUpViewController.swift */; };
 		4E5B2C791D8B56D8009C74B6 /* PopUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E5B2C781D8B56D8009C74B6 /* PopUpViewController.storyboard */; };
 		4E7F89EC1D86FB36002B00B1 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F89EB1D86FB36002B00B1 /* iCarousel.m */; };
@@ -60,6 +61,7 @@
 		4E4A11451DAFCBF200CE02EE /* PopUpViewControllerDicas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopUpViewControllerDicas.storyboard; sourceTree = "<group>"; };
 		4E4A11491DAFDD4500CE02EE /* Dicas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Dicas.plist; sourceTree = "<group>"; };
 		4E4A114C1DAFDE3100CE02EE /* Dicas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dicas.swift; sourceTree = "<group>"; };
+		4E4A114E1DB05FB200CE02EE /* ButtonAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonAnimation.swift; path = ../ButtonAnimation.swift; sourceTree = "<group>"; };
 		4E5B2C761D8B563D009C74B6 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		4E5B2C781D8B56D8009C74B6 /* PopUpViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopUpViewController.storyboard; sourceTree = "<group>"; };
 		4E7F89E91D86FB35002B00B1 /* handWashReminder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "handWashReminder-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		2B0095B31D7A12CC00812FD7 /* handWashReminder */ = {
 			isa = PBXGroup;
 			children = (
+				4E4A11501DB0651700CE02EE /* Animação */,
 				4E33BB9B1DAD363400CD6495 /* DAO */,
 				4E7F89E71D86FB0E002B00B1 /* Frameworks */,
 				EB6BCC8D1D8396AB00211438 /* Other */,
@@ -175,6 +178,14 @@
 				4E4A114C1DAFDE3100CE02EE /* Dicas.swift */,
 			);
 			name = Dicas;
+			sourceTree = "<group>";
+		};
+		4E4A11501DB0651700CE02EE /* Animação */ = {
+			isa = PBXGroup;
+			children = (
+				4E4A114E1DB05FB200CE02EE /* ButtonAnimation.swift */,
+			);
+			name = "Animação";
 			sourceTree = "<group>";
 		};
 		4E5B2C751D8B5624009C74B6 /* PopupCuriosidades */ = {
@@ -421,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4A114F1DB05FB200CE02EE /* ButtonAnimation.swift in Sources */,
 				4EEBD9911D90634300E5C2AA /* AKPickerView.swift in Sources */,
 				2B0095B71D7A12CC00812FD7 /* ViewController.swift in Sources */,
 				4E33BB9D1DAD364A00CD6495 /* SimplePlist.swift in Sources */,

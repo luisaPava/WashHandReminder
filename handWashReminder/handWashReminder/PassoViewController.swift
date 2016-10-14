@@ -31,7 +31,8 @@ class PassoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func dismissButton(_ sender: AnyObject) {
+    @IBAction func dismissButton(_ sender: UIButton) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
         self.dismiss(animated: false, completion: nil)
     }
 }
