@@ -30,6 +30,8 @@ class ViewController: UIViewController {
             duration: 2,
             distance: 100)
         
+        print(self.view.bounds.height)
+        
         button.delegate = self
         button.layer.cornerRadius = button.frame.size.width / 2.0
         self.view.addSubview(button)

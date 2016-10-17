@@ -12,29 +12,14 @@ class CustomCarouselView: UIView {
     @IBOutlet weak var imagem: UIImageView!
     @IBOutlet weak var timer: CircleTimer!
     @IBOutlet weak var numberLabel: UILabel!
-    @IBOutlet weak var desc: UITextView!
     @IBOutlet weak var infinityLabel: UILabel!
+    var desc2: UITextView!
     
     private var containerView: UIView!
     private let customViewNibName = "CustomView"
     
     
     // MARK: init methods
-    convenience init(frame: CGRect, number: String) {
-        self.init(frame: frame)
-        numberLabel.text = number
-        
-        //Timer settings
-        self.timer.isActive = true
-        self.timer.elapsedTime = 0
-        
-        infinityLabel.isHidden = true
-        
-        self.imagem.contentMode = .scaleAspectFit
-        self.desc.setContentOffset(CGPoint.zero, animated: false)
-        
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup()
@@ -45,6 +30,26 @@ class CustomCarouselView: UIView {
         self.timer.isActive = true
         self.timer.totalTime = 20
         self.timer.elapsedTime = 0
+        
+        //Timer settings
+        self.timer.isActive = true
+        self.timer.elapsedTime = 0
+        
+        
+        //TextField Settings
+        let height = self.bounds.height
+        
+        self.desc2 = UITextView(frame: CGRect(x: height / 28.4, y: height / 1.42, width: height / 1.47, height: height / 4.3))
+        self.desc2.font = UIFont(name: "Helvetica", size: 15)
+        self.desc2.textColor = UIColor.white
+        self.desc2.backgroundColor = UIColor.clear
+        self.desc2.textAlignment = .left
+        
+        self.addSubview(desc2)
+        
+        infinityLabel.isHidden = true
+        
+        self.imagem.contentMode = .scaleAspectFit
     }
     
     override func layoutSubviews() {

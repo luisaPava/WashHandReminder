@@ -51,6 +51,31 @@ class NotificationViewController: UIViewController {
         
         ativarBtnOutlet.isSelected = defaults.bool(forKey: "ativarButtonIsSelected")
         
+        
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+//        let inicioDef = defaults.integer(forKey: "pickerInicio")
+//        
+//        if inicioDef != 0 {
+//            pickerInicio.scrollToItem(inicioDef - 1)
+//            
+//        } else {
+//            pickerInicio.scrollToItem(11)
+//        }
+//        
+//        let fimDef = defaults.integer(forKey: "pickerFim")
+//        
+//        if fimDef != 0 {
+//            pickerFim.scrollToItem(fimDef - 1)
+//            
+//        } else {
+//            pickerFim.scrollToItem(11)
+//        }
+        
+        pickerInicio.scrollToItem(11)
+        pickerFim.scrollToItem(11)
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,6 +96,8 @@ class NotificationViewController: UIViewController {
     //MARK: - Actions
     @IBAction func ativarBtnAction(_ sender: UIButton) {
         ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
+        defaults.set(Int(inicio), forKey: "pickerInicio")
+        defaults.set(Int(fim), forKey: "pickerFim")
         
         if !sender.isSelected {
             sender.isSelected = true

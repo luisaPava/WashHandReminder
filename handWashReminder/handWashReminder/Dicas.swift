@@ -25,7 +25,6 @@ class DAODicas {
     }
     
     func getString(atIndex: Int) -> String {
-        print(atIndex)
         return vet.object(forKey: "\(atIndex)") as! String
     }
     

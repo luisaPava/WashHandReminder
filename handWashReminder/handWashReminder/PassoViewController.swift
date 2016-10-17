@@ -23,6 +23,7 @@ class PassoViewController: UIViewController {
         carousel.type = .rotary
         carousel.centerItemWhenSelected = true
         carousel.bounces = false
+//        carousel.contentOffset = CGPoint.zero
 
     }
 
@@ -34,6 +35,10 @@ class PassoViewController: UIViewController {
     @IBAction func dismissButton(_ sender: UIButton) {
         ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
         self.dismiss(animated: false, completion: nil)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        self.automaticallyAdjustsScrollViewInsets = false
     }
 }
 
@@ -72,7 +77,7 @@ extension PassoViewController: iCarouselDataSource {
         }
         
         tempView.imagem.image = UIImage(named: "instrucao\(index + 1)")
-        tempView.desc.text = sharedDAO.getString(atIndex: index + 1)
+        tempView.desc2.text = sharedDAO.getString(atIndex: index + 1)
         
         let timer = sharedDAO.getTempo(atIndex: index)
         
