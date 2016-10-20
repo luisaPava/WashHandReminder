@@ -14,6 +14,7 @@ class NotificationViewController: UIViewController {
     @IBOutlet weak var pickerFim: AKPickerView!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var ativarBtnOutlet: UIButton!
+    private var i: Int = 0
     
     private let center = UNUserNotificationCenter.current()
     private let defaults = UserDefaults.standard
@@ -51,31 +52,31 @@ class NotificationViewController: UIViewController {
         
         ativarBtnOutlet.isSelected = defaults.bool(forKey: "ativarButtonIsSelected")
         
-        
-        
     }
     
     override func viewDidLayoutSubviews() {
-//        let inicioDef = defaults.integer(forKey: "pickerInicio")
-//        
-//        if inicioDef != 0 {
-//            pickerInicio.scrollToItem(inicioDef - 1)
-//            
-//        } else {
-//            pickerInicio.scrollToItem(11)
-//        }
-//        
-//        let fimDef = defaults.integer(forKey: "pickerFim")
-//        
-//        if fimDef != 0 {
-//            pickerFim.scrollToItem(fimDef - 1)
-//            
-//        } else {
-//            pickerFim.scrollToItem(11)
-//        }
-        
-        pickerInicio.scrollToItem(11)
-        pickerFim.scrollToItem(11)
+        if i < 2 {
+            i += 1
+            let inicioDef = defaults.integer(forKey: "pickerInicio")
+            
+            if inicioDef != 0 {
+                pickerInicio.scrollToItem(inicioDef - 1)
+                
+            } else {
+                pickerInicio.scrollToItem(11)
+            }
+            
+            let fimDef = defaults.integer(forKey: "pickerFim")
+            
+            self.pickerFim.scrollToItem(11)
+            
+            if fimDef != 0 {
+                pickerFim.scrollToItem(fimDef - 1)
+                
+            } else {
+                pickerFim.scrollToItem(11)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
