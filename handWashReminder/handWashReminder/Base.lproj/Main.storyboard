@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qUu-yT-vbC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qUu-yT-vbC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -23,6 +26,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brN-yw-rCW" customClass="CircleMenu" customModule="CircleMenu">
+                                <rect key="frame" x="46" y="573" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="brN-yw-rCW" secondAttribute="height" multiplier="1:1" id="XXE-Rc-07M"/>
                                 </constraints>
@@ -48,6 +52,7 @@
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaT-Iw-29I">
+                                <rect key="frame" x="300" y="74" width="59" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="CaT-Iw-29I" secondAttribute="height" multiplier="1:1" id="gZf-j2-7pD"/>
                                 </constraints>
@@ -68,6 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBb-3T-WGX">
+                                <rect key="frame" x="94" y="240" width="187.5" height="187.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wBb-3T-WGX" secondAttribute="height" multiplier="1:1" id="fwk-uf-2gF"/>
                                 </constraints>
@@ -106,10 +112,10 @@
                             <mask key="constraints">
                                 <exclude reference="9Jp-9W-gV0"/>
                                 <exclude reference="MhY-I5-AH9"/>
-                                <exclude reference="LXo-ds-Am0"/>
                                 <exclude reference="6nN-X4-FgG"/>
                                 <exclude reference="WS7-sc-1s9"/>
                                 <exclude reference="cee-pu-1yS"/>
+                                <exclude reference="LXo-ds-Am0"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -121,10 +127,10 @@
                             <mask key="constraints">
                                 <include reference="9Jp-9W-gV0"/>
                                 <include reference="MhY-I5-AH9"/>
-                                <include reference="LXo-ds-Am0"/>
                                 <include reference="6nN-X4-FgG"/>
                                 <include reference="WS7-sc-1s9"/>
                                 <include reference="cee-pu-1yS"/>
+                                <include reference="LXo-ds-Am0"/>
                             </mask>
                         </variation>
                     </view>
@@ -155,10 +161,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6e-HS-5yJ">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="900"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pF-mj-zJF" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="900"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7W7-8d-c5U">
+                                                <rect key="frame" x="20" y="353" width="360" height="1"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="xaL-Lm-Agk"/>
@@ -175,6 +184,7 @@
                                                 </variation>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duração" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zdV-k3-npx">
+                                                <rect key="frame" x="20" y="404" width="360" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="18P-28-bG5"/>
                                                 </constraints>
@@ -193,6 +203,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha o intervalo de tempo que você gostaria de ser notificado." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xqV-Us-dB2">
+                                                <rect key="frame" x="20" y="470" width="360" height="47"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="47" id="59W-PG-1z2"/>
                                                 </constraints>
@@ -211,6 +222,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha o intervalo de tempo entre as notificações." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bw1-c1-odV">
+                                                <rect key="frame" x="20" y="156" width="360" height="47"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="47" id="Qvu-Ze-EN3"/>
                                                 </constraints>
@@ -229,6 +241,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervalo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MZG-kF-giY">
+                                                <rect key="frame" x="20" y="90" width="360" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="cn8-pN-ETF"/>
                                                 </constraints>
@@ -247,6 +260,7 @@
                                                 </variation>
                                             </label>
                                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="s7k-na-CNU" customClass="ADVSegmentedControl" customModule="handWashReminder" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="243" width="360" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Rxh-k5-kUT"/>
@@ -266,15 +280,19 @@
                                                 </connections>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZKe-vW-eF0">
+                                                <rect key="frame" x="20" y="557" width="340" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Início" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6B-Sp-Skm">
+                                                        <rect key="frame" x="0.0" y="23.5" width="170" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Io-U1-fry" customClass="AKPickerView" customModule="handWashReminder" customModuleProvider="target">
+                                                        <rect key="frame" x="170" y="0.0" width="170" height="70"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaT-PC-KwE" customClass="CustomView" customModule="handWashReminder" customModuleProvider="target">
+                                                                <rect key="frame" x="70" y="-10" width="30" height="90"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="30" id="uDL-v9-p8M"/>
@@ -302,15 +320,19 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1aI-QZ-JUZ">
+                                                <rect key="frame" x="20" y="657" width="340" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xe-fZ-VLX">
+                                                        <rect key="frame" x="0.0" y="23.5" width="170" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iy2-bL-ARL" customClass="AKPickerView" customModule="handWashReminder" customModuleProvider="target">
+                                                        <rect key="frame" x="170" y="0.0" width="170" height="70"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTV-Cx-c94" customClass="CustomView" customModule="handWashReminder" customModuleProvider="target">
+                                                                <rect key="frame" x="70" y="-10" width="30" height="90"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="30" id="mDu-Ce-3Xl"/>
@@ -338,6 +360,7 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NE-Bk-e8X">
+                                                <rect key="frame" x="20" y="757" width="360" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="38" id="Jjl-nk-YrL"/>
                                                 </constraints>
@@ -346,6 +369,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pm2-0c-kxc">
+                                                <rect key="frame" x="56.5" y="832" width="287" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="pm2-0c-kxc" secondAttribute="height" multiplier="287:38" id="GVM-Xl-YJS"/>
                                                     <constraint firstAttribute="height" constant="38" id="V0I-bO-CcL"/>
@@ -419,9 +443,6 @@
                                             </mask>
                                             <mask key="constraints">
                                                 <exclude reference="Ryq-rM-49P"/>
-                                                <exclude reference="85M-sb-vWt"/>
-                                                <exclude reference="eZq-nN-qA5"/>
-                                                <exclude reference="qjL-h8-XYB"/>
                                                 <exclude reference="cPM-sZ-Bpv"/>
                                                 <exclude reference="vkm-gY-HkH"/>
                                                 <exclude reference="vpa-uo-hLS"/>
@@ -431,12 +452,15 @@
                                                 <exclude reference="Gdb-BU-TIJ"/>
                                                 <exclude reference="LtR-cz-vT2"/>
                                                 <exclude reference="koK-uI-TeO"/>
-                                                <exclude reference="2QX-8E-8Ed"/>
-                                                <exclude reference="4rV-X7-CVK"/>
-                                                <exclude reference="KhN-q6-KJJ"/>
+                                                <exclude reference="85M-sb-vWt"/>
+                                                <exclude reference="eZq-nN-qA5"/>
+                                                <exclude reference="qjL-h8-XYB"/>
                                                 <exclude reference="8Cd-mz-JNr"/>
                                                 <exclude reference="Htq-Ij-nQA"/>
                                                 <exclude reference="iuS-2Q-quA"/>
+                                                <exclude reference="2QX-8E-8Ed"/>
+                                                <exclude reference="4rV-X7-CVK"/>
+                                                <exclude reference="KhN-q6-KJJ"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
@@ -450,9 +474,6 @@
                                             </mask>
                                             <mask key="constraints">
                                                 <include reference="Ryq-rM-49P"/>
-                                                <include reference="85M-sb-vWt"/>
-                                                <include reference="eZq-nN-qA5"/>
-                                                <include reference="qjL-h8-XYB"/>
                                                 <include reference="cPM-sZ-Bpv"/>
                                                 <include reference="vkm-gY-HkH"/>
                                                 <include reference="vpa-uo-hLS"/>
@@ -462,12 +483,15 @@
                                                 <include reference="Gdb-BU-TIJ"/>
                                                 <include reference="LtR-cz-vT2"/>
                                                 <include reference="koK-uI-TeO"/>
-                                                <include reference="2QX-8E-8Ed"/>
-                                                <include reference="4rV-X7-CVK"/>
-                                                <include reference="KhN-q6-KJJ"/>
+                                                <include reference="85M-sb-vWt"/>
+                                                <include reference="eZq-nN-qA5"/>
+                                                <include reference="qjL-h8-XYB"/>
                                                 <include reference="8Cd-mz-JNr"/>
                                                 <include reference="Htq-Ij-nQA"/>
                                                 <include reference="iuS-2Q-quA"/>
+                                                <include reference="2QX-8E-8Ed"/>
+                                                <include reference="4rV-X7-CVK"/>
+                                                <include reference="KhN-q6-KJJ"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -545,71 +569,12 @@
                         <outlet property="pickerFim" destination="Iy2-bL-ARL" id="dpM-9c-ek8"/>
                         <outlet property="pickerInicio" destination="6Io-U1-fry" id="XmG-Zz-v6E"/>
                         <outlet property="resultLabel" destination="2NE-Bk-e8X" id="i8w-4W-2jQ"/>
+                        <outlet property="segControl" destination="s7k-na-CNU" id="C3B-9X-vJR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojY-LJ-1XL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2129.5999999999999" y="335.5322338830585"/>
-        </scene>
-        <!--Intruções-->
-        <scene sceneID="lAP-Lb-ITO">
-            <objects>
-                <viewController id="JGi-jT-eFJ" customClass="InstrucoesViewController" customModule="handWashReminder" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XEZ-Rh-YDx"/>
-                        <viewControllerLayoutGuide type="bottom" id="SwU-eF-ebR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="p1q-kE-cAD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9W-iR-8cM">
-                                <state key="normal" image="Botão passo a passo"/>
-                                <connections>
-                                    <segue destination="tp9-bT-335" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="Ex7-s0-FX8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlA-47-hXR">
-                                <state key="normal" image="Botão video"/>
-                                <connections>
-                                    <segue destination="eue-wm-h4J" kind="presentation" id="pSY-H7-UuM"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="G9W-iR-8cM" secondAttribute="trailing" constant="20" id="44r-AG-4Vo"/>
-                            <constraint firstItem="ZlA-47-hXR" firstAttribute="height" secondItem="p1q-kE-cAD" secondAttribute="height" multiplier="0.4" id="Dcz-s8-x8K"/>
-                            <constraint firstItem="G9W-iR-8cM" firstAttribute="leading" secondItem="p1q-kE-cAD" secondAttribute="leadingMargin" constant="20" id="I0x-jb-HtT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZlA-47-hXR" secondAttribute="trailing" constant="20.5" id="Pax-4g-GgA"/>
-                            <constraint firstItem="G9W-iR-8cM" firstAttribute="centerX" secondItem="p1q-kE-cAD" secondAttribute="centerX" id="Vml-EZ-jK1"/>
-                            <constraint firstItem="G9W-iR-8cM" firstAttribute="top" secondItem="XEZ-Rh-YDx" secondAttribute="bottom" constant="30" id="Vqy-x7-2RB"/>
-                            <constraint firstItem="G9W-iR-8cM" firstAttribute="height" secondItem="p1q-kE-cAD" secondAttribute="height" multiplier="0.4" id="aWT-8V-PtK"/>
-                            <constraint firstItem="ZlA-47-hXR" firstAttribute="centerX" secondItem="p1q-kE-cAD" secondAttribute="centerX" id="fTB-I4-bQW"/>
-                            <constraint firstItem="SwU-eF-ebR" firstAttribute="top" secondItem="ZlA-47-hXR" secondAttribute="bottom" constant="30" id="kCV-Qh-V6Q"/>
-                            <constraint firstItem="ZlA-47-hXR" firstAttribute="leading" secondItem="p1q-kE-cAD" secondAttribute="leadingMargin" constant="20" id="lBp-Ym-Qjc"/>
-                            <constraint firstItem="G9W-iR-8cM" firstAttribute="centerX" secondItem="p1q-kE-cAD" secondAttribute="centerX" id="snO-Lm-oXZ"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="G9W-iR-8cM"/>
-                                <exclude reference="ZlA-47-hXR"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="G9W-iR-8cM"/>
-                                <include reference="ZlA-47-hXR"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" title="Intruções" id="dLE-oV-47B">
-                        <barButtonItem key="backBarButtonItem" title="Hand Wash" id="CI2-Au-qMB"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dgH-U0-3U4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1055.625" y="1272.8873239436621"/>
         </scene>
         <!--Passo View Controller-->
         <scene sceneID="vjJ-Gb-w0c">
@@ -624,16 +589,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yar-iD-SIx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hvj-7M-Nmz">
-                                    <frame key="frameInset"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instruções" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9R-KJ-tem">
+                                            <rect key="frame" x="111" y="60" width="153" height="38.5"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwm-8f-Nxf">
+                                            <rect key="frame" x="168.5" y="569" width="38" height="38"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="38" id="apK-Bw-KrT"/>
                                                 <constraint firstAttribute="width" constant="38" id="xm8-yC-NDL"/>
@@ -654,6 +622,7 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbq-cz-Dac" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="100" width="375" height="467"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -688,24 +657,6 @@
             </objects>
             <point key="canvasLocation" x="2128.8000000000002" y="1270.6146926536733"/>
         </scene>
-        <!--Video View Controller-->
-        <scene sceneID="tof-nj-a0s">
-            <objects>
-                <viewController id="eue-wm-h4J" customClass="VideoViewController" customModule="handWashReminder" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qFj-sa-gil"/>
-                        <viewControllerLayoutGuide type="bottom" id="R80-4j-Slx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3uF-xn-AhT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7CD-au-TPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1055" y="2024"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="WoF-3h-a9K">
             <objects>
@@ -728,14 +679,9 @@
     <resources>
         <image name="Ativar" width="287" height="38"/>
         <image name="Botão desativar" width="287" height="38"/>
-        <image name="Botão passo a passo" width="318" height="190"/>
-        <image name="Botão video" width="318" height="190"/>
         <image name="Exit" width="35" height="35"/>
         <image name="Instrucoes" width="200" height="200"/>
         <image name="Notificacao" width="59" height="59"/>
         <image name="info" width="44" height="44"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Ex7-s0-FX8"/>
-    </inferredMetricsTieBreakers>
 </document>

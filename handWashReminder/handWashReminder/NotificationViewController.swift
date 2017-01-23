@@ -10,11 +10,17 @@ import UIKit
 import UserNotifications
 
 class NotificationViewController: UIViewController {
+    @IBOutlet weak var segControl: ADVSegmentedControl!
     @IBOutlet weak var pickerInicio: AKPickerView!
     @IBOutlet weak var pickerFim: AKPickerView!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var ativarBtnOutlet: UIButton!
     private var i: Int = 0
+    fileprivate var arrayHours: [Int] = []
+    fileprivate let numItensPicker = 240
+    fileprivate var countIni = 1
+    fileprivate var countFim = 1
+    private var indexSegControl = 0
     
     private let center = UNUserNotificationCenter.current()
     private let defaults = UserDefaults.standard
@@ -43,6 +49,8 @@ class NotificationViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationController?.isNavigationBarHidden = false
         
+        arrayHoursSetup()
+        
         //pickerInicio and pickerFim setting
         setPicker(picker: pickerInicio, id: "inicio")
         setPicker(picker: pickerFim, id: "fim")
@@ -55,33 +63,55 @@ class NotificationViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
+//        indexSegControl = defaults.integer(forKey: "SegmentedIndex")
+//        segControl.selectedIndex = 1
+        
         if i < 2 {
             i += 1
+            
+            //Se o usuário já tiver setado o picker ele vai pro horario anterior
+//            indexSegControl = defaults.integer(forKey: "SegmentedIndex")
+//            segControl.selectedIndex = indexSegControl
+            
             let inicioDef = defaults.integer(forKey: "pickerInicio")
             
             if inicioDef != 0 {
-                pickerInicio.scrollToItem(inicioDef - 1)
+                pickerInicio.scrollToItem(((numItensPicker / 2) + inicioDef) - 1)
                 
             } else {
-                pickerInicio.scrollToItem(11)
+                pickerInicio.scrollToItem((numItensPicker / 2) - 1)
             }
             
             let fimDef = defaults.integer(forKey: "pickerFim")
             
-            self.pickerFim.scrollToItem(11)
+            self.pickerFim.scrollToItem((numItensPicker / 2) - 1)
             
             if fimDef != 0 {
-                pickerFim.scrollToItem(fimDef - 1)
+                pickerFim.scrollToItem(((numItensPicker / 2) + fimDef) - 1)
                 
             } else {
-                pickerFim.scrollToItem(11)
+                pickerFim.scrollToItem((numItensPicker / 2) - 1)
             }
         }
     }
+    
+//    func getIndexPicker(_ def: Int) -> Int {
+//        if def > 12 {
+//            return ((numItensPicker / 2) + (def - 12)) - 1
+//            
+//        } else {
+//            return ((numItensPicker / 2) - def) - 1
+//        }
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        defaults.set(Int(inicio), forKey: "pickerInicio")
+        defaults.set(Int(fim), forKey: "pickerFim")
     }
     
     
@@ -114,6 +144,9 @@ class NotificationViewController: UIViewController {
     
     @IBAction func intervaloSegAction(_ sender: ADVSegmentedControl) {
         let index = sender.selectedIndex
+        indexSegControl = index
+        
+        defaults.set(indexSegControl, forKey: "SegmentedIndex")
         
         switch index {
             case 0:
@@ -195,7 +228,6 @@ class NotificationViewController: UIViewController {
                     
                     dateComponents.hour = hour
                     createNotification(title: "Lembre-se de lavar as mãos", body: curiosidade, dateComponent: dateComponents)
-                    print("Uma \(hour)")
                 
                 //Meia em meia hora
                 case 2:
@@ -209,13 +241,11 @@ class NotificationViewController: UIViewController {
                         countHora += 1
                         dateComponents.hour = hour
                         createNotification(title: "Lembre-se de lavar as mãos", body: curiosidade, dateComponent: dateComponents)
-                        print("Meia \(Int(inicio) + countHora)")
 
                     } else {
                         dateComponents.hour = Int(inicio) + countHora
                         dateComponents.minute = 30
                         createNotification(title: "Lembre-se de lavar as mãos", body: curiosidade, dateComponent: dateComponents)
-                        print("\(Int(inicio) + countHora) 30")
                     }
                 
                 //Duas em duas horas
@@ -228,7 +258,6 @@ class NotificationViewController: UIViewController {
                     
                     dateComponents.hour = hour
                     createNotification(title: "Lembre-se de lavar as mãos", body: curiosidade, dateComponent: dateComponents)
-                    print("Duas \(Int(inicio) + (i * 2))")
                 
                 
                 default:
@@ -257,6 +286,22 @@ class NotificationViewController: UIViewController {
         
         return string
     }
+    
+    func arrayHoursSetup() {
+        var j = 1
+        
+        for _ in 0...numItensPicker {
+            if j > 24 {
+                j = 2
+                arrayHours.append(1)
+                
+            } else {
+                arrayHours.append(j)
+                j += 1
+            }
+        }
+    }
+    
 }
 
 //MARK: - UIColor Extension
@@ -283,21 +328,46 @@ extension NotificationViewController: AKPickerViewDelegate {
         }
         
         if pickerView.id == "inicio" {
-            inicio = Double(item + 1)
+            inicio = Double(pickerView.getTitle(atIndex: item))!
         } else {
-            fim = Double(item + 1)
+            fim = Double(pickerView.getTitle(atIndex: item))!
         }
     }
-    
 }
 
 //MARK: - AKPickerViewDataSource
 extension NotificationViewController: AKPickerViewDataSource {
     func numberOfItemsInPickerView(_ pickerView: AKPickerView) -> Int {
-        return 24
+        return numItensPicker
     }
     
     func pickerView(_ pickerView: AKPickerView, titleForItem item: Int) -> String {
-        return "\(item + 1)"
+//        var temp: Int = 0
+//        
+//        if pickerView.id == "inicio" {
+////            print("\(countIni) inicio")
+//            if countIni < 24 {
+//                temp = countIni
+//                countIni += 1
+//                
+//            } else {
+//                temp = 1
+//                countIni = 2
+//            }
+//            
+//        } else {
+//            if countFim < 24 {
+//                temp = countFim
+//                countFim += 1
+//                
+//            } else {
+//                temp = 1
+//                countFim = 2
+//            }
+//        }
+//        
+//        print("\(temp) \(pickerView.id) \(item)")
+        
+        return "\(arrayHours[item])"
     }
 }

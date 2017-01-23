@@ -240,6 +240,8 @@ open class AKPickerView: UIView, UICollectionViewDataSource, UICollectionViewDel
     
     open lazy var id = ""
     
+    open var title = ""
+    
 	/// Readwrite. A font which used in NOT selected cells.
 	open lazy var font = UIFont.systemFont(ofSize: 20)
 
@@ -517,6 +519,12 @@ open class AKPickerView: UIView, UICollectionViewDataSource, UICollectionViewDel
 	open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return self.dataSource != nil ? self.dataSource!.numberOfItemsInPickerView(self) : 0
 	}
+    
+    func getTitle(atIndex index: Int) -> String {
+        let indexPath = IndexPath(item: index, section: 1)
+        
+        return (self.dataSource?.pickerView?(self, titleForItem: (indexPath as NSIndexPath).item))!
+    }
 
 	open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(AKCollectionViewCell.self), for: indexPath) as! AKCollectionViewCell

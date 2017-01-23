@@ -13,6 +13,7 @@ struct Plist {
         case FileNotWritten
         case FileDoesNotExist
     }
+    
     //2
     let name:String
     //3
@@ -20,6 +21,7 @@ struct Plist {
         guard let path = Bundle.main.path(forResource: name, ofType: "plist") else { return .none }
         return path
     }
+    
     //4
     var destPath:String? {
         guard sourcePath != .none else { return .none }
@@ -49,10 +51,9 @@ struct Plist {
             }
         }
     }
-    
 
     //1
-    func getValuesInPlistFile() -> NSDictionary?{
+    func getValuesInPlistFile() -> NSDictionary? {
         let fileManager = FileManager.default
         if fileManager.fileExists(atPath: destPath!) {
             guard let dict = NSDictionary(contentsOfFile: destPath!) else { return .none }
@@ -61,8 +62,9 @@ struct Plist {
             return .none
         }
     }
+    
     //2
-    func getMutablePlistFile() -> NSMutableDictionary?{
+    func getMutablePlistFile() -> NSMutableDictionary? {
         let fileManager = FileManager.default
         if fileManager.fileExists(atPath: destPath!) {
             guard let dict = NSMutableDictionary(contentsOfFile: destPath!) else { return .none }
@@ -71,6 +73,7 @@ struct Plist {
             return .none
         }
     }
+    
     //3
     func addValuesToPlistFile(dictionary:NSDictionary) throws {
         let fileManager = FileManager.default
@@ -83,5 +86,4 @@ struct Plist {
             throw PlistError.FileDoesNotExist
         }
     }
-    
 }

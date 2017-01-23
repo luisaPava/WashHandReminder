@@ -62,8 +62,6 @@ class ViewController: UIViewController {
             self.performSegue(withIdentifier: "mainToInst", sender: self)
         }
         
-        
-        print("btn")
     }
     
     @IBAction func notificacoesButtonAction(_ sender: UIButton) {

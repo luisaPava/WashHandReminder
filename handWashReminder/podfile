@@ -9,4 +9,5 @@ target 'handWashReminder' do
 
     pod 'CircleMenu', '~> 1.0.0'
 	pod 'PopupController'
+	pod 'RSPlayPauseButton', '~> 1.0'
 end

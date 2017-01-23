@@ -36,7 +36,6 @@
 		EB0B8B4A1D9208ED00EF0753 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B8B491D9208ED00EF0753 /* View.swift */; };
 		EB2F95E21D7CC23C00A2744E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */; };
 		EB2F95E41D7CCA3100A2744E /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */; };
-		EB6BCC911D83989800211438 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BCC901D83989800211438 /* VideoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,7 +75,6 @@
 		EB0B8B491D9208ED00EF0753 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
-		EB6BCC901D83989800211438 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,7 +293,6 @@
 				4E4A113C1DAFC52500CE02EE /* PopupDicas */,
 				2B0095B61D7A12CC00812FD7 /* ViewController.swift */,
 				EB2F95E11D7CC23C00A2744E /* NotificationViewController.swift */,
-				EB6BCC901D83989800211438 /* VideoViewController.swift */,
 				2BCB57531D81D93200C12C65 /* InstrucoesViewController.swift */,
 				4E7F89ED1D86FB60002B00B1 /* PassoViewController.swift */,
 			);
@@ -332,7 +329,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Bepid;
 				TargetAttributes = {
 					2B0095B01D7A12CC00812FD7 = {
@@ -440,7 +437,6 @@
 				4E9730751D922021002FA267 /* CircleTimer.m in Sources */,
 				2BCB57541D81D93200C12C65 /* InstrucoesViewController.swift in Sources */,
 				4E4A114D1DAFDE3100CE02EE /* Dicas.swift in Sources */,
-				EB6BCC911D83989800211438 /* VideoViewController.swift in Sources */,
 				4E33BBA31DAD46C100CD6495 /* Helper.swift in Sources */,
 				4E4A113B1DAD545100CE02EE /* DAOPassos.swift in Sources */,
 				4E1B380E1D92E66E007A1DEB /* CustomView.swift in Sources */,
