@@ -1,2036 +1,871 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>04D267B0B48099D45E912396F8CA526B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>19DD4DD305A1D9E9F90A0C6B2710B587</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06B8977D9D0EE562772091A82D325887</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>PopupController.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0E05CFBF139B14582552DF8968FDB381</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0FD64A3663679761627C274B774E6C1C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>RSPlayPauseButton-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>11C798FFBB0F6DD3B58C105A38701E7A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1470BFF6DC1785184C994C3D68D281CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>46E527348914E5ED99D4375DAC800990</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>15D2185F3D7E3CD28347D37269150C11</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1906ADCDC38CC1F9996A406996FB4CCF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>165402186F14E8D4971A56841A0057AE</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>C68835B75822DE7C4BD70ECFCB9684EB</string>
-			<key>remoteInfo</key>
-			<string>PopupController</string>
-		</dict>
-		<key>17147D879916A87B2BDF176ED7F84FCB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>RSPlayPauseButton</string>
-			<key>target</key>
-			<string>32570BC8B87DEC0D023DC0B123538AD1</string>
-			<key>targetProxy</key>
-			<string>99FBEEA643347DACDED10796E71B9C6D</string>
-		</dict>
-		<key>17903545FABFF1E94578A392E209257E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>CircleMenu.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1906ADCDC38CC1F9996A406996FB4CCF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-handWashReminder-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>19DD4DD305A1D9E9F90A0C6B2710B587</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CircleMenu-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1A438ED94A7A66926EEA5935B338F0B6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>68A6696BB03EB3EE2B09095FFE24ACC4</string>
-				<string>43A55C0362EA89CCE06154F30E307DD2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>20601C0FFC06A3B5682434BB0CBEC55C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>ED8348CE2FDF36D546D567D20AF582C4</string>
-				<string>F985B7FBD7792D1A124EAF56419B9534</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>20BF8386F2521DA0F1F641143F1FE3FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>93636C855FAE917EC7BE89AE48014F68</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>240211D4F548AA4EEC4952F036C4814F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E67451E7C73EF1B97360AEE78865C74F</string>
-				<string>46E527348914E5ED99D4375DAC800990</string>
-				<string>F2FCC51826D825F451CAA33BFCB41DF5</string>
-				<string>8B6D6F183C036100A67B92F0BC2B7BBF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CircleMenu</string>
-			<key>path</key>
-			<string>CircleMenu</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2701A28632F309ACE00A1A8C63BAA822</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>27533A6098E2BDD80827924FA8F4E742</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>1A438ED94A7A66926EEA5935B338F0B6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>99E6B72FADDCBB3E131687356A42AA64</string>
-				<string>FB663CCA004DED63795587E939582B91</string>
-				<string>EB1310F7C59A87712C2C75BB7BD137E2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CircleMenu</string>
-			<key>productName</key>
-			<string>CircleMenu</string>
-			<key>productReference</key>
-			<string>DA13661FF6D8247D40A7330207D50E54</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>2A8DD69F6CC960CC948F7B153433CB06</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_handWashReminder.framework</string>
-			<key>path</key>
-			<string>Pods-handWashReminder.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>2C8FF14065D2DA9B46D5D920A5AA1289</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>AE9439C22469D35336242DD983DB5C5F</string>
-				<string>42287DDF97330524BA3EF220F0276DA6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>32570BC8B87DEC0D023DC0B123538AD1</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>367BB818FA1CC4DC22819263B498FEFF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>D1EE4D4FBE1228605A9AE73F1510C1D7</string>
-				<string>A97E5B20CFB58F3522DEA220BBCEEC10</string>
-				<string>EF726DACD18C61828EA8E5C3A4E0A08B</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RSPlayPauseButton</string>
-			<key>productName</key>
-			<string>RSPlayPauseButton</string>
-			<key>productReference</key>
-			<string>C3465CD6B3B02845EABD0C175B828877</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>348D986C1A9570EC5B29D6790344EDF5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>RSPlayPauseButton.h</string>
-			<key>path</key>
-			<string>RSPlayPauseButtonDemo/RSPlayPauseButton/RSPlayPauseButton.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>34F77BFD9FDBF9A2F09E9880072901B7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>PopupController.swift</string>
-			<key>path</key>
-			<string>Classes/PopupController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>367BB818FA1CC4DC22819263B498FEFF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BD453AAFFE0E8DEB020AC80FA4CF5263</string>
-				<string>D74F58AB054C2D357EE772DD907F6B0B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3898DF8EE196D378D9A58B12161AA6A9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F012C243BC3F0AD87FFBD1FDC30F5F66</string>
-				<string>6E250ADC2251AE468B5977C41FC537BA</string>
-				<string>608E6291106BDC89E81396FF761FB50C</string>
-				<string>AC8D9A9D37DFEAEF5ED59F3DDFE77204</string>
-				<string>0FD64A3663679761627C274B774E6C1C</string>
-				<string>C59006D1493A12E31CF4879E3E694C6D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/RSPlayPauseButton</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>39B351C5C6CE25BE4EDBECE4A2B1BDD1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D7A4A0BBB702D6888F44CE0905523836</string>
-				<string>80131330A5639C6D38FF935134CD8C1F</string>
-				<string>06B8977D9D0EE562772091A82D325887</string>
-				<string>54892F382E499E2719BE54F42A9C88AD</string>
-				<string>9230564F968E0D0DD1F220BBDF80ADD1</string>
-				<string>F1384A039F4B1DD6F4F93CA472BADC6B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/PopupController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E81719AA67266DE45947FB556F37E59</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>06B8977D9D0EE562772091A82D325887</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/PopupController/PopupController-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/PopupController/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/PopupController/PopupController.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>PopupController</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>41343C24A3E6BB4302654125558E592C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>RSPlayPauseButton.m</string>
-			<key>path</key>
-			<string>RSPlayPauseButtonDemo/RSPlayPauseButton/RSPlayPauseButton.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>41F1CE91E6033CA7A43FC4954C697E51</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>240211D4F548AA4EEC4952F036C4814F</string>
-				<string>C13FE84A63D14BB903A8B499E414D589</string>
-				<string>9D9CE82AFDDD96EDA9AF4704C27ED357</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>42287DDF97330524BA3EF220F0276DA6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_RELEASE=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>43A55C0362EA89CCE06154F30E307DD2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>17903545FABFF1E94578A392E209257E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/CircleMenu/CircleMenu-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/CircleMenu/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/CircleMenu/CircleMenu.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>CircleMenu</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>46E527348914E5ED99D4375DAC800990</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>CircleMenuButton.swift</string>
-			<key>path</key>
-			<string>CircleMenuLib/CircleMenuButton/CircleMenuButton.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>513389DD94BD59C2539915174187F5FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>348D986C1A9570EC5B29D6790344EDF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>54892F382E499E2719BE54F42A9C88AD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PopupController-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5E9C923D29AF53789FC8074BD325AF2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>608E6291106BDC89E81396FF761FB50C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>RSPlayPauseButton.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6160F8A67A2D18699D7E859936469290</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-handWashReminder-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>622F711F2018D87F51DD31C7A9F0A371</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-handWashReminder.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>638A7EBE01BE26AB55B9046320066100</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E67451E7C73EF1B97360AEE78865C74F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>649334C5015899B895C017F723508DFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8CFD5577C5F714DF78420454BCE1D37E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>68A6696BB03EB3EE2B09095FFE24ACC4</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>17903545FABFF1E94578A392E209257E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/CircleMenu/CircleMenu-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/CircleMenu/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/CircleMenu/CircleMenu.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>CircleMenu</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>68D237A567A515C09CC84C159D544920</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>CircleMenu</string>
-			<key>target</key>
-			<string>27533A6098E2BDD80827924FA8F4E742</string>
-			<key>targetProxy</key>
-			<string>7B297447170E647A578985E87757E9A7</string>
-		</dict>
-		<key>6BA8AD45AC27D515150BFEB4A6F31D57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F1384A039F4B1DD6F4F93CA472BADC6B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>6D8BE5C7D4B1A4E7F9E56F7D450CE9A5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-handWashReminder-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E250ADC2251AE468B5977C41FC537BA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RSPlayPauseButton.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E43E537FD80A155692556C260083E8A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A37857D9145FB8A3A1E4B4F9EF4EF3C8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>710D2BDB4FCA7662DCA7F8DB0FBD0E17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C59006D1493A12E31CF4879E3E694C6D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>7162E9A2BBB699FB647FFB7B11521CCE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>767518E7FCA945ED565FD499B7B27D2C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>PopupController.framework</string>
-			<key>path</key>
-			<string>PopupController.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7B297447170E647A578985E87757E9A7</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>27533A6098E2BDD80827924FA8F4E742</string>
-			<key>remoteInfo</key>
-			<string>CircleMenu</string>
-		</dict>
-		<key>7D2CB29C1AAC17EB85E6CFC48E6E2A5E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>06B8977D9D0EE562772091A82D325887</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/PopupController/PopupController-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/PopupController/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/PopupController/PopupController.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>PopupController</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>41F1CE91E6033CA7A43FC4954C697E51</string>
-				<string>D294BC08BCF3ADD2778508F5F3E2F71F</string>
-				<string>6E43E537FD80A155692556C260083E8A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7E0E3F37753B4A2036951FBA2C9B99A7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-handWashReminder.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>80131330A5639C6D38FF935134CD8C1F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>PopupController.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>886A22874CC07D54F74529E8E4AF8FD8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>20BF8386F2521DA0F1F641143F1FE3FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8B25E4B02F97465F010B5CFC1845D9FC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AC8D9A9D37DFEAEF5ED59F3DDFE77204</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8B6D6F183C036100A67B92F0BC2B7BBF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>90EF6BBAA2DAF16A80DF857036A394C2</string>
-				<string>17903545FABFF1E94578A392E209257E</string>
-				<string>19DD4DD305A1D9E9F90A0C6B2710B587</string>
-				<string>B25AC711FF4DBB8557378168A321CD71</string>
-				<string>8CFD5577C5F714DF78420454BCE1D37E</string>
-				<string>7162E9A2BBB699FB647FFB7B11521CCE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/CircleMenu</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8CFD5577C5F714DF78420454BCE1D37E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CircleMenu-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>90EF6BBAA2DAF16A80DF857036A394C2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CircleMenu.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9230564F968E0D0DD1F220BBDF80ADD1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PopupController-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>93636C855FAE917EC7BE89AE48014F68</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-handWashReminder-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>text.script.ruby</string>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>96056DE38EE495DFDD9CBF4D03D42784</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3E81719AA67266DE45947FB556F37E59</string>
-				<string>7D2CB29C1AAC17EB85E6CFC48E6E2A5E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>98517A897FAF009AD7D05BD414CEA6AC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>PopupController</string>
-			<key>target</key>
-			<string>C68835B75822DE7C4BD70ECFCB9684EB</string>
-			<key>targetProxy</key>
-			<string>165402186F14E8D4971A56841A0057AE</string>
-		</dict>
-		<key>99E6B72FADDCBB3E131687356A42AA64</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>04D267B0B48099D45E912396F8CA526B</string>
-				<string>638A7EBE01BE26AB55B9046320066100</string>
-				<string>1470BFF6DC1785184C994C3D68D281CD</string>
-				<string>A74367C94AF3506FA88507A8FCC39EA7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>99FBEEA643347DACDED10796E71B9C6D</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>32570BC8B87DEC0D023DC0B123538AD1</string>
-			<key>remoteInfo</key>
-			<string>RSPlayPauseButton</string>
-		</dict>
-		<key>9B34FDAA7FBEB2C6EB8AE4F45A821D59</key>
-		<dict>
-			<key>fileRef</key>
-			<string>41343C24A3E6BB4302654125558E592C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9D9CE82AFDDD96EDA9AF4704C27ED357</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>348D986C1A9570EC5B29D6790344EDF5</string>
-				<string>41343C24A3E6BB4302654125558E592C</string>
-				<string>3898DF8EE196D378D9A58B12161AA6A9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>RSPlayPauseButton</string>
-			<key>path</key>
-			<string>RSPlayPauseButton</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A37857D9145FB8A3A1E4B4F9EF4EF3C8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2C8FF14065D2DA9B46D5D920A5AA1289</string>
-				<string>7E0E3F37753B4A2036951FBA2C9B99A7</string>
-				<string>6160F8A67A2D18699D7E859936469290</string>
-				<string>6D8BE5C7D4B1A4E7F9E56F7D450CE9A5</string>
-				<string>93636C855FAE917EC7BE89AE48014F68</string>
-				<string>B973486D81301F4F850F7452295825A7</string>
-				<string>B3CF79ED031FF294ECDD7E1C62C22397</string>
-				<string>1906ADCDC38CC1F9996A406996FB4CCF</string>
-				<string>622F711F2018D87F51DD31C7A9F0A371</string>
-				<string>C151E0369F909FBA1B7497C83290FC6D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-handWashReminder</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-handWashReminder</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A55A4E655CB048301E79653C19FAC264</key>
-		<dict>
-			<key>fileRef</key>
-			<string>54892F382E499E2719BE54F42A9C88AD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A6E6DFFC6235BC692BD1C37A5904907E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>20601C0FFC06A3B5682434BB0CBEC55C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>886A22874CC07D54F74529E8E4AF8FD8</string>
-				<string>E65A148884FF067178A2823ABE77AD9A</string>
-				<string>A9715DCFEC9E4DB8930F2DCE468BA9BD</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>68D237A567A515C09CC84C159D544920</string>
-				<string>98517A897FAF009AD7D05BD414CEA6AC</string>
-				<string>17147D879916A87B2BDF176ED7F84FCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-handWashReminder</string>
-			<key>productName</key>
-			<string>Pods-handWashReminder</string>
-			<key>productReference</key>
-			<string>2A8DD69F6CC960CC948F7B153433CB06</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>A74367C94AF3506FA88507A8FCC39EA7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F2FCC51826D825F451CAA33BFCB41DF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9715DCFEC9E4DB8930F2DCE468BA9BD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>15D2185F3D7E3CD28347D37269150C11</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A97E5B20CFB58F3522DEA220BBCEEC10</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>11C798FFBB0F6DD3B58C105A38701E7A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AC8D9A9D37DFEAEF5ED59F3DDFE77204</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>RSPlayPauseButton-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AE9439C22469D35336242DD983DB5C5F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_DEBUG=1</string>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B25AC711FF4DBB8557378168A321CD71</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CircleMenu-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B3CF79ED031FF294ECDD7E1C62C22397</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-handWashReminder-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B973486D81301F4F850F7452295825A7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-handWashReminder-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3DCAB2B7CDE207B3958B6CB957FCC758</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BD453AAFFE0E8DEB020AC80FA4CF5263</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>608E6291106BDC89E81396FF761FB50C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/RSPlayPauseButton/RSPlayPauseButton-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/RSPlayPauseButton/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/RSPlayPauseButton/RSPlayPauseButton.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>RSPlayPauseButton</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C13FE84A63D14BB903A8B499E414D589</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>34F77BFD9FDBF9A2F09E9880072901B7</string>
-				<string>39B351C5C6CE25BE4EDBECE4A2B1BDD1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>PopupController</string>
-			<key>path</key>
-			<string>PopupController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C151E0369F909FBA1B7497C83290FC6D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-handWashReminder.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3465CD6B3B02845EABD0C175B828877</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>RSPlayPauseButton.framework</string>
-			<key>path</key>
-			<string>RSPlayPauseButton.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C59006D1493A12E31CF4879E3E694C6D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>RSPlayPauseButton-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C68835B75822DE7C4BD70ECFCB9684EB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>96056DE38EE495DFDD9CBF4D03D42784</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E2EB84CC8D2E383EE1FFA4246048B7E6</string>
-				<string>FD0B6404758975EF10669291D58E4DB9</string>
-				<string>D43C6FA5D9E410EDABA041985FBE5847</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>PopupController</string>
-			<key>productName</key>
-			<string>PopupController</string>
-			<key>productReference</key>
-			<string>767518E7FCA945ED565FD499B7B27D2C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>CEC22C73C1608DFA5D5D78BDCB218219</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D1EE4D4FBE1228605A9AE73F1510C1D7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>8B25E4B02F97465F010B5CFC1845D9FC</string>
-				<string>9B34FDAA7FBEB2C6EB8AE4F45A821D59</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D294BC08BCF3ADD2778508F5F3E2F71F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DA13661FF6D8247D40A7330207D50E54</string>
-				<string>2A8DD69F6CC960CC948F7B153433CB06</string>
-				<string>767518E7FCA945ED565FD499B7B27D2C</string>
-				<string>C3465CD6B3B02845EABD0C175B828877</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>D294BC08BCF3ADD2778508F5F3E2F71F</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>27533A6098E2BDD80827924FA8F4E742</string>
-				<string>A6E6DFFC6235BC692BD1C37A5904907E</string>
-				<string>C68835B75822DE7C4BD70ECFCB9684EB</string>
-				<string>32570BC8B87DEC0D023DC0B123538AD1</string>
-			</array>
-		</dict>
-		<key>D43C6FA5D9E410EDABA041985FBE5847</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6BA8AD45AC27D515150BFEB4A6F31D57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D74F58AB054C2D357EE772DD907F6B0B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>608E6291106BDC89E81396FF761FB50C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/RSPlayPauseButton/RSPlayPauseButton-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/RSPlayPauseButton/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/RSPlayPauseButton/RSPlayPauseButton.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>RSPlayPauseButton</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D7A4A0BBB702D6888F44CE0905523836</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA13661FF6D8247D40A7330207D50E54</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CircleMenu.framework</string>
-			<key>path</key>
-			<string>CircleMenu.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E2EB84CC8D2E383EE1FFA4246048B7E6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A55A4E655CB048301E79653C19FAC264</string>
-				<string>F5B42BB48ED0585DB2B64C758C5EFBEA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E65A148884FF067178A2823ABE77AD9A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5E9C923D29AF53789FC8074BD325AF2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E67451E7C73EF1B97360AEE78865C74F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>CircleMenu.swift</string>
-			<key>path</key>
-			<string>CircleMenuLib/CircleMenu.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EB1310F7C59A87712C2C75BB7BD137E2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>649334C5015899B895C017F723508DFD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>ED8348CE2FDF36D546D567D20AF582C4</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>622F711F2018D87F51DD31C7A9F0A371</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-handWashReminder/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-handWashReminder/Pods-handWashReminder.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_handWashReminder</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EF726DACD18C61828EA8E5C3A4E0A08B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>710D2BDB4FCA7662DCA7F8DB0FBD0E17</string>
-				<string>513389DD94BD59C2539915174187F5FF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F012C243BC3F0AD87FFBD1FDC30F5F66</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F1384A039F4B1DD6F4F93CA472BADC6B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PopupController-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F2FCC51826D825F451CAA33BFCB41DF5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>CircleMenuLoader.swift</string>
-			<key>path</key>
-			<string>CircleMenuLib/CircleMenuLoader/CircleMenuLoader.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F5B42BB48ED0585DB2B64C758C5EFBEA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>34F77BFD9FDBF9A2F09E9880072901B7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F985B7FBD7792D1A124EAF56419B9534</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C151E0369F909FBA1B7497C83290FC6D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-handWashReminder/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-handWashReminder/Pods-handWashReminder.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_handWashReminder</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FB663CCA004DED63795587E939582B91</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2701A28632F309ACE00A1A8C63BAA822</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FD0B6404758975EF10669291D58E4DB9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0E05CFBF139B14582552DF8968FDB381</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04D267B0B48099D45E912396F8CA526B /* CircleMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DD4DD305A1D9E9F90A0C6B2710B587 /* CircleMenu-dummy.m */; };
+		0E05CFBF139B14582552DF8968FDB381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		11C798FFBB0F6DD3B58C105A38701E7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		1470BFF6DC1785184C994C3D68D281CD /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E527348914E5ED99D4375DAC800990 /* CircleMenuButton.swift */; };
+		15D2185F3D7E3CD28347D37269150C11 /* Pods-handWashReminder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1906ADCDC38CC1F9996A406996FB4CCF /* Pods-handWashReminder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20BF8386F2521DA0F1F641143F1FE3FB /* Pods-handWashReminder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93636C855FAE917EC7BE89AE48014F68 /* Pods-handWashReminder-dummy.m */; };
+		2701A28632F309ACE00A1A8C63BAA822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		513389DD94BD59C2539915174187F5FF /* RSPlayPauseButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 348D986C1A9570EC5B29D6790344EDF5 /* RSPlayPauseButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E9C923D29AF53789FC8074BD325AF2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		638A7EBE01BE26AB55B9046320066100 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67451E7C73EF1B97360AEE78865C74F /* CircleMenu.swift */; };
+		649334C5015899B895C017F723508DFD /* CircleMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CFD5577C5F714DF78420454BCE1D37E /* CircleMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BA8AD45AC27D515150BFEB4A6F31D57 /* PopupController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1384A039F4B1DD6F4F93CA472BADC6B /* PopupController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		710D2BDB4FCA7662DCA7F8DB0FBD0E17 /* RSPlayPauseButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C59006D1493A12E31CF4879E3E694C6D /* RSPlayPauseButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B25E4B02F97465F010B5CFC1845D9FC /* RSPlayPauseButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D9A9D37DFEAEF5ED59F3DDFE77204 /* RSPlayPauseButton-dummy.m */; };
+		9B34FDAA7FBEB2C6EB8AE4F45A821D59 /* RSPlayPauseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41343C24A3E6BB4302654125558E592C /* RSPlayPauseButton.m */; };
+		A55A4E655CB048301E79653C19FAC264 /* PopupController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54892F382E499E2719BE54F42A9C88AD /* PopupController-dummy.m */; };
+		A74367C94AF3506FA88507A8FCC39EA7 /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FCC51826D825F451CAA33BFCB41DF5 /* CircleMenuLoader.swift */; };
+		F5B42BB48ED0585DB2B64C758C5EFBEA /* PopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F77BFD9FDBF9A2F09E9880072901B7 /* PopupController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		165402186F14E8D4971A56841A0057AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C68835B75822DE7C4BD70ECFCB9684EB;
+			remoteInfo = PopupController;
+		};
+		7B297447170E647A578985E87757E9A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27533A6098E2BDD80827924FA8F4E742;
+			remoteInfo = CircleMenu;
+		};
+		99FBEEA643347DACDED10796E71B9C6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32570BC8B87DEC0D023DC0B123538AD1;
+			remoteInfo = RSPlayPauseButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06B8977D9D0EE562772091A82D325887 /* PopupController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupController.xcconfig; sourceTree = "<group>"; };
+		0FD64A3663679761627C274B774E6C1C /* RSPlayPauseButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSPlayPauseButton-prefix.pch"; sourceTree = "<group>"; };
+		17903545FABFF1E94578A392E209257E /* CircleMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleMenu.xcconfig; sourceTree = "<group>"; };
+		1906ADCDC38CC1F9996A406996FB4CCF /* Pods-handWashReminder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-handWashReminder-umbrella.h"; sourceTree = "<group>"; };
+		19DD4DD305A1D9E9F90A0C6B2710B587 /* CircleMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleMenu-dummy.m"; sourceTree = "<group>"; };
+		2A8DD69F6CC960CC948F7B153433CB06 /* Pods_handWashReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handWashReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C8FF14065D2DA9B46D5D920A5AA1289 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		348D986C1A9570EC5B29D6790344EDF5 /* RSPlayPauseButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSPlayPauseButton.h; path = RSPlayPauseButtonDemo/RSPlayPauseButton/RSPlayPauseButton.h; sourceTree = "<group>"; };
+		34F77BFD9FDBF9A2F09E9880072901B7 /* PopupController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupController.swift; path = Classes/PopupController.swift; sourceTree = "<group>"; };
+		41343C24A3E6BB4302654125558E592C /* RSPlayPauseButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSPlayPauseButton.m; path = RSPlayPauseButtonDemo/RSPlayPauseButton/RSPlayPauseButton.m; sourceTree = "<group>"; };
+		46E527348914E5ED99D4375DAC800990 /* CircleMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuButton.swift; path = CircleMenuLib/CircleMenuButton/CircleMenuButton.swift; sourceTree = "<group>"; };
+		54892F382E499E2719BE54F42A9C88AD /* PopupController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopupController-dummy.m"; sourceTree = "<group>"; };
+		608E6291106BDC89E81396FF761FB50C /* RSPlayPauseButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSPlayPauseButton.xcconfig; sourceTree = "<group>"; };
+		6160F8A67A2D18699D7E859936469290 /* Pods-handWashReminder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-handWashReminder-acknowledgements.markdown"; sourceTree = "<group>"; };
+		622F711F2018D87F51DD31C7A9F0A371 /* Pods-handWashReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-handWashReminder.debug.xcconfig"; sourceTree = "<group>"; };
+		6D8BE5C7D4B1A4E7F9E56F7D450CE9A5 /* Pods-handWashReminder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-handWashReminder-acknowledgements.plist"; sourceTree = "<group>"; };
+		6E250ADC2251AE468B5977C41FC537BA /* RSPlayPauseButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSPlayPauseButton.modulemap; sourceTree = "<group>"; };
+		7162E9A2BBB699FB647FFB7B11521CCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767518E7FCA945ED565FD499B7B27D2C /* PopupController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopupController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0E3F37753B4A2036951FBA2C9B99A7 /* Pods-handWashReminder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-handWashReminder.modulemap"; sourceTree = "<group>"; };
+		80131330A5639C6D38FF935134CD8C1F /* PopupController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PopupController.modulemap; sourceTree = "<group>"; };
+		8CFD5577C5F714DF78420454BCE1D37E /* CircleMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-umbrella.h"; sourceTree = "<group>"; };
+		90EF6BBAA2DAF16A80DF857036A394C2 /* CircleMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CircleMenu.modulemap; sourceTree = "<group>"; };
+		9230564F968E0D0DD1F220BBDF80ADD1 /* PopupController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupController-prefix.pch"; sourceTree = "<group>"; };
+		93636C855FAE917EC7BE89AE48014F68 /* Pods-handWashReminder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-handWashReminder-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AC8D9A9D37DFEAEF5ED59F3DDFE77204 /* RSPlayPauseButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSPlayPauseButton-dummy.m"; sourceTree = "<group>"; };
+		B25AC711FF4DBB8557378168A321CD71 /* CircleMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-prefix.pch"; sourceTree = "<group>"; };
+		B3CF79ED031FF294ECDD7E1C62C22397 /* Pods-handWashReminder-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-handWashReminder-resources.sh"; sourceTree = "<group>"; };
+		B973486D81301F4F850F7452295825A7 /* Pods-handWashReminder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-handWashReminder-frameworks.sh"; sourceTree = "<group>"; };
+		C151E0369F909FBA1B7497C83290FC6D /* Pods-handWashReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-handWashReminder.release.xcconfig"; sourceTree = "<group>"; };
+		C3465CD6B3B02845EABD0C175B828877 /* RSPlayPauseButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSPlayPauseButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59006D1493A12E31CF4879E3E694C6D /* RSPlayPauseButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSPlayPauseButton-umbrella.h"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D7A4A0BBB702D6888F44CE0905523836 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA13661FF6D8247D40A7330207D50E54 /* CircleMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircleMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67451E7C73EF1B97360AEE78865C74F /* CircleMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenu.swift; path = CircleMenuLib/CircleMenu.swift; sourceTree = "<group>"; };
+		F012C243BC3F0AD87FFBD1FDC30F5F66 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1384A039F4B1DD6F4F93CA472BADC6B /* PopupController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupController-umbrella.h"; sourceTree = "<group>"; };
+		F2FCC51826D825F451CAA33BFCB41DF5 /* CircleMenuLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuLoader.swift; path = CircleMenuLib/CircleMenuLoader/CircleMenuLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A97E5B20CFB58F3522DEA220BBCEEC10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C798FFBB0F6DD3B58C105A38701E7A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65A148884FF067178A2823ABE77AD9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9C923D29AF53789FC8074BD325AF2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB663CCA004DED63795587E939582B91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2701A28632F309ACE00A1A8C63BAA822 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0B6404758975EF10669291D58E4DB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E05CFBF139B14582552DF8968FDB381 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		240211D4F548AA4EEC4952F036C4814F /* CircleMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E67451E7C73EF1B97360AEE78865C74F /* CircleMenu.swift */,
+				46E527348914E5ED99D4375DAC800990 /* CircleMenuButton.swift */,
+				F2FCC51826D825F451CAA33BFCB41DF5 /* CircleMenuLoader.swift */,
+				8B6D6F183C036100A67B92F0BC2B7BBF /* Support Files */,
+			);
+			path = CircleMenu;
+			sourceTree = "<group>";
+		};
+		3898DF8EE196D378D9A58B12161AA6A9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F012C243BC3F0AD87FFBD1FDC30F5F66 /* Info.plist */,
+				6E250ADC2251AE468B5977C41FC537BA /* RSPlayPauseButton.modulemap */,
+				608E6291106BDC89E81396FF761FB50C /* RSPlayPauseButton.xcconfig */,
+				AC8D9A9D37DFEAEF5ED59F3DDFE77204 /* RSPlayPauseButton-dummy.m */,
+				0FD64A3663679761627C274B774E6C1C /* RSPlayPauseButton-prefix.pch */,
+				C59006D1493A12E31CF4879E3E694C6D /* RSPlayPauseButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RSPlayPauseButton";
+			sourceTree = "<group>";
+		};
+		39B351C5C6CE25BE4EDBECE4A2B1BDD1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7A4A0BBB702D6888F44CE0905523836 /* Info.plist */,
+				80131330A5639C6D38FF935134CD8C1F /* PopupController.modulemap */,
+				06B8977D9D0EE562772091A82D325887 /* PopupController.xcconfig */,
+				54892F382E499E2719BE54F42A9C88AD /* PopupController-dummy.m */,
+				9230564F968E0D0DD1F220BBDF80ADD1 /* PopupController-prefix.pch */,
+				F1384A039F4B1DD6F4F93CA472BADC6B /* PopupController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PopupController";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		41F1CE91E6033CA7A43FC4954C697E51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				240211D4F548AA4EEC4952F036C4814F /* CircleMenu */,
+				C13FE84A63D14BB903A8B499E414D589 /* PopupController */,
+				9D9CE82AFDDD96EDA9AF4704C27ED357 /* RSPlayPauseButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E43E537FD80A155692556C260083E8A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A37857D9145FB8A3A1E4B4F9EF4EF3C8 /* Pods-handWashReminder */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				41F1CE91E6033CA7A43FC4954C697E51 /* Pods */,
+				D294BC08BCF3ADD2778508F5F3E2F71F /* Products */,
+				6E43E537FD80A155692556C260083E8A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B6D6F183C036100A67B92F0BC2B7BBF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				90EF6BBAA2DAF16A80DF857036A394C2 /* CircleMenu.modulemap */,
+				17903545FABFF1E94578A392E209257E /* CircleMenu.xcconfig */,
+				19DD4DD305A1D9E9F90A0C6B2710B587 /* CircleMenu-dummy.m */,
+				B25AC711FF4DBB8557378168A321CD71 /* CircleMenu-prefix.pch */,
+				8CFD5577C5F714DF78420454BCE1D37E /* CircleMenu-umbrella.h */,
+				7162E9A2BBB699FB647FFB7B11521CCE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CircleMenu";
+			sourceTree = "<group>";
+		};
+		9D9CE82AFDDD96EDA9AF4704C27ED357 /* RSPlayPauseButton */ = {
+			isa = PBXGroup;
+			children = (
+				348D986C1A9570EC5B29D6790344EDF5 /* RSPlayPauseButton.h */,
+				41343C24A3E6BB4302654125558E592C /* RSPlayPauseButton.m */,
+				3898DF8EE196D378D9A58B12161AA6A9 /* Support Files */,
+			);
+			path = RSPlayPauseButton;
+			sourceTree = "<group>";
+		};
+		A37857D9145FB8A3A1E4B4F9EF4EF3C8 /* Pods-handWashReminder */ = {
+			isa = PBXGroup;
+			children = (
+				2C8FF14065D2DA9B46D5D920A5AA1289 /* Info.plist */,
+				7E0E3F37753B4A2036951FBA2C9B99A7 /* Pods-handWashReminder.modulemap */,
+				6160F8A67A2D18699D7E859936469290 /* Pods-handWashReminder-acknowledgements.markdown */,
+				6D8BE5C7D4B1A4E7F9E56F7D450CE9A5 /* Pods-handWashReminder-acknowledgements.plist */,
+				93636C855FAE917EC7BE89AE48014F68 /* Pods-handWashReminder-dummy.m */,
+				B973486D81301F4F850F7452295825A7 /* Pods-handWashReminder-frameworks.sh */,
+				B3CF79ED031FF294ECDD7E1C62C22397 /* Pods-handWashReminder-resources.sh */,
+				1906ADCDC38CC1F9996A406996FB4CCF /* Pods-handWashReminder-umbrella.h */,
+				622F711F2018D87F51DD31C7A9F0A371 /* Pods-handWashReminder.debug.xcconfig */,
+				C151E0369F909FBA1B7497C83290FC6D /* Pods-handWashReminder.release.xcconfig */,
+			);
+			name = "Pods-handWashReminder";
+			path = "Target Support Files/Pods-handWashReminder";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C13FE84A63D14BB903A8B499E414D589 /* PopupController */ = {
+			isa = PBXGroup;
+			children = (
+				34F77BFD9FDBF9A2F09E9880072901B7 /* PopupController.swift */,
+				39B351C5C6CE25BE4EDBECE4A2B1BDD1 /* Support Files */,
+			);
+			path = PopupController;
+			sourceTree = "<group>";
+		};
+		D294BC08BCF3ADD2778508F5F3E2F71F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA13661FF6D8247D40A7330207D50E54 /* CircleMenu.framework */,
+				2A8DD69F6CC960CC948F7B153433CB06 /* Pods_handWashReminder.framework */,
+				767518E7FCA945ED565FD499B7B27D2C /* PopupController.framework */,
+				C3465CD6B3B02845EABD0C175B828877 /* RSPlayPauseButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A9715DCFEC9E4DB8930F2DCE468BA9BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D2185F3D7E3CD28347D37269150C11 /* Pods-handWashReminder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D43C6FA5D9E410EDABA041985FBE5847 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA8AD45AC27D515150BFEB4A6F31D57 /* PopupController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1310F7C59A87712C2C75BB7BD137E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649334C5015899B895C017F723508DFD /* CircleMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF726DACD18C61828EA8E5C3A4E0A08B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				710D2BDB4FCA7662DCA7F8DB0FBD0E17 /* RSPlayPauseButton-umbrella.h in Headers */,
+				513389DD94BD59C2539915174187F5FF /* RSPlayPauseButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		27533A6098E2BDD80827924FA8F4E742 /* CircleMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A438ED94A7A66926EEA5935B338F0B6 /* Build configuration list for PBXNativeTarget "CircleMenu" */;
+			buildPhases = (
+				99E6B72FADDCBB3E131687356A42AA64 /* Sources */,
+				FB663CCA004DED63795587E939582B91 /* Frameworks */,
+				EB1310F7C59A87712C2C75BB7BD137E2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleMenu;
+			productName = CircleMenu;
+			productReference = DA13661FF6D8247D40A7330207D50E54 /* CircleMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		32570BC8B87DEC0D023DC0B123538AD1 /* RSPlayPauseButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 367BB818FA1CC4DC22819263B498FEFF /* Build configuration list for PBXNativeTarget "RSPlayPauseButton" */;
+			buildPhases = (
+				D1EE4D4FBE1228605A9AE73F1510C1D7 /* Sources */,
+				A97E5B20CFB58F3522DEA220BBCEEC10 /* Frameworks */,
+				EF726DACD18C61828EA8E5C3A4E0A08B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSPlayPauseButton;
+			productName = RSPlayPauseButton;
+			productReference = C3465CD6B3B02845EABD0C175B828877 /* RSPlayPauseButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A6E6DFFC6235BC692BD1C37A5904907E /* Pods-handWashReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20601C0FFC06A3B5682434BB0CBEC55C /* Build configuration list for PBXNativeTarget "Pods-handWashReminder" */;
+			buildPhases = (
+				886A22874CC07D54F74529E8E4AF8FD8 /* Sources */,
+				E65A148884FF067178A2823ABE77AD9A /* Frameworks */,
+				A9715DCFEC9E4DB8930F2DCE468BA9BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68D237A567A515C09CC84C159D544920 /* PBXTargetDependency */,
+				98517A897FAF009AD7D05BD414CEA6AC /* PBXTargetDependency */,
+				17147D879916A87B2BDF176ED7F84FCB /* PBXTargetDependency */,
+			);
+			name = "Pods-handWashReminder";
+			productName = "Pods-handWashReminder";
+			productReference = 2A8DD69F6CC960CC948F7B153433CB06 /* Pods_handWashReminder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C68835B75822DE7C4BD70ECFCB9684EB /* PopupController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96056DE38EE495DFDD9CBF4D03D42784 /* Build configuration list for PBXNativeTarget "PopupController" */;
+			buildPhases = (
+				E2EB84CC8D2E383EE1FFA4246048B7E6 /* Sources */,
+				FD0B6404758975EF10669291D58E4DB9 /* Frameworks */,
+				D43C6FA5D9E410EDABA041985FBE5847 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopupController;
+			productName = PopupController;
+			productReference = 767518E7FCA945ED565FD499B7B27D2C /* PopupController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					27533A6098E2BDD80827924FA8F4E742 = {
+						LastSwiftMigration = 0820;
+					};
+					A6E6DFFC6235BC692BD1C37A5904907E = {
+						LastSwiftMigration = 0820;
+					};
+					C68835B75822DE7C4BD70ECFCB9684EB = {
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D294BC08BCF3ADD2778508F5F3E2F71F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27533A6098E2BDD80827924FA8F4E742 /* CircleMenu */,
+				A6E6DFFC6235BC692BD1C37A5904907E /* Pods-handWashReminder */,
+				C68835B75822DE7C4BD70ECFCB9684EB /* PopupController */,
+				32570BC8B87DEC0D023DC0B123538AD1 /* RSPlayPauseButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		886A22874CC07D54F74529E8E4AF8FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BF8386F2521DA0F1F641143F1FE3FB /* Pods-handWashReminder-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99E6B72FADDCBB3E131687356A42AA64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D267B0B48099D45E912396F8CA526B /* CircleMenu-dummy.m in Sources */,
+				638A7EBE01BE26AB55B9046320066100 /* CircleMenu.swift in Sources */,
+				1470BFF6DC1785184C994C3D68D281CD /* CircleMenuButton.swift in Sources */,
+				A74367C94AF3506FA88507A8FCC39EA7 /* CircleMenuLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1EE4D4FBE1228605A9AE73F1510C1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B25E4B02F97465F010B5CFC1845D9FC /* RSPlayPauseButton-dummy.m in Sources */,
+				9B34FDAA7FBEB2C6EB8AE4F45A821D59 /* RSPlayPauseButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2EB84CC8D2E383EE1FFA4246048B7E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55A4E655CB048301E79653C19FAC264 /* PopupController-dummy.m in Sources */,
+				F5B42BB48ED0585DB2B64C758C5EFBEA /* PopupController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17147D879916A87B2BDF176ED7F84FCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSPlayPauseButton;
+			target = 32570BC8B87DEC0D023DC0B123538AD1 /* RSPlayPauseButton */;
+			targetProxy = 99FBEEA643347DACDED10796E71B9C6D /* PBXContainerItemProxy */;
+		};
+		68D237A567A515C09CC84C159D544920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleMenu;
+			target = 27533A6098E2BDD80827924FA8F4E742 /* CircleMenu */;
+			targetProxy = 7B297447170E647A578985E87757E9A7 /* PBXContainerItemProxy */;
+		};
+		98517A897FAF009AD7D05BD414CEA6AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PopupController;
+			target = C68835B75822DE7C4BD70ECFCB9684EB /* PopupController */;
+			targetProxy = 165402186F14E8D4971A56841A0057AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3E81719AA67266DE45947FB556F37E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B8977D9D0EE562772091A82D325887 /* PopupController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PopupController/PopupController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PopupController/PopupController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PopupController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43A55C0362EA89CCE06154F30E307DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17903545FABFF1E94578A392E209257E /* CircleMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CircleMenu/CircleMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CircleMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CircleMenu/CircleMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CircleMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68A6696BB03EB3EE2B09095FFE24ACC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17903545FABFF1E94578A392E209257E /* CircleMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CircleMenu/CircleMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CircleMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CircleMenu/CircleMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CircleMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D2CB29C1AAC17EB85E6CFC48E6E2A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B8977D9D0EE562772091A82D325887 /* PopupController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PopupController/PopupController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PopupController/PopupController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PopupController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BD453AAFFE0E8DEB020AC80FA4CF5263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 608E6291106BDC89E81396FF761FB50C /* RSPlayPauseButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSPlayPauseButton/RSPlayPauseButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSPlayPauseButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSPlayPauseButton/RSPlayPauseButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RSPlayPauseButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D74F58AB054C2D357EE772DD907F6B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 608E6291106BDC89E81396FF761FB50C /* RSPlayPauseButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSPlayPauseButton/RSPlayPauseButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSPlayPauseButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSPlayPauseButton/RSPlayPauseButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RSPlayPauseButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED8348CE2FDF36D546D567D20AF582C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 622F711F2018D87F51DD31C7A9F0A371 /* Pods-handWashReminder.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-handWashReminder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-handWashReminder/Pods-handWashReminder.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_handWashReminder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F985B7FBD7792D1A124EAF56419B9534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C151E0369F909FBA1B7497C83290FC6D /* Pods-handWashReminder.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-handWashReminder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-handWashReminder/Pods-handWashReminder.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_handWashReminder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A438ED94A7A66926EEA5935B338F0B6 /* Build configuration list for PBXNativeTarget "CircleMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A6696BB03EB3EE2B09095FFE24ACC4 /* Debug */,
+				43A55C0362EA89CCE06154F30E307DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20601C0FFC06A3B5682434BB0CBEC55C /* Build configuration list for PBXNativeTarget "Pods-handWashReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8348CE2FDF36D546D567D20AF582C4 /* Debug */,
+				F985B7FBD7792D1A124EAF56419B9534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9439C22469D35336242DD983DB5C5F /* Debug */,
+				42287DDF97330524BA3EF220F0276DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		367BB818FA1CC4DC22819263B498FEFF /* Build configuration list for PBXNativeTarget "RSPlayPauseButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD453AAFFE0E8DEB020AC80FA4CF5263 /* Debug */,
+				D74F58AB054C2D357EE772DD907F6B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96056DE38EE495DFDD9CBF4D03D42784 /* Build configuration list for PBXNativeTarget "PopupController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E81719AA67266DE45947FB556F37E59 /* Debug */,
+				7D2CB29C1AAC17EB85E6CFC48E6E2A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
