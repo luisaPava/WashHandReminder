@@ -9,8 +9,11 @@
 #import "RSPlayPauseButton.h"
 #include <tgmath.h> // type generic math, yo: http://en.wikipedia.org/wiki/Tgmath.h#tgmath.h
 
+#define heightScreen  [[UIScreen mainScreen] bounds].size.height
 
-static const CGFloat kScale = 1.0;
+
+static const CGFloat kScale = 2;
+
 static const CGFloat kBorderSize = 32.0 * kScale;
 static const CGFloat kBorderWidth = 3.0 * kScale;
 static const CGFloat kSize = kBorderSize + kBorderWidth; // The total size is the border size + 2x half the border width.
@@ -239,11 +242,12 @@ static const CGPoint p8 = {kPauseLineWidth + kPauseLinesSpace, kPauseLineHeight}
         self.borderShapeLayer.fillColor = [UIColor clearColor].CGColor;
         [self.layer addSublayer:self.borderShapeLayer];
     }
-    self.borderShapeLayer.strokeColor = self.tintColor.CGColor;
+    self.borderShapeLayer.strokeColor = UIColor.clearColor.CGColor;
     
     if (!self.playPauseShapeLayer) {
         self.playPauseShapeLayer = [[CAShapeLayer alloc] init];
         CGRect playPauseRect = CGRectZero;
+        
         playPauseRect.origin.x = floor(((self.bounds.size.width) - (kPauseLineWidth + kPauseLinesSpace + kPauseLineWidth)) / 2);
         playPauseRect.origin.y = floor(((self.bounds.size.height) - (kPauseLineHeight)) / 2);
         playPauseRect.size.width = kPauseLineWidth + kPauseLinesSpace + kPauseLineWidth + kPlayTriangleTipOffsetX;

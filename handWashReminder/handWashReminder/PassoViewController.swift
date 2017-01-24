@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import RSPlayPauseButton
 
 class PassoViewController: UIViewController {
     @IBOutlet weak var carousel: iCarousel!
     
     fileprivate let sharedDAO = DAOPassos.sharedInstance
+    fileprivate var playPauseButton: RSPlayPauseButton! = nil
+    fileprivate var autoPlay = false
+    
+    fileprivate var task: DispatchWorkItem!
 
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -24,6 +29,14 @@ class PassoViewController: UIViewController {
         carousel.centerItemWhenSelected = true
         carousel.bounces = false
 //        carousel.contentOffset = CGPoint.zero
+        
+        //Play/Pause settings
+        playPauseButton = RSPlayPauseButton(frame: CGRect(x: width / 2.7, y: 460, width: 0, height: 0))
+        playPauseButton.addTarget(self, action: #selector(playPauseButtonDidPress), for: .touchUpInside)
+        playPauseButton.tintColor = UIColor.white
+        playPauseButton.contentScaleFactor = 2
+        
+        self.view.addSubview(playPauseButton)
 
     }
 
@@ -39,6 +52,44 @@ class PassoViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         self.automaticallyAdjustsScrollViewInsets = false
+    }
+    
+    //Play/Pause Button Action
+    func playPauseButtonDidPress(playPauseButton: RSPlayPauseButton) {
+        playPauseButton.setPaused(!playPauseButton.isPaused, animated: true)
+        
+        let view = carousel.currentItemView as! CustomCarouselView
+        
+        view.timer.reset()
+        view.timer.start()
+        
+        var index = carousel.index(ofItemView: view) + 1
+        
+        if index == sharedDAO.getCount() {
+            index = 0
+        }
+        
+        let timer = sharedDAO.getTempo(atIndex: index - 1)
+        
+        autoPlay = !autoPlay
+        
+        if autoPlay {
+            task = DispatchWorkItem {
+                self.carousel.scrollToItem(at: index, animated: true)
+            }
+            
+            // execute task in 2 seconds
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + timer - 0.5, execute: task)
+            
+        } else {
+            task.cancel()
+            
+        }
+        
+//        let when = DispatchTime.now() + timer - 0.5
+//        DispatchQueue.main.asyncAfter(deadline: when) {
+//           self.carousel.scrollToItem(at: index, animated: true)
+//        }
     }
 }
 
@@ -60,7 +111,6 @@ extension PassoViewController: iCarouselDelegate {
 
 //MARK: - iCarousel Data Source
 extension PassoViewController: iCarouselDataSource {
-    
     //Returns the number of items in iCarousel
     func numberOfItems(in carousel: iCarousel) -> Int {
         return sharedDAO.getCount()
@@ -69,7 +119,7 @@ extension PassoViewController: iCarouselDataSource {
     
     // Return each 'cell' to be shown in iCarousel
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
-        let tempView = CustomCarouselView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width / 1.5, height: self.view.bounds.height / 2))
+        let tempView = CustomCarouselView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width / 1.5, height: self.view.bounds.height / 1.8))
         
         if index == 0 {
             tempView.timer.start()
@@ -107,6 +157,16 @@ extension PassoViewController: iCarouselDataSource {
         }
         
         view.timer.start()
+        
+        if autoPlay {
+            let timer = sharedDAO.getTempo(atIndex: index - 1)
+            
+            task = DispatchWorkItem {
+                self.carousel.scrollToItem(at: index, animated: true)
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + timer - 0.5, execute: task)
+        }
         
     }
 }

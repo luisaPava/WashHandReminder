@@ -398,6 +398,9 @@
 					27533A6098E2BDD80827924FA8F4E742 = {
 						LastSwiftMigration = 0820;
 					};
+					32570BC8B87DEC0D023DC0B123538AD1 = {
+						LastSwiftMigration = 0820;
+					};
 					A6E6DFFC6235BC692BD1C37A5904907E = {
 						LastSwiftMigration = 0820;
 					};
@@ -694,6 +697,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 608E6291106BDC89E81396FF761FB50C /* RSPlayPauseButton.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -713,6 +717,8 @@
 				PRODUCT_NAME = RSPlayPauseButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -723,6 +729,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 608E6291106BDC89E81396FF761FB50C /* RSPlayPauseButton.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -742,6 +749,7 @@
 				PRODUCT_NAME = RSPlayPauseButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

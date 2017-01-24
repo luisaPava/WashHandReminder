@@ -17,6 +17,7 @@ class CustomCarouselView: UIView {
     
     private var containerView: UIView!
     private let customViewNibName = "CustomView"
+    private let deviceName = UIDevice.current.modelName
     
     
     // MARK: init methods
@@ -39,11 +40,13 @@ class CustomCarouselView: UIView {
         //TextField Settings
         let height = self.bounds.height
         
-        self.desc2 = UITextView(frame: CGRect(x: height / 28.4, y: height / 1.42, width: height / 1.47, height: height / 4.3))
-        self.desc2.font = UIFont(name: "Helvetica", size: 15)
+        self.desc2 = UITextView(frame: CGRect(x: height / 28.4, y: height / 1.47, width: height / 1.57, height: height / 4.2))
+        self.desc2.font = UIFont(name: "Helvetica", size: CGFloat(getFontSize()))
         self.desc2.textColor = UIColor.white
         self.desc2.backgroundColor = UIColor.clear
         self.desc2.textAlignment = .left
+        self.desc2.isEditable = false
+        self.desc2.isSelectable = false
         
         self.addSubview(desc2)
         
@@ -54,6 +57,16 @@ class CustomCarouselView: UIView {
     
     override func layoutSubviews() {
         self.imagem.clipsToBounds = true
+    }
+    
+    private func getFontSize() -> Int {
+        if deviceName.contains("Plus") {
+            return 20
+        } else if deviceName.contains("6") || deviceName.contains("7") {
+            return 20
+        } else {
+            return 16
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
