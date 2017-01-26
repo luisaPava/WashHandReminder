@@ -60,6 +60,9 @@ class NotificationViewController: UIViewController {
         
         ativarBtnOutlet.isSelected = defaults.bool(forKey: "ativarButtonIsSelected")
         
+        indexSegControl = defaults.integer(forKey: "SegmentedIndex")
+        segControl.selectedIndex = indexSegControl
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -70,8 +73,8 @@ class NotificationViewController: UIViewController {
             i += 1
             
             //Se o usuário já tiver setado o picker ele vai pro horario anterior
-//            indexSegControl = defaults.integer(forKey: "SegmentedIndex")
-//            segControl.selectedIndex = indexSegControl
+            indexSegControl = defaults.integer(forKey: "SegmentedIndex")
+            segControl.selectedIndex = indexSegControl
             
             let inicioDef = defaults.integer(forKey: "pickerInicio")
             
@@ -109,6 +112,7 @@ class NotificationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     override func viewWillDisappear(_ animated: Bool) {
         defaults.set(Int(inicio), forKey: "pickerInicio")
         defaults.set(Int(fim), forKey: "pickerFim")
@@ -116,6 +120,8 @@ class NotificationViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
+
+        
         self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.navigationBar.barTintColor = UIColor(netHex: 0x2F557D)
         
@@ -332,6 +338,10 @@ extension NotificationViewController: AKPickerViewDelegate {
         } else {
             fim = Double(pickerView.getTitle(atIndex: item))!
         }
+        
+        if pickerView.selectedItem == 0 {
+            pickerView.scrollToItem((numItensPicker / 2) - 1)
+        }
     }
 }
 
@@ -342,32 +352,6 @@ extension NotificationViewController: AKPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: AKPickerView, titleForItem item: Int) -> String {
-//        var temp: Int = 0
-//        
-//        if pickerView.id == "inicio" {
-////            print("\(countIni) inicio")
-//            if countIni < 24 {
-//                temp = countIni
-//                countIni += 1
-//                
-//            } else {
-//                temp = 1
-//                countIni = 2
-//            }
-//            
-//        } else {
-//            if countFim < 24 {
-//                temp = countFim
-//                countFim += 1
-//                
-//            } else {
-//                temp = 1
-//                countFim = 2
-//            }
-//        }
-//        
-//        print("\(temp) \(pickerView.id) \(item)")
-        
         return "\(arrayHours[item])"
     }
 }

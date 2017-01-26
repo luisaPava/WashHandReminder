@@ -62,3 +62,11 @@ public extension UIDevice {
         }
     }
 }
+
+extension UIButton {
+    func starAnimation() {
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
+            self.alpha = 1
+        }, completion: nil)
+    }
+}

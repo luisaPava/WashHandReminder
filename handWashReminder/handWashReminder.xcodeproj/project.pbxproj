@@ -20,6 +20,7 @@
 		4E33BB9F1DAD36E900CD6495 /* Curiosidades.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E33BB9E1DAD36E900CD6495 /* Curiosidades.plist */; };
 		4E33BBA11DAD37D500CD6495 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E33BBA01DAD37D500CD6495 /* DAO.swift */; };
 		4E33BBA31DAD46C100CD6495 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E33BBA21DAD46C100CD6495 /* Helper.swift */; };
+		4E4826681E3A7C6C0094D92F /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4826671E3A7C6C0094D92F /* IBDesignable.swift */; };
 		4E4A11371DAD526800CE02EE /* PassoAPasso.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4A11361DAD526800CE02EE /* PassoAPasso.plist */; };
 		4E4A113B1DAD545100CE02EE /* DAOPassos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A113A1DAD545100CE02EE /* DAOPassos.swift */; };
 		4E4A11421DAFC5EB00CE02EE /* PopupDIcas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A11411DAFC5EB00CE02EE /* PopupDIcas.swift */; };
@@ -54,6 +55,7 @@
 		4E33BB9E1DAD36E900CD6495 /* Curiosidades.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Curiosidades.plist; sourceTree = "<group>"; };
 		4E33BBA01DAD37D500CD6495 /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		4E33BBA21DAD46C100CD6495 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		4E4826671E3A7C6C0094D92F /* IBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
 		4E4A11361DAD526800CE02EE /* PassoAPasso.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PassoAPasso.plist; sourceTree = "<group>"; };
 		4E4A113A1DAD545100CE02EE /* DAOPassos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOPassos.swift; sourceTree = "<group>"; };
 		4E4A11411DAFC5EB00CE02EE /* PopupDIcas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDIcas.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				EB2F95E31D7CCA3100A2744E /* SegmentedControl.swift */,
 				EB0B8B491D9208ED00EF0753 /* View.swift */,
 				4E33BBA21DAD46C100CD6495 /* Helper.swift */,
+				4E4826671E3A7C6C0094D92F /* IBDesignable.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				4E7F89EC1D86FB36002B00B1 /* iCarousel.m in Sources */,
 				4E5B2C771D8B563D009C74B6 /* PopUpViewController.swift in Sources */,
 				EB0B8B4A1D9208ED00EF0753 /* View.swift in Sources */,
+				4E4826681E3A7C6C0094D92F /* IBDesignable.swift in Sources */,
 				EB2F95E21D7CC23C00A2744E /* NotificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

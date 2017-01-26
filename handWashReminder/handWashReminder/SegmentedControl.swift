@@ -118,7 +118,7 @@ import UIKit
         
         displayNewSelectedIndex()
         
-        setupView()
+//        setupView()
         
     }
     

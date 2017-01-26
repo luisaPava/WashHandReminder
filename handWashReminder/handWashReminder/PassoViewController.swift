@@ -28,10 +28,9 @@ class PassoViewController: UIViewController {
         carousel.type = .rotary
         carousel.centerItemWhenSelected = true
         carousel.bounces = false
-//        carousel.contentOffset = CGPoint.zero
         
         //Play/Pause settings
-        playPauseButton = RSPlayPauseButton(frame: CGRect(x: width / 2.7, y: 460, width: 0, height: 0))
+        playPauseButton = RSPlayPauseButton(frame: CGRect(x: width / 2.5, y: height / 1.23, width: 0, height: 0))
         playPauseButton.addTarget(self, action: #selector(playPauseButtonDidPress), for: .touchUpInside)
         playPauseButton.tintColor = UIColor.white
         playPauseButton.contentScaleFactor = 2
@@ -159,7 +158,15 @@ extension PassoViewController: iCarouselDataSource {
         view.timer.start()
         
         if autoPlay {
-            let timer = sharedDAO.getTempo(atIndex: index - 1)
+            let timer: Double!
+            
+            if index == 0 {
+                timer = sharedDAO.getTempo(atIndex: index)
+                
+            } else {
+                timer = sharedDAO.getTempo(atIndex: index - 1)
+                
+            }
             
             task = DispatchWorkItem {
                 self.carousel.scrollToItem(at: index, animated: true)
