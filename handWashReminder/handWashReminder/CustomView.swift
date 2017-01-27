@@ -28,8 +28,8 @@ class CustomCarouselView: UIView {
         
         //Timer settings
         self.timer.delegate = self
-        self.timer.isActive = true
-        self.timer.totalTime = 20
+        self.timer.isActive = false
+//        self.timer.totalTime = 10
         self.timer.elapsedTime = 0
         
         //Timer settings

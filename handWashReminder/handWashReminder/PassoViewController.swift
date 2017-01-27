@@ -68,7 +68,15 @@ class PassoViewController: UIViewController {
             index = 0
         }
         
-        let timer = sharedDAO.getTempo(atIndex: index - 1)
+        var timer: Double
+        
+        if index == 0 {
+            timer = sharedDAO.getTempo(atIndex: index)
+            
+        } else {
+            timer = sharedDAO.getTempo(atIndex: index - 1)
+            
+        }
         
         autoPlay = !autoPlay
         
@@ -82,6 +90,10 @@ class PassoViewController: UIViewController {
             
         } else {
             task.cancel()
+            
+            view.timer.reset()
+            view.timer.start()
+            view.timer.stop()
             
         }
         
@@ -120,11 +132,6 @@ extension PassoViewController: iCarouselDataSource {
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         let tempView = CustomCarouselView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width / 1.5, height: self.view.bounds.height / 1.8))
         
-        if index == 0 {
-            tempView.timer.start()
-            
-        }
-        
         tempView.imagem.image = UIImage(named: "instrucao\(index + 1)")
         tempView.desc2.text = sharedDAO.getString(atIndex: index + 1)
         
@@ -138,7 +145,18 @@ extension PassoViewController: iCarouselDataSource {
             
         } else {
             tempView.timer.totalTime = timer
+            print(timer)
             
+        }
+        
+        if index == 0 && autoPlay {
+            tempView.timer.start()
+            
+        }
+        
+        if !autoPlay {
+            tempView.timer.start()
+            tempView.timer.stop()
         }
         
         
@@ -155,10 +173,9 @@ extension PassoViewController: iCarouselDataSource {
             index = 0
         }
         
-        view.timer.start()
-        
         if autoPlay {
             let timer: Double!
+            view.timer.start()
             
             if index == 0 {
                 timer = sharedDAO.getTempo(atIndex: index)
@@ -173,7 +190,9 @@ extension PassoViewController: iCarouselDataSource {
             }
             
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + timer - 0.5, execute: task)
+        } else {
+            view.timer.start()
+            view.timer.stop()
         }
-        
     }
 }

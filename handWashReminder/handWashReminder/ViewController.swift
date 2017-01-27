@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var gambiarraButton: UIButton!
     @IBOutlet weak var notButtonOutlet: UIButton!
     @IBOutlet weak var instrucoesButtonOutlet: UIButton!
-    @IBOutlet weak var circleMenuButton: CircleMenu!
     fileprivate var buttons: Array<String> = ["curiosidade", "tips"]
     fileprivate let defaults = UserDefaults.standard
     fileprivate var button: CircleMenu!
@@ -23,8 +22,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        circleMenuButton.delegate = self
         
         //Create circle menu programmatically
         button = CircleMenu(
@@ -44,8 +41,6 @@ class ViewController: UIViewController {
         if defaults.bool(forKey: "botãoNotificação") {
             notButtonOutlet.setImage(#imageLiteral(resourceName: "Notificacao2"), for: .normal)
         }
-        
-        circleMenuButton.isHidden = true
         
         button.delegate = self
         
@@ -93,8 +88,6 @@ class ViewController: UIViewController {
         gambiarraButton.isHidden = true
         
     }
-    
-
     
     //MARK: - Actions
     @IBAction func instrucoesButtonAction(_ sender: UIButton) {
